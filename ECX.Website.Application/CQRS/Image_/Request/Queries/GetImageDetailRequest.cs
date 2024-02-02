@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Image_.Request.Queries
 {
     public class GetImageDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

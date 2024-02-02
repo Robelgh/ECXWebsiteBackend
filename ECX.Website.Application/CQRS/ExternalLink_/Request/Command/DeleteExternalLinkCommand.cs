@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.ExternalLink_.Request.Command
 {
     public class DeleteExternalLinkCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

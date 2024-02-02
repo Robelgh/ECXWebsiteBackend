@@ -17,6 +17,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 using ECX.Website.Application.DTOs.Common.Validators;
+using ECX.Website.Application.CQRS.Page_.Request.Command;
+using ECX.Website.Application.DTOs.Page.Validators;
 
 namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
 {
@@ -30,6 +32,7 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
             _pageCatagoryRepository = pageCatagoryRepository;
             _mapper = mapper;
         }
+
         public async Task<BaseCommonResponse> Handle(CreatePageCatagoryCommand request, CancellationToken cancellationToken)
         {
             var response = new BaseCommonResponse();
@@ -61,39 +64,39 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
                     {
                         string contentType = request.PageCatagoryFormDto.ImgFile.ContentType.ToString();
                         string ext = contentType.Split('/')[1];
-                        string fileName = Guid.NewGuid().ToString() +"."+ext;
+                        string fileName = Guid.NewGuid().ToString() + "." + ext;
                         string path = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\image", fileName);
 
                         using (Stream stream = new FileStream(path, FileMode.Create))
                         {
                             request.PageCatagoryFormDto.ImgFile.CopyTo(stream);
                         }
-                        var PageCatagoryDto = _mapper.Map<PageCatagoryDto>(request.PageCatagoryFormDto);
-                        PageCatagoryDto.ImgName = fileName;
+                        var PagecatagoryDto = _mapper.Map<PageCatagoryDto>(request.PageCatagoryFormDto);
+                        PagecatagoryDto.ImgName = fileName;
 
-                        string pageCatagoryId ;
+                        Guid pageId;
                         bool flag = true;
 
                         while (true)
                         {
-                            pageCatagoryId = (Guid.NewGuid()).ToString();
-                            flag = await _pageCatagoryRepository.Exists(pageCatagoryId);
+                            pageId = (Guid.NewGuid());
+                            flag = await _pageCatagoryRepository.Exists(pageId);
                             if (flag == false)
                             {
-                                PageCatagoryDto.Id = pageCatagoryId;
+                                PagecatagoryDto.Id = pageId;
                                 break;
                             }
                         }
 
-                        var data =_mapper.Map<PageCatagory>(PageCatagoryDto);
-                        
+                        var data = _mapper.Map<PageCatagory>(PagecatagoryDto);
+
                         var saveData = await _pageCatagoryRepository.Add(data);
 
                         response.Data = _mapper.Map<PageCatagoryDto>(saveData);
                         response.Success = true;
                         response.Message = "Created Successfully";
                         response.Status = "200";
-                    }    
+                    }
                 }
                 catch (Exception ex)
                 {

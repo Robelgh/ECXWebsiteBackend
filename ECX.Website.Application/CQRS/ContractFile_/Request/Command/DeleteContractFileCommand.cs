@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.ContractFile_.Request.Command
 {
     public class DeleteContractFileCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

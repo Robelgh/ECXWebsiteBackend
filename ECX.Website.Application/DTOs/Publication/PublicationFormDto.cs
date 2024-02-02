@@ -10,7 +10,7 @@ namespace ECX.Website.Application.DTOs.Publication
 {
     public class PublicationFormDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public IFormFile File { get; set; }

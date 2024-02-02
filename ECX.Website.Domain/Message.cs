@@ -8,7 +8,7 @@ namespace ECX.Website.Domain
     public class Message : BaseDomainEntity
     {
 
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
         

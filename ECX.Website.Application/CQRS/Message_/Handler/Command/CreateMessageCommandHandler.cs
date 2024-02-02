@@ -45,12 +45,12 @@ namespace ECX.Website.Application.CQRS.Message_.Handler.Command
             }
             else
             {
-                string messageId;
+                Guid messageId;
                 bool flag = true;
 
                 while (true)
                 {
-                    messageId = Guid.NewGuid().ToString();
+                    messageId = Guid.NewGuid();
                     flag = await _messageRepository.Exists(messageId);
                     if (flag == false)
                     {

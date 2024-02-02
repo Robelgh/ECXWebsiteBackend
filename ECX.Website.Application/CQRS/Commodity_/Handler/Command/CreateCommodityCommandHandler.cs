@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Commodity_.Handler.Command
                         var CommodityDto = _mapper.Map<CommodityDto>(request.CommodityFormDto);
                         CommodityDto.ImgName = fileName;
 
-                        string commodityId;
+                        Guid commodityId;
                         bool flag = true;
 
                         while (true)
                         {
-                            commodityId = Guid.NewGuid().ToString();
+                            commodityId = Guid.NewGuid();
                             flag = await _commodityRepository.Exists(commodityId);
                             if (flag == false)
                             {

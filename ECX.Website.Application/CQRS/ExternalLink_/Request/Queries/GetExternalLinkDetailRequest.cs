@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.ExternalLink_.Request.Queries
 {
     public class GetExternalLinkDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Video_.Request.Queries
 {
     public class GetVideoDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

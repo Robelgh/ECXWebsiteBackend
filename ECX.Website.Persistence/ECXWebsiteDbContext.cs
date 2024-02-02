@@ -1,5 +1,7 @@
 ﻿using ECX.Website.Domain;
 using ECX.Website.Domain.Common;
+using ECX.Website.Domain.Lookup;
+using ECX.Website.Persistence.EntityTypeConfiguration;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,10 +17,7 @@ namespace ECX.Website.Persistence
         {
             
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ECXWebsiteDbContext).Assembly);
-        }
+  
         public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
             foreach (var entity in ChangeTracker.Entries<BaseDomainEntity>())
@@ -33,13 +32,13 @@ namespace ECX.Website.Persistence
             }
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
+        public const string DEFAULT_SCHEMA = "ECXWebsite";
         public DbSet<Commodity> Commodities { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<PageCatagory> PageCatagories { get; set; }
         public DbSet<BoardOfDirector> BoardOfDirectors { get; set; }
         public DbSet<Image> Images { get; set; }
-        public DbSet<Account> Accounts { get; set; }
         public DbSet<Announcement> Announcements { get; set; }
         public DbSet<Applicant> Applicants { get; set; }
         public DbSet<Blog> Blogs { get; set; }
@@ -50,6 +49,8 @@ namespace ECX.Website.Persistence
         public DbSet<FeedBack> FeedBacks { get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<Message> Messages { get; set; }
+
+        public DbSet<MarketData> MarketData { get; set; }
         public DbSet<Publication> Publications { get; set; }
         public DbSet<Research> Researchs { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
@@ -60,6 +61,20 @@ namespace ECX.Website.Persistence
         public DbSet<Vacancy> Vacancys { get; set; }
         public DbSet<Video> Videos { get; set; }
         public DbSet<WareHouse> WareHouses { get; set; }
-        
+
+        public DbSet<ParentLookup> ParentLookups { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+           
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ECXWebsiteDbContext).Assembly);
+            modelBuilder.ApplyConfiguration(new CommodityContractFileETC());
+            modelBuilder.ApplyConfiguration(new ParentLookupPageCategoryETC());
+            //modelBuilder.ApplyConfiguration(new PageCatagoryPageETC());
+        }
+
+
+
     }
 }

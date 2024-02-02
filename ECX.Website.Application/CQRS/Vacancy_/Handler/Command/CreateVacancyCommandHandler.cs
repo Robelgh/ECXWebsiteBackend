@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Vacancy_.Handler.Command
                         var VacancyDto = _mapper.Map<VacancyDto>(request.VacancyFormDto);
                         VacancyDto.ImgName = fileName;
 
-                        string vacancyId;
+                        Guid vacancyId;
                         bool flag = true;
 
                         while (true)
                         {
-                            vacancyId = Guid.NewGuid().ToString();
+                            vacancyId = Guid.NewGuid();
                             flag = await _vacancyRepository.Exists(vacancyId);
                             if (flag == false)
                             {

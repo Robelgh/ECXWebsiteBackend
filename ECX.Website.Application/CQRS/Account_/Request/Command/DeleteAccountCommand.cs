@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Account_.Request.Command
 {
     public class DeleteAccountCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

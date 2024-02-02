@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.WareHouse_.Handler.Command
                         var WareHouseDto = _mapper.Map<WareHouseDto>(request.WareHouseFormDto);
                         WareHouseDto.ImgName = fileName;
 
-                        string wareHouseId;
+                        Guid wareHouseId;
                         bool flag = true;
 
                         while (true)
                         {
-                            wareHouseId = Guid.NewGuid().ToString();
+                            wareHouseId = Guid.NewGuid();
                             flag = await _wareHouseRepository.Exists(wareHouseId);
                             if (flag == false)
                             {

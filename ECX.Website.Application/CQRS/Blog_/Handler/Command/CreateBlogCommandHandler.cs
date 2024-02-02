@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Blog_.Handler.Command
                         var BlogDto = _mapper.Map<BlogDto>(request.BlogFormDto);
                         BlogDto.ImgName = fileName;
 
-                        string blogId;
+                        Guid blogId;
                         bool flag = true;
 
                         while (true)
                         {
-                            blogId = Guid.NewGuid().ToString();
+                            blogId = Guid.NewGuid();
                             flag = await _blogRepository.Exists(blogId);
                             if (flag == false)
                             {

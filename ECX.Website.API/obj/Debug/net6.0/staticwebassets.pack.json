@@ -1,188 +1,460 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\0d302e94-fbd4-436d-8c05-b6de6c1cd5ba.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\070ed0fe-2d42-41be-8cde-50f1cf124403.jpeg",
+      "PackagePath": "staticwebassets\\image\\070ed0fe-2d42-41be-8cde-50f1cf124403.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\09436205-8341-4839-a109-c8e938d17d36.jpeg",
+      "PackagePath": "staticwebassets\\image\\09436205-8341-4839-a109-c8e938d17d36.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\0d302e94-fbd4-436d-8c05-b6de6c1cd5ba.jpeg",
       "PackagePath": "staticwebassets\\image\\0d302e94-fbd4-436d-8c05-b6de6c1cd5ba.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\114ced76-42f1-4e7e-9ebd-82e9ab009e18.jpeg",
-      "PackagePath": "staticwebassets\\image\\114ced76-42f1-4e7e-9ebd-82e9ab009e18.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\0e3a3db1-480d-44f9-9cca-eff8521117fd.jpeg",
+      "PackagePath": "staticwebassets\\image\\0e3a3db1-480d-44f9-9cca-eff8521117fd.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\13eb95fe-78f0-4dbc-82c0-67257dd4292f.jpeg",
-      "PackagePath": "staticwebassets\\image\\13eb95fe-78f0-4dbc-82c0-67257dd4292f.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\0e9a12ef-74d9-4143-b81a-1cef2b90214f.jpeg",
+      "PackagePath": "staticwebassets\\image\\0e9a12ef-74d9-4143-b81a-1cef2b90214f.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\15e46cb6-7bb7-4c96-984c-dee37952490f.png",
-      "PackagePath": "staticwebassets\\image\\15e46cb6-7bb7-4c96-984c-dee37952490f.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\12e0f3b6-8a2b-475d-814e-fbe3874a1df8.jpeg",
+      "PackagePath": "staticwebassets\\image\\12e0f3b6-8a2b-475d-814e-fbe3874a1df8.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\16ca4c9c-7406-401c-bda2-ac8a1afe6fa3.png",
-      "PackagePath": "staticwebassets\\image\\16ca4c9c-7406-401c-bda2-ac8a1afe6fa3.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\1438aaed-8ff2-4908-a4ab-38151bc312c4.jpeg",
+      "PackagePath": "staticwebassets\\image\\1438aaed-8ff2-4908-a4ab-38151bc312c4.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\1ea08db6-5523-4082-89f6-74d97868dd0f.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\1652a1d5-f3bc-44f6-a083-bb2703cbe6e6.jpeg",
+      "PackagePath": "staticwebassets\\image\\1652a1d5-f3bc-44f6-a083-bb2703cbe6e6.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\17a75942-27d7-4d42-afcc-7867d92030ed.jpeg",
+      "PackagePath": "staticwebassets\\image\\17a75942-27d7-4d42-afcc-7867d92030ed.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\18c7b797-071d-4b51-8df2-6785589d01b2.jpeg",
+      "PackagePath": "staticwebassets\\image\\18c7b797-071d-4b51-8df2-6785589d01b2.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\19b0dbd2-0206-4e6f-a255-9ac76c0a48ad.jpeg",
+      "PackagePath": "staticwebassets\\image\\19b0dbd2-0206-4e6f-a255-9ac76c0a48ad.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\1ea08db6-5523-4082-89f6-74d97868dd0f.jpeg",
       "PackagePath": "staticwebassets\\image\\1ea08db6-5523-4082-89f6-74d97868dd0f.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\2296c3e7-11ca-4bb2-9e83-84167ba4db86.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2172a7b4-c92b-4c7d-8abf-4b7d9db42f10.png",
+      "PackagePath": "staticwebassets\\image\\2172a7b4-c92b-4c7d-8abf-4b7d9db42f10.png"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\219e0671-81e4-42b0-9b1e-08016e9da4cd.jpeg",
+      "PackagePath": "staticwebassets\\image\\219e0671-81e4-42b0-9b1e-08016e9da4cd.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2296c3e7-11ca-4bb2-9e83-84167ba4db86.jpeg",
       "PackagePath": "staticwebassets\\image\\2296c3e7-11ca-4bb2-9e83-84167ba4db86.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\234b41c2-0eb1-4a11-aafd-1f5504d697f1.png",
-      "PackagePath": "staticwebassets\\image\\234b41c2-0eb1-4a11-aafd-1f5504d697f1.png"
-    },
-    {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\23c5a877-24ca-48b4-86e2-9c5dc37fbf8b.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\23c5a877-24ca-48b4-86e2-9c5dc37fbf8b.jpeg",
       "PackagePath": "staticwebassets\\image\\23c5a877-24ca-48b4-86e2-9c5dc37fbf8b.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\28786604-9196-4f90-8ced-cbec6d55fb11.jpeg",
-      "PackagePath": "staticwebassets\\image\\28786604-9196-4f90-8ced-cbec6d55fb11.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\26b2d47c-32a8-4cc8-903a-4a636aec77cf.jpeg",
+      "PackagePath": "staticwebassets\\image\\26b2d47c-32a8-4cc8-903a-4a636aec77cf.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\433d1869-7cee-4f90-8ac2-529073f45cdd.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2779a92d-96d9-4842-aa8a-b3e75bddf55c.jpeg",
+      "PackagePath": "staticwebassets\\image\\2779a92d-96d9-4842-aa8a-b3e75bddf55c.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\28c4f606-3ffa-45a9-90a3-7dc976809a7f.jpeg",
+      "PackagePath": "staticwebassets\\image\\28c4f606-3ffa-45a9-90a3-7dc976809a7f.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\296c8ec1-6825-4679-a92c-1de76c64d2c6.jpeg",
+      "PackagePath": "staticwebassets\\image\\296c8ec1-6825-4679-a92c-1de76c64d2c6.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2c03a450-7d05-4adb-8db2-7eff705f2649.jpeg",
+      "PackagePath": "staticwebassets\\image\\2c03a450-7d05-4adb-8db2-7eff705f2649.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2dcc99fc-c6f6-449e-9836-b1215fc9d659.jpeg",
+      "PackagePath": "staticwebassets\\image\\2dcc99fc-c6f6-449e-9836-b1215fc9d659.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\301a7b1e-1fda-4d75-9b4e-98ae8437cc32.jpeg",
+      "PackagePath": "staticwebassets\\image\\301a7b1e-1fda-4d75-9b4e-98ae8437cc32.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\3178cbbf-ce52-402c-9444-8bff3a0c15a8.jpeg",
+      "PackagePath": "staticwebassets\\image\\3178cbbf-ce52-402c-9444-8bff3a0c15a8.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\35c8f309-0d12-4eab-8ced-7a1d6b698cb1.jpeg",
+      "PackagePath": "staticwebassets\\image\\35c8f309-0d12-4eab-8ced-7a1d6b698cb1.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\433d1869-7cee-4f90-8ac2-529073f45cdd.jpeg",
       "PackagePath": "staticwebassets\\image\\433d1869-7cee-4f90-8ac2-529073f45cdd.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\529de70d-3838-4e2f-a433-0b813185c35f.png",
-      "PackagePath": "staticwebassets\\image\\529de70d-3838-4e2f-a433-0b813185c35f.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\44f6d3a5-3cf5-44b4-8208-7b2bd76269a5.jpeg",
+      "PackagePath": "staticwebassets\\image\\44f6d3a5-3cf5-44b4-8208-7b2bd76269a5.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\562c6146-cf1e-4552-a96e-089d377db166.png",
-      "PackagePath": "staticwebassets\\image\\562c6146-cf1e-4552-a96e-089d377db166.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4575ac7c-d662-4652-ab29-96a37f24060c.jpeg",
+      "PackagePath": "staticwebassets\\image\\4575ac7c-d662-4652-ab29-96a37f24060c.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\59c0897e-cdab-402c-bdf7-c5067b18d782.png",
-      "PackagePath": "staticwebassets\\image\\59c0897e-cdab-402c-bdf7-c5067b18d782.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\45c70123-ea27-4d66-8633-24cc341ad891.jpeg",
+      "PackagePath": "staticwebassets\\image\\45c70123-ea27-4d66-8633-24cc341ad891.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\66a61577-faa6-47b3-af85-5bb5e8362cf7.jpeg",
-      "PackagePath": "staticwebassets\\image\\66a61577-faa6-47b3-af85-5bb5e8362cf7.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\48f8a42c-632b-4e6c-9a09-5fa9e3267a14.jpeg",
+      "PackagePath": "staticwebassets\\image\\48f8a42c-632b-4e6c-9a09-5fa9e3267a14.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\683e4c77-57f7-4e60-b0c8-c92a7a05ae60.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4ad12e3d-8650-43c2-9c5c-3a0ac1d35ee8.jpeg",
+      "PackagePath": "staticwebassets\\image\\4ad12e3d-8650-43c2-9c5c-3a0ac1d35ee8.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4bf5b4b4-4181-4da7-aa26-9834c949d683.jpeg",
+      "PackagePath": "staticwebassets\\image\\4bf5b4b4-4181-4da7-aa26-9834c949d683.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4bf728d0-1071-4e78-973f-8db2a4659de2.jpeg",
+      "PackagePath": "staticwebassets\\image\\4bf728d0-1071-4e78-973f-8db2a4659de2.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4cef2fea-8289-40d2-88aa-f45726eb7d80.png",
+      "PackagePath": "staticwebassets\\image\\4cef2fea-8289-40d2-88aa-f45726eb7d80.png"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\53607cd7-18cc-4561-9404-4544d8fb4af6.jpeg",
+      "PackagePath": "staticwebassets\\image\\53607cd7-18cc-4561-9404-4544d8fb4af6.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\5eb4c69f-465e-4713-bf86-25a57dff8f62.jpeg",
+      "PackagePath": "staticwebassets\\image\\5eb4c69f-465e-4713-bf86-25a57dff8f62.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\60939589-b2a8-484a-b2a8-7d6602edcad0.jpeg",
+      "PackagePath": "staticwebassets\\image\\60939589-b2a8-484a-b2a8-7d6602edcad0.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\61375ea2-f81f-4a45-94bd-3900f1327d33.jpeg",
+      "PackagePath": "staticwebassets\\image\\61375ea2-f81f-4a45-94bd-3900f1327d33.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\61455908-9b0e-4b11-8a27-9c95c31ea6e3.jpeg",
+      "PackagePath": "staticwebassets\\image\\61455908-9b0e-4b11-8a27-9c95c31ea6e3.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\6365dd03-19e2-495e-92b2-be9b65073790.jpeg",
+      "PackagePath": "staticwebassets\\image\\6365dd03-19e2-495e-92b2-be9b65073790.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\683e4c77-57f7-4e60-b0c8-c92a7a05ae60.jpeg",
       "PackagePath": "staticwebassets\\image\\683e4c77-57f7-4e60-b0c8-c92a7a05ae60.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\70427e7d-99d6-4926-ab6f-ef742c3eaea8.png",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\68806733-b2e7-4417-a38e-b4a9d755dd1d.png",
+      "PackagePath": "staticwebassets\\image\\68806733-b2e7-4417-a38e-b4a9d755dd1d.png"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\6a2f8e4f-207a-43be-881f-4177ddf0cd81.jpeg",
+      "PackagePath": "staticwebassets\\image\\6a2f8e4f-207a-43be-881f-4177ddf0cd81.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\6dae9c25-9153-4572-8a76-7486e9001b5e.jpeg",
+      "PackagePath": "staticwebassets\\image\\6dae9c25-9153-4572-8a76-7486e9001b5e.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\70427e7d-99d6-4926-ab6f-ef742c3eaea8.png",
       "PackagePath": "staticwebassets\\image\\70427e7d-99d6-4926-ab6f-ef742c3eaea8.png"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\75e8357d-04d0-4dd8-b2ff-081ccdf42c80.png",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\75e8357d-04d0-4dd8-b2ff-081ccdf42c80.png",
       "PackagePath": "staticwebassets\\image\\75e8357d-04d0-4dd8-b2ff-081ccdf42c80.png"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\77b1033b-efdd-4454-8b1f-73a6a10b7818.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\77b1033b-efdd-4454-8b1f-73a6a10b7818.jpeg",
       "PackagePath": "staticwebassets\\image\\77b1033b-efdd-4454-8b1f-73a6a10b7818.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\80d402cb-b623-42de-9f6b-48c84158d901.jpeg",
-      "PackagePath": "staticwebassets\\image\\80d402cb-b623-42de-9f6b-48c84158d901.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\7a7d2ff3-182a-45ce-a06e-7db3d55fc33a.jpeg",
+      "PackagePath": "staticwebassets\\image\\7a7d2ff3-182a-45ce-a06e-7db3d55fc33a.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\8486bba1-9861-4802-a587-ba0d5da9dffb.png",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\7fbc30ed-f3ce-4fce-85f8-1511527737db.jpeg",
+      "PackagePath": "staticwebassets\\image\\7fbc30ed-f3ce-4fce-85f8-1511527737db.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8486bba1-9861-4802-a587-ba0d5da9dffb.png",
       "PackagePath": "staticwebassets\\image\\8486bba1-9861-4802-a587-ba0d5da9dffb.png"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\8859d1f3-610d-4ca3-8804-505ce4be3757.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\85aa9439-0949-471f-8c13-4c2ca5c0ac19.jpeg",
+      "PackagePath": "staticwebassets\\image\\85aa9439-0949-471f-8c13-4c2ca5c0ac19.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8859d1f3-610d-4ca3-8804-505ce4be3757.jpeg",
       "PackagePath": "staticwebassets\\image\\8859d1f3-610d-4ca3-8804-505ce4be3757.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\8e94ba41-0bb8-4e08-a9a7-e9edb87e4958.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8c600ad5-4ccc-48d8-85bb-bc6ea20c8ff5.jpeg",
+      "PackagePath": "staticwebassets\\image\\8c600ad5-4ccc-48d8-85bb-bc6ea20c8ff5.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8d345be1-fe9c-4e06-93f8-934e83c8d9ff.jpeg",
+      "PackagePath": "staticwebassets\\image\\8d345be1-fe9c-4e06-93f8-934e83c8d9ff.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8e94ba41-0bb8-4e08-a9a7-e9edb87e4958.jpeg",
       "PackagePath": "staticwebassets\\image\\8e94ba41-0bb8-4e08-a9a7-e9edb87e4958.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\af6635e6-92e2-4d7d-b983-2f7e60d05f82.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\92302598-09f6-4861-8b1e-031b087c42b8.jpeg",
+      "PackagePath": "staticwebassets\\image\\92302598-09f6-4861-8b1e-031b087c42b8.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\96fdefcc-8336-4d53-9e70-b4491043d4ee.jpeg",
+      "PackagePath": "staticwebassets\\image\\96fdefcc-8336-4d53-9e70-b4491043d4ee.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\970c6d67-01ce-4952-9f52-f3178400f4be.jpeg",
+      "PackagePath": "staticwebassets\\image\\970c6d67-01ce-4952-9f52-f3178400f4be.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\9a6ee8bb-4d00-4300-a9d7-fe4e91999f01.jpeg",
+      "PackagePath": "staticwebassets\\image\\9a6ee8bb-4d00-4300-a9d7-fe4e91999f01.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a1088517-864d-4bb2-8b16-a62f004d5f2c.jpeg",
+      "PackagePath": "staticwebassets\\image\\a1088517-864d-4bb2-8b16-a62f004d5f2c.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a2ae1ec7-30b6-4b63-9468-c89dbc03c239.jpeg",
+      "PackagePath": "staticwebassets\\image\\a2ae1ec7-30b6-4b63-9468-c89dbc03c239.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a326b0a9-7a7e-43cf-8d0a-05c5b2d85de8.jpeg",
+      "PackagePath": "staticwebassets\\image\\a326b0a9-7a7e-43cf-8d0a-05c5b2d85de8.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a3cfe249-3552-416b-b30b-48abc13a711d.jpeg",
+      "PackagePath": "staticwebassets\\image\\a3cfe249-3552-416b-b30b-48abc13a711d.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a5fa26cd-c0c8-47c9-80a7-bfa7a81e35b8.jpeg",
+      "PackagePath": "staticwebassets\\image\\a5fa26cd-c0c8-47c9-80a7-bfa7a81e35b8.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a7f1c940-71f6-4146-ab90-c38752d159dd.png",
+      "PackagePath": "staticwebassets\\image\\a7f1c940-71f6-4146-ab90-c38752d159dd.png"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\af102a9c-9f4e-4bae-925c-42f24d84774a.jpeg",
+      "PackagePath": "staticwebassets\\image\\af102a9c-9f4e-4bae-925c-42f24d84774a.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\af6635e6-92e2-4d7d-b983-2f7e60d05f82.jpeg",
       "PackagePath": "staticwebassets\\image\\af6635e6-92e2-4d7d-b983-2f7e60d05f82.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\b4519c71-00df-4037-a740-237e3482078b.jpeg",
-      "PackagePath": "staticwebassets\\image\\b4519c71-00df-4037-a740-237e3482078b.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\aff8953e-1998-43dc-a2d2-7f2d07c14b3c.jpeg",
+      "PackagePath": "staticwebassets\\image\\aff8953e-1998-43dc-a2d2-7f2d07c14b3c.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\b8d0358a-a100-4f3f-a4f0-eb948041e85a.png",
-      "PackagePath": "staticwebassets\\image\\b8d0358a-a100-4f3f-a4f0-eb948041e85a.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b65030fa-f6e5-44f1-be7b-6c1294cfb41c.jpeg",
+      "PackagePath": "staticwebassets\\image\\b65030fa-f6e5-44f1-be7b-6c1294cfb41c.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\bab4a5a1-e30f-41b9-814e-fa3df87c4bfe.png",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b70d80ec-e33f-42ad-af0b-d2b59f213d05.jpeg",
+      "PackagePath": "staticwebassets\\image\\b70d80ec-e33f-42ad-af0b-d2b59f213d05.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b9dd9381-a974-418d-a9a2-c40aaf4d4c99.jpeg",
+      "PackagePath": "staticwebassets\\image\\b9dd9381-a974-418d-a9a2-c40aaf4d4c99.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b9f8c98c-53ef-499a-a5f6-840e50d66177.jpeg",
+      "PackagePath": "staticwebassets\\image\\b9f8c98c-53ef-499a-a5f6-840e50d66177.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\bab4a5a1-e30f-41b9-814e-fa3df87c4bfe.png",
       "PackagePath": "staticwebassets\\image\\bab4a5a1-e30f-41b9-814e-fa3df87c4bfe.png"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\c475c802-fb30-4fde-ad5a-90945885152d.jpeg",
-      "PackagePath": "staticwebassets\\image\\c475c802-fb30-4fde-ad5a-90945885152d.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\bcd3a9cd-dbb8-421d-bfd9-beff01337415.jpeg",
+      "PackagePath": "staticwebassets\\image\\bcd3a9cd-dbb8-421d-bfd9-beff01337415.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\c7691313-2252-44b7-b688-a8f0ab6c4772.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c07405a6-a160-4847-b7d5-3447555867d9.jpeg",
+      "PackagePath": "staticwebassets\\image\\c07405a6-a160-4847-b7d5-3447555867d9.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c22dfe71-b544-4d8c-990f-2eee2d443bb3.jpeg",
+      "PackagePath": "staticwebassets\\image\\c22dfe71-b544-4d8c-990f-2eee2d443bb3.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c7691313-2252-44b7-b688-a8f0ab6c4772.jpeg",
       "PackagePath": "staticwebassets\\image\\c7691313-2252-44b7-b688-a8f0ab6c4772.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\d1c4bb02-97d6-40b6-b87d-853a1f29c3e8.jpeg",
-      "PackagePath": "staticwebassets\\image\\d1c4bb02-97d6-40b6-b87d-853a1f29c3e8.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c7b7c660-e7a0-4cb5-8e67-9f87834f2d76.jpeg",
+      "PackagePath": "staticwebassets\\image\\c7b7c660-e7a0-4cb5-8e67-9f87834f2d76.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\d1d8b186-4bd9-4278-a69c-131567e21caa.jpeg",
-      "PackagePath": "staticwebassets\\image\\d1d8b186-4bd9-4278-a69c-131567e21caa.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\cc30d37b-3e33-4683-9e36-d80d374a0930.png",
+      "PackagePath": "staticwebassets\\image\\cc30d37b-3e33-4683-9e36-d80d374a0930.png"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\d7e0289d-17bd-4f32-987c-22463ffec28a.jpeg",
-      "PackagePath": "staticwebassets\\image\\d7e0289d-17bd-4f32-987c-22463ffec28a.jpeg"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\d7b811f4-534a-4fe4-9763-82fd9af6083e.jpeg",
+      "PackagePath": "staticwebassets\\image\\d7b811f4-534a-4fe4-9763-82fd9af6083e.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\d84b1c79-9769-46c8-b7a2-e02534c34d36.png",
-      "PackagePath": "staticwebassets\\image\\d84b1c79-9769-46c8-b7a2-e02534c34d36.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\d875e44d-663c-4dde-9cba-4d9b2309d4bf.png",
+      "PackagePath": "staticwebassets\\image\\d875e44d-663c-4dde-9cba-4d9b2309d4bf.png"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\d9cd66a6-b356-423f-8149-24023a9beac3.png",
-      "PackagePath": "staticwebassets\\image\\d9cd66a6-b356-423f-8149-24023a9beac3.png"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\daf0ea99-c570-4941-b3a7-ab9097b89ceb.jpeg",
+      "PackagePath": "staticwebassets\\image\\daf0ea99-c570-4941-b3a7-ab9097b89ceb.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\image\\f68c42a9-ca76-47bb-91af-3f2c872c53f6.jpeg",
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\dd8d3c64-3a47-4674-98bf-86e77c76b035.jpeg",
+      "PackagePath": "staticwebassets\\image\\dd8d3c64-3a47-4674-98bf-86e77c76b035.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\de640464-8993-4fef-9a10-29cca64e3f4c.jpeg",
+      "PackagePath": "staticwebassets\\image\\de640464-8993-4fef-9a10-29cca64e3f4c.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e18dd42e-9dd5-4135-a1bf-0db6f8aa1787.jpeg",
+      "PackagePath": "staticwebassets\\image\\e18dd42e-9dd5-4135-a1bf-0db6f8aa1787.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e4aa6e59-9303-4717-9a28-a38c24dfcece.jpeg",
+      "PackagePath": "staticwebassets\\image\\e4aa6e59-9303-4717-9a28-a38c24dfcece.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e5f7028b-a873-4f23-b599-664a816db2b2.jpeg",
+      "PackagePath": "staticwebassets\\image\\e5f7028b-a873-4f23-b599-664a816db2b2.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e8408e77-d08b-492d-98fe-d39084fedf56.jpeg",
+      "PackagePath": "staticwebassets\\image\\e8408e77-d08b-492d-98fe-d39084fedf56.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e9ec279e-d565-4272-a33f-e3a7cf915b85.jpeg",
+      "PackagePath": "staticwebassets\\image\\e9ec279e-d565-4272-a33f-e3a7cf915b85.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f3fc7ac6-15b6-4cba-960c-d9c9d6076197.jpeg",
+      "PackagePath": "staticwebassets\\image\\f3fc7ac6-15b6-4cba-960c-d9c9d6076197.jpeg"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f68c42a9-ca76-47bb-91af-3f2c872c53f6.jpeg",
       "PackagePath": "staticwebassets\\image\\f68c42a9-ca76-47bb-91af-3f2c872c53f6.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\2c6c68c6-376c-4f41-9f0f-cf6fc43de396.pdf",
-      "PackagePath": "staticwebassets\\pdf\\2c6c68c6-376c-4f41-9f0f-cf6fc43de396.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f9b735bb-ff6d-41fe-b5d0-04a3f4567207.jpeg",
+      "PackagePath": "staticwebassets\\image\\f9b735bb-ff6d-41fe-b5d0-04a3f4567207.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\33260e8e-ff1f-490e-9fd2-209457fef275.pdf",
-      "PackagePath": "staticwebassets\\pdf\\33260e8e-ff1f-490e-9fd2-209457fef275.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\fbd8e633-e24c-4be2-8d0e-bb09103b073d.jpeg",
+      "PackagePath": "staticwebassets\\image\\fbd8e633-e24c-4be2-8d0e-bb09103b073d.jpeg"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\4c68e4e6-8e9f-4dcf-9349-0c0e6884736f.pdf",
-      "PackagePath": "staticwebassets\\pdf\\4c68e4e6-8e9f-4dcf-9349-0c0e6884736f.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\09f21b3c-5e1e-4069-aea3-b501b7aa549f.pdf",
+      "PackagePath": "staticwebassets\\pdf\\09f21b3c-5e1e-4069-aea3-b501b7aa549f.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\4df533d3-df1f-40f9-a8fe-cce88369c789.pdf",
-      "PackagePath": "staticwebassets\\pdf\\4df533d3-df1f-40f9-a8fe-cce88369c789.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\10463db5-fbfc-49ad-a92b-3051a4c6ab18.pdf",
+      "PackagePath": "staticwebassets\\pdf\\10463db5-fbfc-49ad-a92b-3051a4c6ab18.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\b3e31bde-d036-4a9b-ba31-d76cb5fcdf03.pdf",
-      "PackagePath": "staticwebassets\\pdf\\b3e31bde-d036-4a9b-ba31-d76cb5fcdf03.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\1ced5e6e-d54e-47fe-b418-c5b2e1f6a6a6.pdf",
+      "PackagePath": "staticwebassets\\pdf\\1ced5e6e-d54e-47fe-b418-c5b2e1f6a6a6.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\bdc7e586-8218-4215-a875-ffbbb90b40fb.pdf",
-      "PackagePath": "staticwebassets\\pdf\\bdc7e586-8218-4215-a875-ffbbb90b40fb.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\1f47a72e-c720-4bc7-b558-e1dd3c42a02b.pdf",
+      "PackagePath": "staticwebassets\\pdf\\1f47a72e-c720-4bc7-b558-e1dd3c42a02b.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\bf1d18e0-9fce-43f6-8240-f7802c4da36f.pdf",
-      "PackagePath": "staticwebassets\\pdf\\bf1d18e0-9fce-43f6-8240-f7802c4da36f.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\240ca5f6-26f8-4e20-98ca-59fc073d6909.pdf",
+      "PackagePath": "staticwebassets\\pdf\\240ca5f6-26f8-4e20-98ca-59fc073d6909.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\c2ba5667-db42-449c-95fa-a4d083ef3021.pdf",
-      "PackagePath": "staticwebassets\\pdf\\c2ba5667-db42-449c-95fa-a4d083ef3021.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\36d80645-cbd0-4b3a-8b5b-920a4a77adf7.pdf",
+      "PackagePath": "staticwebassets\\pdf\\36d80645-cbd0-4b3a-8b5b-920a4a77adf7.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\pdf\\db672d10-d091-49d7-9036-adb3347e79a5.pdf",
-      "PackagePath": "staticwebassets\\pdf\\db672d10-d091-49d7-9036-adb3347e79a5.pdf"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\3cc597a9-26a9-4d0b-b6f1-b251a9c4d224.pdf",
+      "PackagePath": "staticwebassets\\pdf\\3cc597a9-26a9-4d0b-b6f1-b251a9c4d224.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\video\\295cd224-972c-4ac2-8e00-0a106cb23fa9.mp4",
-      "PackagePath": "staticwebassets\\video\\295cd224-972c-4ac2-8e00-0a106cb23fa9.mp4"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\4072bcc9-c9ae-4149-805a-ee417a63d23e.pdf",
+      "PackagePath": "staticwebassets\\pdf\\4072bcc9-c9ae-4149-805a-ee417a63d23e.pdf"
     },
     {
-      "Id": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.API\\wwwroot\\video\\769305fa-c480-49ca-a09d-c78f58434d60.mp4",
-      "PackagePath": "staticwebassets\\video\\769305fa-c480-49ca-a09d-c78f58434d60.mp4"
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\668467dc-1624-4a63-bfc3-1de21f452cd7.pdf",
+      "PackagePath": "staticwebassets\\pdf\\668467dc-1624-4a63-bfc3-1de21f452cd7.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\758dec9e-d81a-4035-8bef-42791812a09b.pdf",
+      "PackagePath": "staticwebassets\\pdf\\758dec9e-d81a-4035-8bef-42791812a09b.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\7d99f356-879d-4c5d-95c9-b4ddb546c6bf.pdf",
+      "PackagePath": "staticwebassets\\pdf\\7d99f356-879d-4c5d-95c9-b4ddb546c6bf.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\8eb40cb2-3c54-46b8-9e31-f629ead07a72.pdf",
+      "PackagePath": "staticwebassets\\pdf\\8eb40cb2-3c54-46b8-9e31-f629ead07a72.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\955bc7d0-516d-45bc-b2e8-3e8099afb0c1.pdf",
+      "PackagePath": "staticwebassets\\pdf\\955bc7d0-516d-45bc-b2e8-3e8099afb0c1.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\a4734af9-02ba-4970-af10-0d7a50850089.pdf",
+      "PackagePath": "staticwebassets\\pdf\\a4734af9-02ba-4970-af10-0d7a50850089.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\a69c9023-38ef-4130-909d-9441271e2a8c.pdf",
+      "PackagePath": "staticwebassets\\pdf\\a69c9023-38ef-4130-909d-9441271e2a8c.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\b2eb0cbe-5251-4dc0-8444-424be5d3153b.pdf",
+      "PackagePath": "staticwebassets\\pdf\\b2eb0cbe-5251-4dc0-8444-424be5d3153b.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\c911916d-f158-4916-95f4-0d7f3d046983.pdf",
+      "PackagePath": "staticwebassets\\pdf\\c911916d-f158-4916-95f4-0d7f3d046983.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\e6ca6627-3ef0-4999-8a69-555003d2326e.pdf",
+      "PackagePath": "staticwebassets\\pdf\\e6ca6627-3ef0-4999-8a69-555003d2326e.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\f3bafef0-6c80-4d47-89fd-1a1286febedb.pdf",
+      "PackagePath": "staticwebassets\\pdf\\f3bafef0-6c80-4d47-89fd-1a1286febedb.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\fa59d2ff-cc0e-4ed1-9bd6-09c7b9b5f2f4.pdf",
+      "PackagePath": "staticwebassets\\pdf\\fa59d2ff-cc0e-4ed1-9bd6-09c7b9b5f2f4.pdf"
+    },
+    {
+      "Id": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\fbb23eef-8581-4978-99c0-0ca02544b48c.pdf",
+      "PackagePath": "staticwebassets\\pdf\\fbb23eef-8581-4978-99c0-0ca02544b48c.pdf"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ECX.Website.API.Microsoft.AspNetCore.StaticWebAssets.props",

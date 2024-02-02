@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.ContractFile_.Request.Queries
 {
     public class GetContractFileDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

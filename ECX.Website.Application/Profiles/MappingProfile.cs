@@ -32,6 +32,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ECX.Website.Domain.Lookup;
+using ECX.Website.Application.DTOs.ParentLookup;
 
 namespace ECX.Website.Application.Profiles
 {
@@ -50,8 +52,12 @@ namespace ECX.Website.Application.Profiles
             CreateMap<PageDto,Page>().ReverseMap();
 
             CreateMap<PageFormDto, PageDto>().ReverseMap();
-            
-            CreateMap<PageCatagoryDto,PageCatagory>().ReverseMap();
+
+            CreateMap<ParentLookupDto, ParentLookup>().ReverseMap();
+
+            CreateMap<ParentLookupFormDto, ParentLookupDto>().ReverseMap();
+
+            CreateMap<PageCatagoryDto, PageCatagory>().ReverseMap();
 
             CreateMap<PageCatagoryFormDto, PageCatagoryDto>().ReverseMap();
 
@@ -142,11 +148,15 @@ namespace ECX.Website.Application.Profiles
             CreateMap<AnnouncementDto,Announcement>().ReverseMap();
             
             CreateMap<AnnouncementFormDto, AnnouncementDto>().ReverseMap();
+
+            //CreateMap<AccountDto,Account>().ReverseMap();
+
+            //CreateMap<AccountFormDto, AccountDto>().ReverseMap();
+
+            CreateMap<RegisterDto, Account>()
+                .ForMember(u => u.FirstName, opt => opt.MapFrom(x => x.Email));
             
-            CreateMap<AccountDto,Account>().ReverseMap();
-            
-            CreateMap<AccountFormDto, AccountDto>().ReverseMap();
-   
+
         }
     }
 }

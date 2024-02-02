@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Brochure_.Handler.Command
                         var BrochureDto = _mapper.Map<BrochureDto>(request.BrochureFormDto);
                         BrochureDto.FileName = fileName;
 
-                        string brochureId ;
+                        Guid brochureId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            brochureId = (Guid.NewGuid()).ToString();
+                            brochureId = (Guid.NewGuid());
                             flag = await _brochureRepository.Exists(brochureId);
                             if (flag == false)
                             {

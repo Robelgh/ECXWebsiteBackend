@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Announcement_.Handler.Command
                         var AnnouncementDto = _mapper.Map<AnnouncementDto>(request.AnnouncementFormDto);
                         AnnouncementDto.FileName = fileName;
 
-                        string announcementId ;
+                        Guid announcementId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            announcementId = Guid.NewGuid().ToString();
+                            announcementId = Guid.NewGuid();
                             flag = await _announcementRepository.Exists(announcementId);
                             if (flag == false)
                             {

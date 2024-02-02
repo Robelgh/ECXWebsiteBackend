@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Image_.Request.Command
 {
     public class DeleteImageCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

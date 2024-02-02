@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.TradingCenter_.Request.Command
 {
     public class DeleteTradingCenterCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

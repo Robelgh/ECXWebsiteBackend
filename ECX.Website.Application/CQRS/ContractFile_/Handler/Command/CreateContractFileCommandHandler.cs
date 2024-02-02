@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.ContractFile_.Handler.Command
                         var ContractFileDto = _mapper.Map<ContractFileDto>(request.ContractFileFormDto);
                         ContractFileDto.FileName = fileName;
 
-                        string contractFileId ;
+                        Guid contractFileId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            contractFileId = (Guid.NewGuid()).ToString();
+                            contractFileId = (Guid.NewGuid());
                             flag = await _contractFileRepository.Exists(contractFileId);
                             if (flag == false)
                             {

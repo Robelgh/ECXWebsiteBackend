@@ -9,7 +9,7 @@ namespace ECX.Website.Application.DTOs.Blog
 {
     public class BlogDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
         public string ImgName { get; set; }

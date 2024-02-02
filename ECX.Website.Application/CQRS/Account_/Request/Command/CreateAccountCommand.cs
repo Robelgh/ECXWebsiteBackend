@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace ECX.Website.Application.CQRS.Account_.Request.Command
 {
-    public class CreateAccountCommand : IRequest<BaseCommonResponse>
+    public class CreateAccountCommand : IRequest<ResponseAccount>
     {
-        public AccountFormDto AccountFormDto { get; set; }
+        public RegisterDto RegisterDto { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace ECX.Website.Application.DTOs.Page
 {
     public class PageDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string CatagoryId { get; set; }

@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Blog_.Request.Queries
 {
     public class GetBlogDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

@@ -45,12 +45,12 @@ namespace ECX.Website.Application.CQRS.Subscription_.Handler.Command
             }
             else
             {
-                string subscriptionId;
+                Guid subscriptionId;
                 bool flag = true;
 
                 while (true)
                 {
-                    subscriptionId = Guid.NewGuid().ToString();
+                    subscriptionId = Guid.NewGuid();
                     flag = await _subscriptionRepository.Exists(subscriptionId);
                     if (flag == false)
                     {

@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Applicant_.Handler.Command
                         var ApplicantDto = _mapper.Map<ApplicantDto>(request.ApplicantFormDto);
                         ApplicantDto.FileName = fileName;
 
-                        string applicantId ;
+                        Guid applicantId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            applicantId = (Guid.NewGuid()).ToString();
+                            applicantId = (Guid.NewGuid());
                             flag = await _applicantRepository.Exists(applicantId);
                             if (flag == false)
                             {

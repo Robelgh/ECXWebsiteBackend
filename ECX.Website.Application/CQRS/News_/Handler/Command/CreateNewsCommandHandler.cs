@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.News_.Handler.Command
                         var NewsDto = _mapper.Map<NewsDto>(request.NewsFormDto);
                         NewsDto.ImgName = fileName;
 
-                        string newsId ;
+                        Guid newsId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            newsId = Guid.NewGuid().ToString();
+                            newsId = Guid.NewGuid();
                             flag = await _newsRepository.Exists(newsId);
                             if (flag == false)
                             {

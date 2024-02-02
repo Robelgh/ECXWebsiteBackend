@@ -9,7 +9,7 @@ namespace ECX.Website.Application.DTOs.FeedBack
 {
     public class FeedBackDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Subject { get; set; }
         public string Comment { get; set; }
     }

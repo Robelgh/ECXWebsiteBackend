@@ -8,6 +8,9 @@ using ECX.Website.Application.Exceptions;
 using ECX.Website.Application.Response;
 using ECX.Website.Domain;
 using MediatR;
+using ECX.Website.Application.CQRS.Page_.Request.Command;
+using ECX.Website.Application.DTOs.Page.Validators;
+using FluentValidation;
 
 namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
 {
@@ -41,10 +44,10 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
 
                 response.Success = false;
                 response.Message = new NotFoundException(
-                    nameof(PageCatagory), request.PageCatagoryFormDto.Id).Message.ToString();
+                            nameof(Page), request.PageCatagoryFormDto.Id).Message.ToString();
                 response.Status = "404";
             }
-            else 
+            else
             {
                 if (request.PageCatagoryFormDto.ImgFile != null)
                 {
@@ -64,10 +67,10 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
                         {
                             var oldImage = (await _pageCatagoryRepository.GetById(
                                 request.PageCatagoryFormDto.Id)).ImgName;
-                            
+
 
                             string oldPath = Path.Combine(
-                                Directory.GetCurrentDirectory(), @"wwwroot\image",oldImage);
+                                Directory.GetCurrentDirectory(), @"wwwroot\image", oldImage);
                             File.Delete(oldPath);
 
                             string contentType = request.PageCatagoryFormDto.ImgFile.ContentType.ToString();
@@ -79,7 +82,7 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
                             {
                                 request.PageCatagoryFormDto.ImgFile.CopyTo(stream);
                             }
-                           
+
                             PageCatagoryDto.ImgName = fileName;
                         }
                     }
@@ -95,10 +98,10 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
                 {
                     PageCatagoryDto.ImgName = (await _pageCatagoryRepository.GetById(
                                 request.PageCatagoryFormDto.Id)).ImgName;
-                } 
+                }
 
                 var updateData = await _pageCatagoryRepository.GetById(request.PageCatagoryFormDto.Id);
-                
+
                 _mapper.Map(PageCatagoryDto, updateData);
 
                 var data = await _pageCatagoryRepository.Update(updateData);
@@ -111,5 +114,6 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Command
             return response;
         }
     }
+
  }
 

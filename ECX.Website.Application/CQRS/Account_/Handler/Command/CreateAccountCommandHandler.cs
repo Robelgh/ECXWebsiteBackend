@@ -17,10 +17,13 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 using ECX.Website.Application.DTOs.Common.Validators;
+using FluentValidation;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 
 namespace ECX.Website.Application.CQRS.Account_.Handler.Command
 {
-    public class CreateAccountCommandHandler : IRequestHandler<CreateAccountCommand, BaseCommonResponse>
+    public class CreateAccountCommandHandler : IRequestHandler<CreateAccountCommand, ResponseAccount>
     {
         private IAccountRepository _accountRepository;
         private IMapper _mapper;
@@ -30,11 +33,22 @@ namespace ECX.Website.Application.CQRS.Account_.Handler.Command
             _accountRepository = accountRepository;
             _mapper = mapper;
         }
-        public async Task<BaseCommonResponse> Handle(CreateAccountCommand request, CancellationToken cancellationToken)
+        public async Task<ResponseAccount> Handle(CreateAccountCommand request, CancellationToken cancellationToken)
         {
-            var response = new BaseCommonResponse();
+            var response = new ResponseAccount();
             var validator = new AccountCreateDtoValidator();
-            var validationResult = await validator.ValidateAsync(request.AccountFormDto);
+
+            if (request.RegisterDto == null)
+                throw new NullReferenceException("Reigster form is null");
+
+            else if (request.RegisterDto.Password != request.RegisterDto.ConfirmPassword)
+                {
+                response.Message = "Confirm password doesn't match the password";
+                response.Success = false;
+                response.Status = "403";
+                
+                };
+            var validationResult = await validator.ValidateAsync(request.RegisterDto);
 
             if (validationResult.IsValid == false)
             {
@@ -47,53 +61,25 @@ namespace ECX.Website.Application.CQRS.Account_.Handler.Command
             {
                 try
                 {
-                    var imageValidator = new ImageValidator();
-                    var imgValidationResult = await imageValidator.ValidateAsync(request.AccountFormDto.ImgFile);
+                    var Account = _mapper.Map<Account>(request.RegisterDto);
+                    var result = await _accountRepository.RegisterUserAsync(Account , request.RegisterDto.Password);
 
-                    if (imgValidationResult.IsValid == false)
+                    if (result.Success)
                     {
-                        response.Success = false;
-                        response.Message = "Creation Faild";
-                        response.Errors = imgValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
-                        response.Status = "400";
-                    }
-                    else
-                    {
-                        string contentType = request.AccountFormDto.ImgFile.ContentType.ToString();
-                        string ext = contentType.Split('/')[1];
-                        string fileName = Guid.NewGuid().ToString() + "." + ext;
-                        string path = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\image", fileName);
-
-                        using (Stream stream = new FileStream(path, FileMode.Create))
-                        {
-                            request.AccountFormDto.ImgFile.CopyTo(stream);
-                        }
-                        var AccountDto = _mapper.Map<AccountDto>(request.AccountFormDto);
-                        AccountDto.ImgName = fileName;
-
-                        string accountId;
-                        bool flag = true;
-
-                        while (true)
-                        {
-                            accountId = Guid.NewGuid().ToString();
-                            flag = await _accountRepository.Exists(accountId);
-                            if (flag == false)
-                            {
-                                AccountDto.Id = accountId;
-                                break;
-                            }
-                        }
-
-                        var data = _mapper.Map<Account>(AccountDto);
-
-                        var saveData = await _accountRepository.Add(data);
-
-                        response.Data = _mapper.Map<AccountDto>(saveData);
                         response.Success = true;
                         response.Message = "Created Successfully";
                         response.Status = "200";
+                        ;
                     }
+                    else
+                    {
+                        response.Message = "User did not create";
+                        response.Success = false;
+                        response.Errors = result.Errors;
+                    }
+
+                
+                    
                 }
                 catch (Exception ex)
                 {

@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.WareHouse_.Request.Queries
 {
     public class GetWareHouseDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.TrainingDoc_.Handler.Command
                         var TrainingDocDto = _mapper.Map<TrainingDocDto>(request.TrainingDocFormDto);
                         TrainingDocDto.FileName = fileName;
 
-                        string trainingDocId ;
+                        Guid trainingDocId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            trainingDocId = Guid.NewGuid().ToString();
+                            trainingDocId = Guid.NewGuid();
                             flag = await _trainingDocRepository.Exists(trainingDocId);
                             if (flag == false)
                             {

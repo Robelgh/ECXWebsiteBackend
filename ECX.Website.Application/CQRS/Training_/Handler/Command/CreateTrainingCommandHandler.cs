@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Training_.Handler.Command
                         var TrainingDto = _mapper.Map<TrainingDto>(request.TrainingFormDto);
                         TrainingDto.ImgName = fileName;
 
-                        string trainingId;
+                        Guid trainingId;
                         bool flag = true;
 
                         while (true)
                         {
-                            trainingId = Guid.NewGuid().ToString();
+                            trainingId = Guid.NewGuid();
                             flag = await _trainingRepository.Exists(trainingId);
                             if (flag == false)
                             {

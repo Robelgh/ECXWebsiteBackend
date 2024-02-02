@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Vacancy_.Request.Command
 {
     public class DeleteVacancyCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

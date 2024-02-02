@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Blog_.Request.Command
 {
     public class DeleteBlogCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

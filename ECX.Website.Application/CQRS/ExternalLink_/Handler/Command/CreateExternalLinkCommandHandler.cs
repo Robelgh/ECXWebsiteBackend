@@ -45,12 +45,12 @@ namespace ECX.Website.Application.CQRS.ExternalLink_.Handler.Command
             }
             else
             {
-                string externalLinkId;
+                Guid externalLinkId;
                 bool flag = true;
 
                 while (true)
                 {
-                    externalLinkId = Guid.NewGuid().ToString();
+                    externalLinkId = Guid.NewGuid();
                     flag = await _externalLinkRepository.Exists(externalLinkId);
                     if (flag == false)
                     {

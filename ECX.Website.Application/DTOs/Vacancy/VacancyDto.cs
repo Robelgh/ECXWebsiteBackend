@@ -9,7 +9,7 @@ namespace ECX.Website.Application.DTOs.Vacancy
 {
     public class VacancyDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string ImgName { get; set; }

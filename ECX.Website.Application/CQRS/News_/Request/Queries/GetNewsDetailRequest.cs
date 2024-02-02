@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.News_.Request.Queries
 {
     public class GetNewsDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

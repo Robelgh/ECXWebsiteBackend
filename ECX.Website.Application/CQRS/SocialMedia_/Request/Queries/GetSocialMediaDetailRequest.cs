@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.SocialMedia_.Request.Queries
 {
     public class GetSocialMediaDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

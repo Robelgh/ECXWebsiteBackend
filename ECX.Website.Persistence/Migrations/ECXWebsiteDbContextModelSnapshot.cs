@@ -22,61 +22,11 @@ namespace ECX.Website.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ECX.Website.Domain.Account", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("CreatedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImgName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("LName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UpdatedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Accounts");
-                });
-
             modelBuilder.Entity("ECX.Website.Domain.Announcement", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -96,9 +46,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -118,8 +67,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Applicant", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -161,8 +111,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Blog", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Body")
                         .IsRequired()
@@ -182,9 +133,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -204,8 +154,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.BoardOfDirector", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -225,9 +176,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -247,8 +197,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Brochure", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -268,9 +219,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -290,8 +240,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Commodity", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -311,9 +262,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -333,12 +283,12 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.ContractFile", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("CommodityId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("CommodityId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -358,9 +308,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -375,13 +324,17 @@ namespace ECX.Website.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContractFiles");
+                    b.HasIndex("CommodityId")
+                        .IsUnique();
+
+                    b.ToTable("ContractFiles", (string)null);
                 });
 
             modelBuilder.Entity("ECX.Website.Domain.ExternalLink", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -397,9 +350,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -423,8 +375,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Faq", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Answer")
                         .IsRequired()
@@ -440,9 +393,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Question")
                         .IsRequired()
@@ -466,8 +418,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.FeedBack", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Comment")
                         .IsRequired()
@@ -483,9 +436,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Subject")
                         .IsRequired()
@@ -505,8 +457,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Image", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Caption")
                         .IsRequired()
@@ -529,9 +482,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsCarousel")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -551,8 +503,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Language", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -584,10 +537,136 @@ namespace ECX.Website.Persistence.Migrations
                     b.ToTable("Languages");
                 });
 
+            modelBuilder.Entity("ECX.Website.Domain.Lookup.ParentLookup", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImgName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UpdatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ParentLookups");
+                });
+
+            modelBuilder.Entity("ECX.Website.Domain.MarketData", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("ClosingPrice")
+                        .HasColumnType("float");
+
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("DateKey")
+                        .HasColumnType("float");
+
+                    b.Property<double>("DayHigh")
+                        .HasColumnType("float");
+
+                    b.Property<double>("DayLow")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Difference")
+                        .HasColumnType("float");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("OpeningPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("PercentageChange")
+                        .HasColumnType("float");
+
+                    b.Property<double>("PreviousClosing")
+                        .HasColumnType("float");
+
+                    b.Property<double>("ProductionYear")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Symbol")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("TradeDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("VolumeInLot")
+                        .HasColumnType("float");
+
+                    b.Property<double>("VolumeInQuintal")
+                        .HasColumnType("float");
+
+                    b.Property<string>("WarehouseCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("tday")
+                        .HasColumnType("float");
+
+                    b.Property<double>("tmonth")
+                        .HasColumnType("float");
+
+                    b.Property<double>("tyear")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MarketData");
+                });
+
             modelBuilder.Entity("ECX.Website.Domain.Message", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Body")
                         .IsRequired()
@@ -603,9 +682,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Subject")
                         .IsRequired()
@@ -625,8 +703,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.News", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -649,9 +728,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Source")
                         .IsRequired()
@@ -675,12 +753,12 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Page", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("CatagoryId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("CatagoryId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -700,9 +778,12 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PageCatagoryId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -717,13 +798,16 @@ namespace ECX.Website.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pages");
+                    b.HasIndex("PageCatagoryId");
+
+                    b.ToTable("Page", (string)null);
                 });
 
             modelBuilder.Entity("ECX.Website.Domain.PageCatagory", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -743,9 +827,12 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ParentLookupId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -760,13 +847,16 @@ namespace ECX.Website.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PageCatagories");
+                    b.HasIndex("ParentLookupId");
+
+                    b.ToTable("PageCatagories", (string)null);
                 });
 
             modelBuilder.Entity("ECX.Website.Domain.Publication", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -786,9 +876,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -808,8 +897,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Research", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -829,9 +919,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -851,8 +940,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.SocialMedia", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -872,9 +962,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -898,8 +987,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Subscription", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -933,8 +1023,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.TradingCenter", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -954,9 +1045,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -976,8 +1066,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Training", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -997,9 +1088,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -1019,8 +1109,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.TrainingDoc", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -1040,9 +1131,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -1062,8 +1152,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Vacancy", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -1083,9 +1174,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -1105,8 +1195,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.Video", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -1122,9 +1213,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -1148,8 +1238,9 @@ namespace ECX.Website.Persistence.Migrations
 
             modelBuilder.Entity("ECX.Website.Domain.WareHouse", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Capacity")
                         .IsRequired()
@@ -1173,9 +1264,8 @@ namespace ECX.Website.Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("LangId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("LangId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Latitude")
                         .IsRequired()
@@ -1199,6 +1289,55 @@ namespace ECX.Website.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("WareHouses");
+                });
+
+            modelBuilder.Entity("ECX.Website.Domain.ContractFile", b =>
+                {
+                    b.HasOne("ECX.Website.Domain.Commodity", "Commodity")
+                        .WithOne("ContractFile")
+                        .HasForeignKey("ECX.Website.Domain.ContractFile", "CommodityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Commodity");
+                });
+
+            modelBuilder.Entity("ECX.Website.Domain.Page", b =>
+                {
+                    b.HasOne("ECX.Website.Domain.PageCatagory", "PageCatagory")
+                        .WithMany("Page")
+                        .HasForeignKey("PageCatagoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PageCatagory");
+                });
+
+            modelBuilder.Entity("ECX.Website.Domain.PageCatagory", b =>
+                {
+                    b.HasOne("ECX.Website.Domain.Lookup.ParentLookup", "ParentLookup")
+                        .WithMany("PageCatagory")
+                        .HasForeignKey("ParentLookupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ParentLookup");
+                });
+
+            modelBuilder.Entity("ECX.Website.Domain.Commodity", b =>
+                {
+                    b.Navigation("ContractFile")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ECX.Website.Domain.Lookup.ParentLookup", b =>
+                {
+                    b.Navigation("PageCatagory");
+                });
+
+            modelBuilder.Entity("ECX.Website.Domain.PageCatagory", b =>
+                {
+                    b.Navigation("Page");
                 });
 #pragma warning restore 612, 618
         }

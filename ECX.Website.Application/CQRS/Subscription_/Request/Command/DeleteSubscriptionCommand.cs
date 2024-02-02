@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Subscription_.Request.Command
 {
     public class DeleteSubscriptionCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

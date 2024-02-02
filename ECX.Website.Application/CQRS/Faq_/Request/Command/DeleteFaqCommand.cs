@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Faq_.Request.Command
 {
     public class DeleteFaqCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

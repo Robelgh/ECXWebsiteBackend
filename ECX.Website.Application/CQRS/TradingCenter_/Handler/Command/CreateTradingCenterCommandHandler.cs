@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.TradingCenter_.Handler.Command
                         var TradingCenterDto = _mapper.Map<TradingCenterDto>(request.TradingCenterFormDto);
                         TradingCenterDto.ImgName = fileName;
 
-                        string tradingCenterId;
+                        Guid tradingCenterId;
                         bool flag = true;
 
                         while (true)
                         {
-                            tradingCenterId = Guid.NewGuid().ToString();
+                            tradingCenterId = Guid.NewGuid();
                             flag = await _tradingCenterRepository.Exists(tradingCenterId);
                             if (flag == false)
                             {

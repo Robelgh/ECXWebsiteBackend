@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Page_.Handler.Command
                         var PageDto = _mapper.Map<PageDto>(request.PageFormDto);
                         PageDto.ImgName = fileName;
 
-                        string pageId ;
+                        Guid pageId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            pageId = (Guid.NewGuid()).ToString();
+                            pageId = (Guid.NewGuid());
                             flag = await _pageRepository.Exists(pageId);
                             if (flag == false)
                             {
