@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Commodity_.Request.Queries
 {
     public class GetCommodityDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

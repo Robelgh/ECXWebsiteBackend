@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Publication_.Handler.Command
                         var PublicationDto = _mapper.Map<PublicationDto>(request.PublicationFormDto);
                         PublicationDto.FileName = fileName;
 
-                        string publicationId ;
+                        Guid publicationId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            publicationId = (Guid.NewGuid()).ToString();
+                            publicationId = (Guid.NewGuid());
                             flag = await _publicationRepository.Exists(publicationId);
                             if (flag == false)
                             {

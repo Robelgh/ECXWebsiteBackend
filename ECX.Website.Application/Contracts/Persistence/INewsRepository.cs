@@ -9,6 +9,6 @@ namespace ECX.Website.Application.Contracts.Persistence
 {
     public interface INewsRepository : IGenericRepository<News>
     {
-
+        Task<IEnumerable<News>> getNews();
     }
 }

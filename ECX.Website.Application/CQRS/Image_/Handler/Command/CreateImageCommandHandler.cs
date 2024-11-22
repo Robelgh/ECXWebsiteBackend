@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Image_.Handler.Command
                         var ImageDto = _mapper.Map<ImageDto>(request.ImageFormDto);
                         ImageDto.ImgName = fileName;
 
-                        string imageId ;
+                        Guid imageId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            imageId = (Guid.NewGuid()).ToString();
+                            imageId = (Guid.NewGuid());
                             flag = await _imageRepository.Exists(imageId);
                             if (flag == false)
                             {

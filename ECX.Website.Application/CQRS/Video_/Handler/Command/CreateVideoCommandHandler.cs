@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Video_.Handler.Command
                         var VideoDto = _mapper.Map<VideoDto>(request.VideoFormDto);
                         VideoDto.VideoName = fileName;
 
-                        string videoId;
+                        Guid videoId;
                         bool flag = true;
 
                         while (true)
                         {
-                            videoId = Guid.NewGuid().ToString();
+                            videoId = Guid.NewGuid();
                             flag = await _videoRepository.Exists(videoId);
                             if (flag == false)
                             {

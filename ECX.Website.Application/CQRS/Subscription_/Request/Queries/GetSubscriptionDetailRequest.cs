@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Subscription_.Request.Queries
 {
     public class GetSubscriptionDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

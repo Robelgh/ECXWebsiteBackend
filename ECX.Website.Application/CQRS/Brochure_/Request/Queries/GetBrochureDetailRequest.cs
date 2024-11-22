@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Brochure_.Request.Queries
 {
     public class GetBrochureDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

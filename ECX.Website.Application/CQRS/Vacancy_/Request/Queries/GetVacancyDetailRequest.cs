@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Vacancy_.Request.Queries
 {
     public class GetVacancyDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

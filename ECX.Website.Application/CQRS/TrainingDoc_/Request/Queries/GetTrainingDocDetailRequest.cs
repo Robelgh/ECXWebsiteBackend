@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.TrainingDoc_.Request.Queries
 {
     public class GetTrainingDocDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

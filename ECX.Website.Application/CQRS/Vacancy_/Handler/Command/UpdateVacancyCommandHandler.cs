@@ -46,56 +46,6 @@ namespace ECX.Website.Application.CQRS.Vacancy_.Handler.Command
             }
             else 
             {
-                if (request.VacancyFormDto.ImgFile != null)
-                {
-                    try
-                    {
-                        var imageValidator = new ImageValidator();
-                        var imgValidationResult = await imageValidator.ValidateAsync(request.VacancyFormDto.ImgFile);
-
-                        if (imgValidationResult.IsValid == false)
-                        {
-                            response.Success = false;
-                            response.Message = "Update Failed";
-                            response.Errors = imgValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
-                            response.Status = "400";
-                        }
-                        else
-                        {
-                            var oldImage = (await _vacancyRepository.GetById(
-                                request.VacancyFormDto.Id)).ImgName;
-                            
-
-                            string oldPath = Path.Combine(
-                                Directory.GetCurrentDirectory(), @"wwwroot\image",oldImage);
-                            File.Delete(oldPath);
-
-                            string contentType = request.VacancyFormDto.ImgFile.ContentType.ToString();
-                            string ext = contentType.Split('/')[1];
-                            string fileName = Guid.NewGuid().ToString() + "." + ext;
-                            string path = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\image", fileName);
-
-                            using (Stream stream = new FileStream(path, FileMode.Create))
-                            {
-                                request.VacancyFormDto.ImgFile.CopyTo(stream);
-                            }
-                           
-                            VacancyDto.ImgName = fileName;
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        response.Success = false;
-                        response.Message = "Update Failed";
-                        response.Errors = new List<string> { ex.Message };
-                        response.Status = "400";
-                    }
-                }
-                else
-                {
-                    VacancyDto.ImgName = (await _vacancyRepository.GetById(
-                                request.VacancyFormDto.Id)).ImgName;
-                } 
 
                 var updateData = await _vacancyRepository.GetById(request.VacancyFormDto.Id);
                 

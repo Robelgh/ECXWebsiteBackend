@@ -9,6 +9,7 @@ namespace ECX.Website.Application.Contracts.Persistence
 {
     public interface IContractFileRepository : IGenericRepository<ContractFile>
     {
+        Task<IEnumerable<ContractFile>> GetContractByCommodityId(Guid commodityId);
 
     }
 }

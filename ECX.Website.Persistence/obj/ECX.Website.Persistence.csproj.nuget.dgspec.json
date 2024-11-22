@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {}
+    "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Application\\ECX.Website.Application.csproj": {
+    "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Application\\ECX.Website.Application.csproj",
+        "projectUniqueName": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj",
         "projectName": "ECX.Website.Application",
-        "projectPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Application\\ECX.Website.Application.csproj",
-        "packagesPath": "C:\\Users\\Hadera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Application\\obj\\",
+        "projectPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj",
+        "packagesPath": "C:\\Users\\appmaintains\\.nuget\\packages\\",
+        "outputPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hadera\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\appmaintains\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
-                "projectPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Domain\\ECX.Website.Domain.csproj"
+              "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
+                "projectPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj"
               }
             }
           }
@@ -70,20 +76,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -93,22 +85,28 @@
         }
       }
     },
-    "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
+    "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
+        "projectUniqueName": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
         "projectName": "ECX.Website.Domain",
-        "projectPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
-        "packagesPath": "C:\\Users\\Hadera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Domain\\obj\\",
+        "projectPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
+        "packagesPath": "C:\\Users\\appmaintains\\.nuget\\packages\\",
+        "outputPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hadera\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\appmaintains\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -126,6 +124,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.1.39, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.26, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -137,20 +145,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -160,30 +154,36 @@
         }
       }
     },
-    "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {
+    "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
+        "projectUniqueName": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
         "projectName": "ECX.Website.Persistence",
-        "projectPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Hadera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Persistence\\obj\\",
+        "projectPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
+        "packagesPath": "C:\\Users\\appmaintains\\.nuget\\packages\\",
+        "outputPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hadera\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\appmaintains\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Application\\ECX.Website.Application.csproj": {
-                "projectPath": "C:\\Users\\Hadera\\Desktop\\ECXWebsite\\ECXWebsite-back-end\\ECX.Website.Application\\ECX.Website.Application.csproj"
+              "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj": {
+                "projectPath": "E:\\ECXWebsite\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj"
               }
             }
           }
@@ -198,6 +198,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.26, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.26, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
@@ -230,6 +238,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -246,20 +258,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

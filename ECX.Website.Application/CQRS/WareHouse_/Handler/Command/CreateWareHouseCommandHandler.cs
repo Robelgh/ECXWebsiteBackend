@@ -47,36 +47,16 @@ namespace ECX.Website.Application.CQRS.WareHouse_.Handler.Command
             {
                 try
                 {
-                    var imageValidator = new ImageValidator();
-                    var imgValidationResult = await imageValidator.ValidateAsync(request.WareHouseFormDto.ImgFile);
-
-                    if (imgValidationResult.IsValid == false)
-                    {
-                        response.Success = false;
-                        response.Message = "Creation Faild";
-                        response.Errors = imgValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
-                        response.Status = "400";
-                    }
-                    else
-                    {
-                        string contentType = request.WareHouseFormDto.ImgFile.ContentType.ToString();
-                        string ext = contentType.Split('/')[1];
-                        string fileName = Guid.NewGuid().ToString() + "." + ext;
-                        string path = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\image", fileName);
-
-                        using (Stream stream = new FileStream(path, FileMode.Create))
-                        {
-                            request.WareHouseFormDto.ImgFile.CopyTo(stream);
-                        }
+               
                         var WareHouseDto = _mapper.Map<WareHouseDto>(request.WareHouseFormDto);
-                        WareHouseDto.ImgName = fileName;
+                        WareHouseDto.ImgName = "fileName";
 
-                        string wareHouseId;
+                        Guid wareHouseId;
                         bool flag = true;
 
                         while (true)
                         {
-                            wareHouseId = Guid.NewGuid().ToString();
+                            wareHouseId = Guid.NewGuid();
                             flag = await _wareHouseRepository.Exists(wareHouseId);
                             if (flag == false)
                             {
@@ -93,7 +73,7 @@ namespace ECX.Website.Application.CQRS.WareHouse_.Handler.Command
                         response.Success = true;
                         response.Message = "Created Successfully";
                         response.Status = "200";
-                    }
+                    
                 }
                 catch (Exception ex)
                 {

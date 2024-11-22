@@ -11,7 +11,8 @@ namespace ECX.Website.Application.DTOs.PageCatagory
 {
     public class PageCatagoryFormDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
+        public Guid? ParentLookupId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public IFormFile ImgFile { get; set; }

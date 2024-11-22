@@ -45,12 +45,12 @@ namespace ECX.Website.Application.CQRS.Faq_.Handler.Command
             }
             else
             {
-                string faqId;
+                Guid faqId;
                 bool flag = true;
 
                 while (true)
                 {
-                    faqId = Guid.NewGuid().ToString();
+                    faqId = Guid.NewGuid();
                     flag = await _faqRepository.Exists(faqId);
                     if (flag == false)
                     {

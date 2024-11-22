@@ -15,12 +15,23 @@ namespace ECX.Website.Persistence.Repositories
         {
             _context = context;
         }
-        public async Task<IEnumerable<Page>> GetByPageCatagoryLangId(string catagoryId,string langId)
+        public async Task<IEnumerable<Page>> GetByPageCatagoryLangId(Guid Id,Guid langId)
         { 
-            return _context.Set<Page>().Where(
-                p => p.CatagoryId == catagoryId && p.LangId == langId
-                ).ToList();  
+            return _context.Set<Page>().Where( p => p.PageCatagoryId == Id && p.LangId == langId ).ToList(); 
         }
+
+        public async Task<IEnumerable<Page>> GetPageByLangId(Guid langId)
+        {
+            return _context.Set<Page>().Where(p => p.LangId == langId);
+        }
+
+        public async Task<IEnumerable<Page>> GetPageByPageCatagoryId(Guid Id)
+        {
+            return _context.Set<Page>().Where(p => p.PageCatagoryId == Id);
+        }
+
         
+
+
     }
 }

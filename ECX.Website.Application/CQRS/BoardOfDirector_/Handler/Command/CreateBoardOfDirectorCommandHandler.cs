@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.BoardOfDirector_.Handler.Command
                         var BoardOfDirectorDto = _mapper.Map<BoardOfDirectorDto>(request.BoardOfDirectorFormDto);
                         BoardOfDirectorDto.ImgName = fileName;
 
-                        string boardOfDirectorId ;
+                        Guid boardOfDirectorId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            boardOfDirectorId = (Guid.NewGuid()).ToString();
+                            boardOfDirectorId = (Guid.NewGuid());
                             flag = await _boardOfDirectorRepository.Exists(boardOfDirectorId);
                             if (flag == false)
                             {

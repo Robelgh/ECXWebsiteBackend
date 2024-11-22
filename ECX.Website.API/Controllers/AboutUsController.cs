@@ -4,6 +4,7 @@ using ECX.Website.Application.DTOs.Page;
 using ECX.Website.Application.Response;
 using ECX.Website.Domain;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
@@ -38,7 +39,7 @@ namespace ECX.Website.API.Controllers
 
         // GET api/<AboutEcx>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Get(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Get(Guid id)
         {
             var query = new GetPageDetailRequest { Id = id };
             BaseCommonResponse response = await _mediator.Send(query);
@@ -83,7 +84,7 @@ namespace ECX.Website.API.Controllers
 
         // DELETE api/<AboutEcx>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Delete(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Delete(Guid id)
         {
             var command = new DeletePageCommand { Id = id };
             BaseCommonResponse response = await _mediator.Send(command);

@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Language_.Request.Command
 {
     public class DeleteLanguageCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

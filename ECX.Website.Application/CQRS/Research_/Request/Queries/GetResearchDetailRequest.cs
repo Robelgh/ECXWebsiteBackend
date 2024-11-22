@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Research_.Request.Queries
 {
     public class GetResearchDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

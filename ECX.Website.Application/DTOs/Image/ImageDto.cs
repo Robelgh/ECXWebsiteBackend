@@ -9,7 +9,7 @@ namespace ECX.Website.Application.DTOs.Image
 {
     public class ImageDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Caption { get; set; }
         public bool   IsCarousel { get; set; }

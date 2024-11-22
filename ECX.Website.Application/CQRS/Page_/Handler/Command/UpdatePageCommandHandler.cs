@@ -8,6 +8,7 @@ using ECX.Website.Application.Exceptions;
 using ECX.Website.Application.Response;
 using ECX.Website.Domain;
 using MediatR;
+using ECX.Website.Application.DTOs.PageCatagory;
 
 namespace ECX.Website.Application.CQRS.Page_.Handler.Command
 {
@@ -55,10 +56,39 @@ namespace ECX.Website.Application.CQRS.Page_.Handler.Command
 
                         if (imgValidationResult.IsValid == false)
                         {
-                            response.Success = false;
-                            response.Message = "Update Failed";
-                            response.Errors = imgValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
-                            response.Status = "400";
+                            var pdfValidator = new PdfValidator();
+                            var pdfValidationResult = await pdfValidator.ValidateAsync(request.PageFormDto.ImgFile);
+
+                            if (pdfValidationResult.IsValid == false)
+                            {
+                                response.Success = false;
+                                response.Message = "Creation Faild";
+                                response.Errors = pdfValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
+                                response.Status = "400";
+                            }
+                            else
+                            {
+                                var oldPdf = (await _pageRepository.GetById(
+                               request.PageFormDto.Id)).ImgName;
+
+
+                                string oldPath = Path.Combine(
+                                    Directory.GetCurrentDirectory(), @"wwwroot\pdf", oldPdf);
+                                File.Delete(oldPath);
+
+                                string contentType = request.PageFormDto.ImgFile.ContentType.ToString();
+                                string ext = contentType.Split('/')[1];
+                                string fileName = Guid.NewGuid().ToString() + "." + ext;
+                                string path = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\pdf", fileName);
+
+                                using (Stream stream = new FileStream(path, FileMode.Create))
+                                {
+                                    request.PageFormDto.ImgFile.CopyTo(stream);
+                                }
+
+                                PageDto.ImgName = fileName;
+
+                            }
                         }
                         else
                         {

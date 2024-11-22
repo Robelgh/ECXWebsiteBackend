@@ -9,6 +9,12 @@ namespace ECX.Website.Application.Contracts.Persistence
 {
     public interface IPageRepository : IGenericRepository<Page>
     {
-        Task<IEnumerable<Page>> GetByPageCatagoryLangId(string catagoryId,string langId);
+        Task<IEnumerable<Page>> GetByPageCatagoryLangId(Guid Id, Guid langId);
+
+        Task<IEnumerable<Page>> GetPageByLangId(Guid langId);
+
+        Task<IEnumerable<Page>> GetPageByPageCatagoryId(Guid Id);
+
+        
     }
 }

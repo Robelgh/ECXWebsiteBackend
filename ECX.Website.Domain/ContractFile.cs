@@ -8,11 +8,12 @@ namespace ECX.Website.Domain
     public class ContractFile : BaseDomainEntity
     {
 
-        public string LangId { get; set; }
-        public string CommodityId { get; set;}
+        public Guid LangId { get; set; }
+        public Guid CommodityId { get; set;}
         public string Name { get; set; }
         public string Description { get; set; }
         public string FileName { get; set; }
+        public Commodity Commodity { get; set; }
 
     }
 }

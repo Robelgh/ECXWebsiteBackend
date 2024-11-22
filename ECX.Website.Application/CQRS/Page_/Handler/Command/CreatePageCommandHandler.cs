@@ -52,10 +52,54 @@ namespace ECX.Website.Application.CQRS.Page_.Handler.Command
 
                     if (imgValidationResult.IsValid == false)
                     {
-                        response.Success = false;
-                        response.Message = "Creation Faild";
-                        response.Errors = imgValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
-                        response.Status = "400";
+                        var pdfValidator = new PdfValidator();
+                        var pdfValidationResult = await pdfValidator.ValidateAsync(request.PageFormDto.ImgFile);
+
+                        if (pdfValidationResult.IsValid == false)
+                        {
+                            response.Success = false;
+                            response.Message = "Creation Faild";
+                            response.Errors = pdfValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
+                            response.Status = "400";
+                        }
+                        else
+                        {
+                            string contentType = request.PageFormDto.ImgFile.ContentType.ToString();
+                            string ext = contentType.Split('/')[1];
+                            string fileName = Guid.NewGuid().ToString() + "." + ext;
+                            string path = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\pdf", fileName);
+
+
+                            using (Stream stream = new FileStream(path, FileMode.Create))
+                            {
+                                request.PageFormDto.ImgFile.CopyTo(stream);
+                            }
+                            var PageDto = _mapper.Map<PageDto>(request.PageFormDto);
+                            PageDto.ImgName = fileName;
+
+                            Guid pageId;
+                            bool flag = true;
+
+                            while (true)
+                            {
+                                pageId = (Guid.NewGuid());
+                                flag = await _pageRepository.Exists(pageId);
+                                if (flag == false)
+                                {
+                                    PageDto.Id = pageId;
+                                    break;
+                                }
+                            }
+
+                            var data = _mapper.Map<Page>(PageDto);
+
+                            var saveData = await _pageRepository.Add(data);
+
+                            response.Data = _mapper.Map<PageDto>(saveData);
+                            response.Success = true;
+                            response.Message = "Created Successfully";
+                            response.Status = "200";
+                        }
                     }
                     else
                     {
@@ -68,15 +112,16 @@ namespace ECX.Website.Application.CQRS.Page_.Handler.Command
                         {
                             request.PageFormDto.ImgFile.CopyTo(stream);
                         }
+
                         var PageDto = _mapper.Map<PageDto>(request.PageFormDto);
                         PageDto.ImgName = fileName;
 
-                        string pageId ;
+                        Guid pageId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            pageId = (Guid.NewGuid()).ToString();
+                            pageId = (Guid.NewGuid());
                             flag = await _pageRepository.Exists(pageId);
                             if (flag == false)
                             {

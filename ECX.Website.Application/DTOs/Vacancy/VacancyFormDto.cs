@@ -10,9 +10,14 @@ namespace ECX.Website.Application.DTOs.Vacancy
 {
     public class VacancyFormDto : BaseDtos
     {
-        public string LangId { get; set; }
-        public string Name { get; set; }
+        public Guid LangId { get; set; }
+        public string Title { get; set; }
+
+        public string PageCatagoryId { get; set; }
+
         public string Description { get; set; }
-        public IFormFile ImgFile{get;set;}
+        public string Type { get; set; }
+        public DateTime ExpDate { get; set; }
+
     }
 }

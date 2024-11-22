@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ECX.Website.Application.Contracts.Persistence
 {
-    public interface ITradingCenterRepository : IGenericRepository<TradingCenter>
+    public interface IFactRepository : IGenericRepository<Facts>
     {
 
     }

@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Message_.Request.Command
 {
     public class DeleteMessageCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

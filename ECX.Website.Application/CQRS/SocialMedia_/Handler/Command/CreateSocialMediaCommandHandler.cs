@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.SocialMedia_.Handler.Command
                         var SocialMediaDto = _mapper.Map<SocialMediaDto>(request.SocialMediaFormDto);
                         SocialMediaDto.ImgName = fileName;
 
-                        string socialMediaId;
+                        Guid socialMediaId;
                         bool flag = true;
 
                         while (true)
                         {
-                            socialMediaId = Guid.NewGuid().ToString();
+                            socialMediaId = Guid.NewGuid();
                             flag = await _socialMediaRepository.Exists(socialMediaId);
                             if (flag == false)
                             {

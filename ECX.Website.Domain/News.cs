@@ -8,7 +8,7 @@ namespace ECX.Website.Domain
     public class News : BaseDomainEntity
     {
 
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Source { get; set; }

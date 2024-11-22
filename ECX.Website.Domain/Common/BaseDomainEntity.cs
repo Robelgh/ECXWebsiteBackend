@@ -8,7 +8,7 @@ namespace ECX.Website.Domain.Common
 {
     public abstract class BaseDomainEntity
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
         public bool IsActive { get; set; }
 

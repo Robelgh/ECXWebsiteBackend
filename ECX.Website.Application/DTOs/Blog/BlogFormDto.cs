@@ -10,7 +10,7 @@ namespace ECX.Website.Application.DTOs.Blog
 {
     public class BlogFormDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
         public IFormFile ImgFile{get;set;}

@@ -24,14 +24,14 @@ namespace ECX.Website.API.Controllers
 
         // GET: api/<PageController>
         [HttpGet("{id1}/{id2}")]
-        public async Task<ActionResult<BaseCommonResponse>> Get(string id1, string id2)
+        public async Task<ActionResult<BaseCommonResponse>> Get(Guid id1, Guid id2)
         {
-            var query = new GetPageListByParamsRequest{CatagoryId =id1, LangId = id2};
+            var query = new GetPageListByParamsRequest{ CatagorName = id1, LangId = id2};
             BaseCommonResponse response = await _mediator.Send(query);
             switch(response.Status){
-                case "200" : return Ok(response);
-                case "400" : return BadRequest(response);
-                case "404" : return NotFound(response);
+                case "200" : return Ok(response);   
+                case "400" : return BadRequest(response);  
+                case "404" : return NotFound(response);  
                 default : return response;  
             }
         }
@@ -51,7 +51,7 @@ namespace ECX.Website.API.Controllers
 
         // GET api/<PageController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Get(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Get(Guid id)
         {
             var query = new GetPageDetailRequest { Id = id };
             BaseCommonResponse response = await _mediator.Send(query);
@@ -60,6 +60,34 @@ namespace ECX.Website.API.Controllers
                 case "400" : return BadRequest(response);
                 case "404" : return NotFound(response);
                 default : return response;  
+            }
+        }
+
+           // GET api/<PageController>/5
+        [HttpGet("lan/{id}")]
+        public async Task<ActionResult<BaseCommonResponse>> GetPageByLan(Guid id)
+        {
+            var query = new GetPageByLanRequest { Id = id };
+            BaseCommonResponse response = await _mediator.Send(query);
+            switch(response.Status){
+                case "200" : return Ok(response);
+                case "400" : return BadRequest(response);
+                case "404" : return NotFound(response);
+                default : return response;  
+            }
+        }
+
+        [HttpGet("pageCatagory/{id}")]
+        public async Task<ActionResult<BaseCommonResponse>> GetPageCatagoryByParent(Guid id)
+        {
+            var query = new GetPageListByPageCatagoryRequest { Id = id };
+            BaseCommonResponse response = await _mediator.Send(query);
+            switch (response.Status)
+            {
+                case "200": return Ok(response);
+                case "400": return BadRequest(response);
+                case "404": return NotFound(response);
+                default: return response;
             }
         }
 
@@ -96,7 +124,7 @@ namespace ECX.Website.API.Controllers
 
         // DELETE api/<PageController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Delete(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Delete(Guid id)
         {
             var command = new DeletePageCommand { Id = id };
             BaseCommonResponse response = await _mediator.Send(command);

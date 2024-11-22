@@ -71,12 +71,12 @@ namespace ECX.Website.Application.CQRS.Research_.Handler.Command
                         var ResearchDto = _mapper.Map<ResearchDto>(request.ResearchFormDto);
                         ResearchDto.FileName = fileName;
 
-                        string researchId ;
+                        Guid researchId ;
                         bool flag = true;
 
                         while (true)
                         {
-                            researchId = Guid.NewGuid().ToString();
+                            researchId = Guid.NewGuid();
                             flag = await _researchRepository.Exists(researchId);
                             if (flag == false)
                             {

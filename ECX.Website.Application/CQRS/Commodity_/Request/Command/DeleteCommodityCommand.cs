@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Commodity_.Request.Command
 {
     public class DeleteCommodityCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

@@ -45,12 +45,12 @@ namespace ECX.Website.Application.CQRS.FeedBack_.Handler.Command
             }
             else
             {
-                string FeedBackId;
+                Guid FeedBackId;
                 bool flag = true;
 
                 while (true)
                 {
-                    FeedBackId = Guid.NewGuid().ToString();
+                    FeedBackId = Guid.NewGuid();
                     flag = await _feedBackRepository.Exists(FeedBackId);
                     if (flag == false)
                     {

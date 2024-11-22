@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Video_.Request.Command
 {
     public class DeleteVideoCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

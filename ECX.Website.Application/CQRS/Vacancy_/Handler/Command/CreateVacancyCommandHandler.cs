@@ -47,36 +47,14 @@ namespace ECX.Website.Application.CQRS.Vacancy_.Handler.Command
             {
                 try
                 {
-                    var imageValidator = new ImageValidator();
-                    var imgValidationResult = await imageValidator.ValidateAsync(request.VacancyFormDto.ImgFile);
-
-                    if (imgValidationResult.IsValid == false)
-                    {
-                        response.Success = false;
-                        response.Message = "Creation Faild";
-                        response.Errors = imgValidationResult.Errors.Select(x => x.ErrorMessage).ToList();
-                        response.Status = "400";
-                    }
-                    else
-                    {
-                        string contentType = request.VacancyFormDto.ImgFile.ContentType.ToString();
-                        string ext = contentType.Split('/')[1];
-                        string fileName = Guid.NewGuid().ToString() + "." + ext;
-                        string path = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\image", fileName);
-
-                        using (Stream stream = new FileStream(path, FileMode.Create))
-                        {
-                            request.VacancyFormDto.ImgFile.CopyTo(stream);
-                        }
+                 
                         var VacancyDto = _mapper.Map<VacancyDto>(request.VacancyFormDto);
-                        VacancyDto.ImgName = fileName;
-
-                        string vacancyId;
+                        Guid vacancyId;
                         bool flag = true;
 
                         while (true)
                         {
-                            vacancyId = Guid.NewGuid().ToString();
+                            vacancyId = Guid.NewGuid();
                             flag = await _vacancyRepository.Exists(vacancyId);
                             if (flag == false)
                             {
@@ -93,7 +71,7 @@ namespace ECX.Website.Application.CQRS.Vacancy_.Handler.Command
                         response.Success = true;
                         response.Message = "Created Successfully";
                         response.Status = "200";
-                    }
+                    
                 }
                 catch (Exception ex)
                 {

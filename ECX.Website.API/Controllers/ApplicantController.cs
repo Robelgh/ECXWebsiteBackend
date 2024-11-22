@@ -38,7 +38,7 @@ namespace ECX.Website.API.Controllers
 
         // GET api/<ApplicantController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Get(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Get(Guid id)
         {
             var query = new GetApplicantDetailRequest { Id = id };
             BaseCommonResponse response = await _mediator.Send(query);
@@ -83,7 +83,7 @@ namespace ECX.Website.API.Controllers
 
         // DELETE api/<ApplicantController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Delete(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Delete(Guid id)
         {
             var command = new DeleteApplicantCommand { Id = id };
             BaseCommonResponse response = await _mediator.Send(command);

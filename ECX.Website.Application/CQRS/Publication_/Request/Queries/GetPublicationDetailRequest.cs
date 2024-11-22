@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Publication_.Request.Queries
 {
     public class GetPublicationDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

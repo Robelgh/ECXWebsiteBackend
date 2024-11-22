@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.News_.Request.Command
 {
     public class DeleteNewsCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

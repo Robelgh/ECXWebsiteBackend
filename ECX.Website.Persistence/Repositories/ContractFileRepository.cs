@@ -14,5 +14,12 @@ namespace ECX.Website.Persistence.Repositories
         {
             _context = context;
         }
+
+        public async Task<IEnumerable<ContractFile>> GetContractByCommodityId(Guid commodityId)
+        {
+            return _context.Set<ContractFile>().Where(p => p.CommodityId == commodityId);
+        }
+
+        
     }
 }

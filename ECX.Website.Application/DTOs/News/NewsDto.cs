@@ -9,7 +9,7 @@ namespace ECX.Website.Application.DTOs.News
 {
     public class NewsDto : BaseDtos
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Source { get; set; }

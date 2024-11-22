@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.BoardOfDirector_.Request.Queries
 {
     public class GetBoardOfDirectorDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

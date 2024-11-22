@@ -13,8 +13,8 @@ namespace ECX.Website.Application.DTOs.PageCatagory.Validators
         {
 
             RuleFor(p => p.LangId)
-                .NotEmpty().WithMessage("{PropertyName} is requiered.")
-                .NotNull();
+                  .NotEmpty().WithMessage("{PropertyName} is requiered.")
+                  .NotNull();
             RuleFor(p => p.Title)
                 .NotEmpty().WithMessage("{PropertyName} is requiered.")
                 .NotNull();

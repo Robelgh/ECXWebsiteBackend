@@ -9,6 +9,7 @@ namespace ECX.Website.Application.Contracts.Persistence
 {
     public interface IVacancyRepository : IGenericRepository<Vacancy>
     {
+        Task<IEnumerable<Vacancy>> getVacancy();
 
     }
 }

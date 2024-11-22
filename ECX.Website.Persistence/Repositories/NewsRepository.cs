@@ -14,5 +14,12 @@ namespace ECX.Website.Persistence.Repositories
         {
             _context = context;
         }
+
+        public async Task<IEnumerable<News>> getNews()
+        {
+            return _context.Set<News>().Where(p => p.ExpDate > DateTime.Today).ToList();
+        }
+
+
     }
 }

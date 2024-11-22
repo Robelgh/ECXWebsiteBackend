@@ -32,7 +32,7 @@ namespace ECX.Website.Application.CQRS.Page_.Handler.Queries
         public async Task<BaseCommonResponse> Handle(GetPageListByParamsRequest request, CancellationToken cancellationToken)
         {
             var response = new BaseCommonResponse();
-            var data = await _pageRepository.GetByPageCatagoryLangId(request.CatagoryId,request.LangId);
+            var data = await _pageRepository.GetByPageCatagoryLangId(request.CatagorName, request.LangId);
             
             
                 response.Success = true;

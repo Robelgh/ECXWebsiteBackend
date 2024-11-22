@@ -47,12 +47,12 @@ namespace ECX.Website.Application.CQRS.Language_.Handler.Command
             {
                 var LanguageDto = _mapper.Map<LanguageDto>(request.LanguageFormDto);
                 
-                string languageId;
+                Guid languageId;
                 bool flag = true;
 
                 while (true)
                 {
-                    languageId = Guid.NewGuid().ToString();
+                    languageId = Guid.NewGuid();
                     flag = await _languageRepository.Exists(languageId);
                     if (flag == false)
                     {

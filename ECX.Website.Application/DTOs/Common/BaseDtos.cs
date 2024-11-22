@@ -8,7 +8,7 @@ namespace ECX.Website.Application.DTOs.Common
 {
     public abstract class BaseDtos
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
         public bool IsActive { get; set; }
 

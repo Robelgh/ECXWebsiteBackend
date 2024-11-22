@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Request.Command
 {
     public class DeletePageCatagoryCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

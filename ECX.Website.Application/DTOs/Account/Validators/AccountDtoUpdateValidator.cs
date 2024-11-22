@@ -11,8 +11,16 @@ namespace ECX.Website.Application.DTOs.Account.Validators
     {
         public AccountUpdateDtoValidator()
         {
+            RuleFor(p => p.ConfirmPassword)
+         .NotEmpty().WithMessage("{PropertyName} is requiered.")
+         .NotNull();
+            RuleFor(p => p.Email)
+                .NotEmpty().WithMessage("{PropertyName} is requiered.")
+                .NotNull();
+            RuleFor(p => p.Password)
+               .NotEmpty().WithMessage("{PropertyName} is requiered.")
+               .NotNull();
 
-          
         }
     }
 }

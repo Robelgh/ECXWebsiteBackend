@@ -99,6 +99,7 @@ namespace ECX.Website.Application.CQRS.Commodity_.Handler.Command
 
                 var updateData = await _commodityRepository.GetById(request.CommodityFormDto.Id);
                 
+                
                 _mapper.Map(CommodityDto, updateData);
 
                 var data = await _commodityRepository.Update(updateData);

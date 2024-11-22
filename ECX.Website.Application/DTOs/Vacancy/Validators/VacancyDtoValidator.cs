@@ -11,7 +11,13 @@ namespace ECX.Website.Application.DTOs.Vacancy.Validators
     {
         public VacancyDtoValidator()
         {
-            RuleFor(p=>p.Name)
+            RuleFor(p => p.LangId)
+                          .NotEmpty().WithMessage("{PropertyName} is requiered.")
+                          .NotNull();
+            RuleFor(p => p.Title)
+                .NotEmpty().WithMessage("{PropertyName} is requiered.")
+                .NotNull();
+            RuleFor(p => p.Type)
                 .NotEmpty().WithMessage("{PropertyName} is requiered.")
                 .NotNull();
             RuleFor(p => p.Description)

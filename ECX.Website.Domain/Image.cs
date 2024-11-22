@@ -7,7 +7,7 @@ namespace ECX.Website.Domain
 {
     public class Image : BaseDomainEntity
     {
-        public string LangId { get; set; }
+        public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Caption { get; set; }
         public bool   IsCarousel { get; set; }

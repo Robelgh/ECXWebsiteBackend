@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Faq_.Request.Queries
 {
     public class GetFaqDetailRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

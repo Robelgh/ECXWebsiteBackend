@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Brochure_.Request.Command
 {
     public class DeleteBrochureCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

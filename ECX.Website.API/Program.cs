@@ -1,9 +1,13 @@
 using ECX.Website.Application;
 using ECX.Website.Infrastructure;
 using ECX.Website.Persistence;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
+var builder = WebApplication.CreateBuilder(args); 
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 
-var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -14,8 +18,7 @@ builder.Services.ConfigureInfrastructureServices(builder.Configuration);
 builder.Services.ConfigurePersistenceServices(builder.Configuration);
 builder.Services.AddControllers();
 
-builder.Services.AddControllersWithViews
-   (options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
+builder.Services.AddControllers().AddNewtonsoftJson();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -36,11 +39,15 @@ app.UseCors(builder =>
 app.UseStaticFiles();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.UseCors();
 

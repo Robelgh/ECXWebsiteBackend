@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace ECX.Website.Application.CQRS.Account_.Request.Queries
 {
-    public class GetAccountDetailRequest :IRequest<BaseCommonResponse>
+    public class GetScrollingDataRequest :IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

@@ -31,7 +31,7 @@ namespace ECX.Website.Application.CQRS.Vacancy_.Handler.Queries
         public async Task<BaseCommonResponse> Handle(GetVacancyListRequest request, CancellationToken cancellationToken)
         {
             var response = new BaseCommonResponse();
-            var data = await _vacancyRepository.GetAll();
+            var data = await _vacancyRepository.getVacancy();
 
             response.Success = true;
             response.Data = _mapper.Map<List<VacancyDto>>(data);

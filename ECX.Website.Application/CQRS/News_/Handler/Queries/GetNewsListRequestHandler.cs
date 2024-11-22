@@ -31,7 +31,7 @@ namespace ECX.Website.Application.CQRS.News_.Handler.Queries
         public async Task<BaseCommonResponse> Handle(GetNewsListRequest request, CancellationToken cancellationToken)
         {
             var response = new BaseCommonResponse();
-            var data = await _newsRepository.GetAll();
+            var data = await _newsRepository.getNews();
 
             response.Success = true;
             response.Data = _mapper.Map<List<NewsDto>>(data);

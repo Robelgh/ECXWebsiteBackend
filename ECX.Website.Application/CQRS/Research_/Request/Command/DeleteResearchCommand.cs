@@ -10,6 +10,6 @@ namespace ECX.Website.Application.CQRS.Research_.Request.Command
 {
     public class DeleteResearchCommand : IRequest<BaseCommonResponse>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

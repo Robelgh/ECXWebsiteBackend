@@ -43,7 +43,7 @@ namespace ECX.Website.Application.CQRS.PageCatagory_.Handler.Queries
             {
                 response.Success = false;
                 response.Message = new NotFoundException(
-                    nameof(PageCatagory), request.Id).Message.ToString();
+                  nameof(PageCatagory), request.Id).Message.ToString();
                 response.Status = "404";
             }
             return response;

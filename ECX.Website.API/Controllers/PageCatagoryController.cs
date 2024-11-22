@@ -36,9 +36,22 @@ namespace ECX.Website.API.Controllers
             }
         }
 
+        [HttpGet("parent/{id}")]
+        public async Task<ActionResult<BaseCommonResponse>> GetPageCatagoryByParent(Guid id)
+        {
+            var query = new GetPageCatagoryListByParentRequest { Id = id };
+            BaseCommonResponse response = await _mediator.Send(query);
+            switch (response.Status)
+            {
+                case "200": return Ok(response);
+                case "400": return BadRequest(response);
+                case "404": return NotFound(response);
+                default: return response;
+            }
+        }
         // GET api/<PageCatagoryController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Get(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Get(Guid id)
         {
             var query = new GetPageCatagoryDetailRequest { Id = id };
             BaseCommonResponse response = await _mediator.Send(query);
@@ -50,6 +63,20 @@ namespace ECX.Website.API.Controllers
             }
         }
 
+        // GET api/<PageCatagoryController>/5
+        [HttpGet("lan/{id}")]
+        public async Task<ActionResult<BaseCommonResponse>> GetPageCatagoryByLan(Guid id)
+        {
+            var query = new GetPageCatagoryByLanRequest { Id = id };
+            BaseCommonResponse response = await _mediator.Send(query);
+            switch (response.Status)
+            {
+                case "200": return Ok(response);
+                case "400": return BadRequest(response);
+                case "404": return NotFound(response);
+                default: return response;
+            }
+        }
         // POST api/<PageCatagoryController>
         [HttpPost]
         public async Task<ActionResult<BaseCommonResponse>> Post([FromForm] PageCatagoryFormDto data)
@@ -83,7 +110,7 @@ namespace ECX.Website.API.Controllers
 
         // DELETE api/<PageCatagoryController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<BaseCommonResponse>> Delete(string id)
+        public async Task<ActionResult<BaseCommonResponse>> Delete(Guid id)
         {
             var command = new DeletePageCatagoryCommand { Id = id };
             BaseCommonResponse response = await _mediator.Send(command);
