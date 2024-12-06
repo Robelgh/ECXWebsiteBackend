@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\ECX.Website.API.csproj": {}
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\ECX.Website.API.csproj": {}
   },
   "projects": {
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\ECX.Website.API.csproj": {
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\ECX.Website.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\ECX.Website.API.csproj",
+        "projectUniqueName": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\ECX.Website.API.csproj",
         "projectName": "ECX.Website.API",
-        "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\ECX.Website.API.csproj",
-        "packagesPath": "C:\\Users\\Robel\\.nuget\\packages\\",
-        "outputPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\obj\\",
+        "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\ECX.Website.API.csproj",
+        "packagesPath": "C:\\Users\\Robel.gebrehiwot\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Robel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Robel.gebrehiwot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -29,14 +35,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj": {
-                "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj"
+              "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj": {
+                "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj"
               },
-              "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj": {
-                "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj"
+              "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj": {
+                "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj"
               },
-              "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {
-                "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj"
+              "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {
+                "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj"
               }
             }
           }
@@ -115,17 +121,22 @@
         }
       }
     },
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj": {
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj",
+        "projectUniqueName": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj",
         "projectName": "ECX.Website.Application",
-        "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj",
-        "packagesPath": "C:\\Users\\Robel\\.nuget\\packages\\",
-        "outputPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\obj\\",
+        "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj",
+        "packagesPath": "C:\\Users\\Robel.gebrehiwot\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Robel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Robel.gebrehiwot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -133,14 +144,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
-                "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj"
+              "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
+                "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj"
               }
             }
           }
@@ -192,17 +204,22 @@
         }
       }
     },
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
+        "projectUniqueName": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
         "projectName": "ECX.Website.Domain",
-        "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
-        "packagesPath": "C:\\Users\\Robel\\.nuget\\packages\\",
-        "outputPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\obj\\",
+        "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
+        "packagesPath": "C:\\Users\\Robel.gebrehiwot\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Robel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Robel.gebrehiwot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,6 +227,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -257,17 +275,22 @@
         }
       }
     },
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj": {
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj",
+        "projectUniqueName": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj",
         "projectName": "ECX.Website.Infrastructure",
-        "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Robel\\.nuget\\packages\\",
-        "outputPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Infrastructure\\obj\\",
+        "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Infrastructure\\ECX.Website.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Robel.gebrehiwot\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Robel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Robel.gebrehiwot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -275,14 +298,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj": {
-                "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj"
+              "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj": {
+                "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj"
               }
             }
           }
@@ -330,17 +354,22 @@
         }
       }
     },
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
+        "projectUniqueName": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
         "projectName": "ECX.Website.Persistence",
-        "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Robel\\.nuget\\packages\\",
-        "outputPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Persistence\\obj\\",
+        "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Persistence\\ECX.Website.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Robel.gebrehiwot\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Robel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Robel.gebrehiwot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -348,14 +377,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj": {
-                "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Application\\ECX.Website.Application.csproj"
+              "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj": {
+                "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Application\\ECX.Website.Application.csproj"
               }
             }
           }

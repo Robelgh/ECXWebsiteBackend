@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {}
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {}
   },
   "projects": {
-    "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
+    "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
+        "projectUniqueName": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
         "projectName": "ECX.Website.Domain",
-        "projectPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
-        "packagesPath": "C:\\Users\\Robel\\.nuget\\packages\\",
-        "outputPath": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.Domain\\obj\\",
+        "projectPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\ECX.Website.Domain.csproj",
+        "packagesPath": "C:\\Users\\Robel.gebrehiwot\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Robel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Robel.gebrehiwot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

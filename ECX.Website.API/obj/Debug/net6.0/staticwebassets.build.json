@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pxn/RCGeU0wADtToJs7WQ1OnlOgBF/+aIsxm8nk0SzU=",
+  "Hash": "w2OlaDGgBZWgctdx3PZNfGB9qHRjaQA0ITDNvWcaCVM=",
   "Source": "ECX.Website.API",
   "BasePath": "_content/ECX.Website.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ECX.Website.API\\wwwroot",
       "Source": "ECX.Website.API",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\070ed0fe-2d42-41be-8cde-50f1cf124403.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\070ed0fe-2d42-41be-8cde-50f1cf124403.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/070ed0fe-2d42-41be-8cde-50f1cf124403.jpeg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\image\\070ed0fe-2d42-41be-8cde-50f1cf124403.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\09436205-8341-4839-a109-c8e938d17d36.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\09436205-8341-4839-a109-c8e938d17d36.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/09436205-8341-4839-a109-c8e938d17d36.jpeg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\image\\09436205-8341-4839-a109-c8e938d17d36.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\0d302e94-fbd4-436d-8c05-b6de6c1cd5ba.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\0d302e94-fbd4-436d-8c05-b6de6c1cd5ba.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/0d302e94-fbd4-436d-8c05-b6de6c1cd5ba.jpeg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\image\\0d302e94-fbd4-436d-8c05-b6de6c1cd5ba.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\0e3a3db1-480d-44f9-9cca-eff8521117fd.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\0e3a3db1-480d-44f9-9cca-eff8521117fd.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/0e3a3db1-480d-44f9-9cca-eff8521117fd.jpeg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\image\\0e3a3db1-480d-44f9-9cca-eff8521117fd.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\0e9a12ef-74d9-4143-b81a-1cef2b90214f.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\0e9a12ef-74d9-4143-b81a-1cef2b90214f.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/0e9a12ef-74d9-4143-b81a-1cef2b90214f.jpeg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\image\\0e9a12ef-74d9-4143-b81a-1cef2b90214f.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\12e0f3b6-8a2b-475d-814e-fbe3874a1df8.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\12e0f3b6-8a2b-475d-814e-fbe3874a1df8.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/12e0f3b6-8a2b-475d-814e-fbe3874a1df8.jpeg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\image\\12e0f3b6-8a2b-475d-814e-fbe3874a1df8.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\1438aaed-8ff2-4908-a4ab-38151bc312c4.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\1438aaed-8ff2-4908-a4ab-38151bc312c4.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/1438aaed-8ff2-4908-a4ab-38151bc312c4.jpeg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\image\\1438aaed-8ff2-4908-a4ab-38151bc312c4.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\1652a1d5-f3bc-44f6-a083-bb2703cbe6e6.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\1652a1d5-f3bc-44f6-a083-bb2703cbe6e6.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/1652a1d5-f3bc-44f6-a083-bb2703cbe6e6.jpeg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\image\\1652a1d5-f3bc-44f6-a083-bb2703cbe6e6.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\17a75942-27d7-4d42-afcc-7867d92030ed.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\17a75942-27d7-4d42-afcc-7867d92030ed.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/17a75942-27d7-4d42-afcc-7867d92030ed.jpeg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\image\\17a75942-27d7-4d42-afcc-7867d92030ed.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\18c7b797-071d-4b51-8df2-6785589d01b2.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\18c7b797-071d-4b51-8df2-6785589d01b2.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/18c7b797-071d-4b51-8df2-6785589d01b2.jpeg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\image\\18c7b797-071d-4b51-8df2-6785589d01b2.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\19b0dbd2-0206-4e6f-a255-9ac76c0a48ad.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\19b0dbd2-0206-4e6f-a255-9ac76c0a48ad.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/19b0dbd2-0206-4e6f-a255-9ac76c0a48ad.jpeg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\image\\19b0dbd2-0206-4e6f-a255-9ac76c0a48ad.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\1ea08db6-5523-4082-89f6-74d97868dd0f.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\1ea08db6-5523-4082-89f6-74d97868dd0f.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/1ea08db6-5523-4082-89f6-74d97868dd0f.jpeg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\image\\1ea08db6-5523-4082-89f6-74d97868dd0f.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2172a7b4-c92b-4c7d-8abf-4b7d9db42f10.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\2172a7b4-c92b-4c7d-8abf-4b7d9db42f10.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/2172a7b4-c92b-4c7d-8abf-4b7d9db42f10.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\image\\2172a7b4-c92b-4c7d-8abf-4b7d9db42f10.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\219e0671-81e4-42b0-9b1e-08016e9da4cd.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\219e0671-81e4-42b0-9b1e-08016e9da4cd.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/219e0671-81e4-42b0-9b1e-08016e9da4cd.jpeg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\image\\219e0671-81e4-42b0-9b1e-08016e9da4cd.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2296c3e7-11ca-4bb2-9e83-84167ba4db86.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\2296c3e7-11ca-4bb2-9e83-84167ba4db86.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/2296c3e7-11ca-4bb2-9e83-84167ba4db86.jpeg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\image\\2296c3e7-11ca-4bb2-9e83-84167ba4db86.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\23c5a877-24ca-48b4-86e2-9c5dc37fbf8b.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\23c5a877-24ca-48b4-86e2-9c5dc37fbf8b.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/23c5a877-24ca-48b4-86e2-9c5dc37fbf8b.jpeg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\image\\23c5a877-24ca-48b4-86e2-9c5dc37fbf8b.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\26b2d47c-32a8-4cc8-903a-4a636aec77cf.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\26b2d47c-32a8-4cc8-903a-4a636aec77cf.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/26b2d47c-32a8-4cc8-903a-4a636aec77cf.jpeg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\image\\26b2d47c-32a8-4cc8-903a-4a636aec77cf.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2779a92d-96d9-4842-aa8a-b3e75bddf55c.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\2779a92d-96d9-4842-aa8a-b3e75bddf55c.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/2779a92d-96d9-4842-aa8a-b3e75bddf55c.jpeg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\image\\2779a92d-96d9-4842-aa8a-b3e75bddf55c.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\28c4f606-3ffa-45a9-90a3-7dc976809a7f.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\28c4f606-3ffa-45a9-90a3-7dc976809a7f.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/28c4f606-3ffa-45a9-90a3-7dc976809a7f.jpeg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\image\\28c4f606-3ffa-45a9-90a3-7dc976809a7f.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\296c8ec1-6825-4679-a92c-1de76c64d2c6.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\296c8ec1-6825-4679-a92c-1de76c64d2c6.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/296c8ec1-6825-4679-a92c-1de76c64d2c6.jpeg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\image\\296c8ec1-6825-4679-a92c-1de76c64d2c6.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2c03a450-7d05-4adb-8db2-7eff705f2649.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\2c03a450-7d05-4adb-8db2-7eff705f2649.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/2c03a450-7d05-4adb-8db2-7eff705f2649.jpeg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\image\\2c03a450-7d05-4adb-8db2-7eff705f2649.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\2dcc99fc-c6f6-449e-9836-b1215fc9d659.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\2dcc99fc-c6f6-449e-9836-b1215fc9d659.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/2dcc99fc-c6f6-449e-9836-b1215fc9d659.jpeg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\image\\2dcc99fc-c6f6-449e-9836-b1215fc9d659.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\301a7b1e-1fda-4d75-9b4e-98ae8437cc32.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\301a7b1e-1fda-4d75-9b4e-98ae8437cc32.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/301a7b1e-1fda-4d75-9b4e-98ae8437cc32.jpeg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\image\\301a7b1e-1fda-4d75-9b4e-98ae8437cc32.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\3178cbbf-ce52-402c-9444-8bff3a0c15a8.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\3178cbbf-ce52-402c-9444-8bff3a0c15a8.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/3178cbbf-ce52-402c-9444-8bff3a0c15a8.jpeg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\image\\3178cbbf-ce52-402c-9444-8bff3a0c15a8.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\35c8f309-0d12-4eab-8ced-7a1d6b698cb1.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\35c8f309-0d12-4eab-8ced-7a1d6b698cb1.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/35c8f309-0d12-4eab-8ced-7a1d6b698cb1.jpeg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\image\\35c8f309-0d12-4eab-8ced-7a1d6b698cb1.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\433d1869-7cee-4f90-8ac2-529073f45cdd.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\433d1869-7cee-4f90-8ac2-529073f45cdd.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/433d1869-7cee-4f90-8ac2-529073f45cdd.jpeg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\image\\433d1869-7cee-4f90-8ac2-529073f45cdd.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\44f6d3a5-3cf5-44b4-8208-7b2bd76269a5.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\44f6d3a5-3cf5-44b4-8208-7b2bd76269a5.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/44f6d3a5-3cf5-44b4-8208-7b2bd76269a5.jpeg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\image\\44f6d3a5-3cf5-44b4-8208-7b2bd76269a5.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4575ac7c-d662-4652-ab29-96a37f24060c.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\4575ac7c-d662-4652-ab29-96a37f24060c.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/4575ac7c-d662-4652-ab29-96a37f24060c.jpeg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\image\\4575ac7c-d662-4652-ab29-96a37f24060c.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\45c70123-ea27-4d66-8633-24cc341ad891.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\45c70123-ea27-4d66-8633-24cc341ad891.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/45c70123-ea27-4d66-8633-24cc341ad891.jpeg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\image\\45c70123-ea27-4d66-8633-24cc341ad891.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\48f8a42c-632b-4e6c-9a09-5fa9e3267a14.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\48f8a42c-632b-4e6c-9a09-5fa9e3267a14.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/48f8a42c-632b-4e6c-9a09-5fa9e3267a14.jpeg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\image\\48f8a42c-632b-4e6c-9a09-5fa9e3267a14.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4ad12e3d-8650-43c2-9c5c-3a0ac1d35ee8.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\4ad12e3d-8650-43c2-9c5c-3a0ac1d35ee8.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/4ad12e3d-8650-43c2-9c5c-3a0ac1d35ee8.jpeg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\image\\4ad12e3d-8650-43c2-9c5c-3a0ac1d35ee8.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4bf5b4b4-4181-4da7-aa26-9834c949d683.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\4bf5b4b4-4181-4da7-aa26-9834c949d683.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/4bf5b4b4-4181-4da7-aa26-9834c949d683.jpeg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\image\\4bf5b4b4-4181-4da7-aa26-9834c949d683.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4bf728d0-1071-4e78-973f-8db2a4659de2.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\4bf728d0-1071-4e78-973f-8db2a4659de2.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/4bf728d0-1071-4e78-973f-8db2a4659de2.jpeg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\image\\4bf728d0-1071-4e78-973f-8db2a4659de2.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\4cef2fea-8289-40d2-88aa-f45726eb7d80.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\4cef2fea-8289-40d2-88aa-f45726eb7d80.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/4cef2fea-8289-40d2-88aa-f45726eb7d80.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\image\\4cef2fea-8289-40d2-88aa-f45726eb7d80.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\53607cd7-18cc-4561-9404-4544d8fb4af6.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\53607cd7-18cc-4561-9404-4544d8fb4af6.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/53607cd7-18cc-4561-9404-4544d8fb4af6.jpeg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\image\\53607cd7-18cc-4561-9404-4544d8fb4af6.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\5eb4c69f-465e-4713-bf86-25a57dff8f62.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\5eb4c69f-465e-4713-bf86-25a57dff8f62.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/5eb4c69f-465e-4713-bf86-25a57dff8f62.jpeg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\image\\5eb4c69f-465e-4713-bf86-25a57dff8f62.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\60939589-b2a8-484a-b2a8-7d6602edcad0.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\60939589-b2a8-484a-b2a8-7d6602edcad0.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/60939589-b2a8-484a-b2a8-7d6602edcad0.jpeg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\image\\60939589-b2a8-484a-b2a8-7d6602edcad0.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\61375ea2-f81f-4a45-94bd-3900f1327d33.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\61375ea2-f81f-4a45-94bd-3900f1327d33.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/61375ea2-f81f-4a45-94bd-3900f1327d33.jpeg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\image\\61375ea2-f81f-4a45-94bd-3900f1327d33.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\61455908-9b0e-4b11-8a27-9c95c31ea6e3.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\61455908-9b0e-4b11-8a27-9c95c31ea6e3.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/61455908-9b0e-4b11-8a27-9c95c31ea6e3.jpeg",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\image\\61455908-9b0e-4b11-8a27-9c95c31ea6e3.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\6365dd03-19e2-495e-92b2-be9b65073790.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\6365dd03-19e2-495e-92b2-be9b65073790.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/6365dd03-19e2-495e-92b2-be9b65073790.jpeg",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\image\\6365dd03-19e2-495e-92b2-be9b65073790.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\683e4c77-57f7-4e60-b0c8-c92a7a05ae60.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\683e4c77-57f7-4e60-b0c8-c92a7a05ae60.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/683e4c77-57f7-4e60-b0c8-c92a7a05ae60.jpeg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\image\\683e4c77-57f7-4e60-b0c8-c92a7a05ae60.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\68806733-b2e7-4417-a38e-b4a9d755dd1d.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\68806733-b2e7-4417-a38e-b4a9d755dd1d.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/68806733-b2e7-4417-a38e-b4a9d755dd1d.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\image\\68806733-b2e7-4417-a38e-b4a9d755dd1d.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\6a2f8e4f-207a-43be-881f-4177ddf0cd81.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\6a2f8e4f-207a-43be-881f-4177ddf0cd81.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/6a2f8e4f-207a-43be-881f-4177ddf0cd81.jpeg",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\image\\6a2f8e4f-207a-43be-881f-4177ddf0cd81.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\6dae9c25-9153-4572-8a76-7486e9001b5e.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\6dae9c25-9153-4572-8a76-7486e9001b5e.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/6dae9c25-9153-4572-8a76-7486e9001b5e.jpeg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\image\\6dae9c25-9153-4572-8a76-7486e9001b5e.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\70427e7d-99d6-4926-ab6f-ef742c3eaea8.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\70427e7d-99d6-4926-ab6f-ef742c3eaea8.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/70427e7d-99d6-4926-ab6f-ef742c3eaea8.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\image\\70427e7d-99d6-4926-ab6f-ef742c3eaea8.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\75e8357d-04d0-4dd8-b2ff-081ccdf42c80.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\75e8357d-04d0-4dd8-b2ff-081ccdf42c80.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/75e8357d-04d0-4dd8-b2ff-081ccdf42c80.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\image\\75e8357d-04d0-4dd8-b2ff-081ccdf42c80.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\77b1033b-efdd-4454-8b1f-73a6a10b7818.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\77b1033b-efdd-4454-8b1f-73a6a10b7818.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/77b1033b-efdd-4454-8b1f-73a6a10b7818.jpeg",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\image\\77b1033b-efdd-4454-8b1f-73a6a10b7818.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\7a7d2ff3-182a-45ce-a06e-7db3d55fc33a.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\7a7d2ff3-182a-45ce-a06e-7db3d55fc33a.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/7a7d2ff3-182a-45ce-a06e-7db3d55fc33a.jpeg",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\image\\7a7d2ff3-182a-45ce-a06e-7db3d55fc33a.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\7fbc30ed-f3ce-4fce-85f8-1511527737db.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\7fbc30ed-f3ce-4fce-85f8-1511527737db.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/7fbc30ed-f3ce-4fce-85f8-1511527737db.jpeg",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\image\\7fbc30ed-f3ce-4fce-85f8-1511527737db.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8486bba1-9861-4802-a587-ba0d5da9dffb.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\8486bba1-9861-4802-a587-ba0d5da9dffb.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/8486bba1-9861-4802-a587-ba0d5da9dffb.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\image\\8486bba1-9861-4802-a587-ba0d5da9dffb.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\85aa9439-0949-471f-8c13-4c2ca5c0ac19.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\85aa9439-0949-471f-8c13-4c2ca5c0ac19.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/85aa9439-0949-471f-8c13-4c2ca5c0ac19.jpeg",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\image\\85aa9439-0949-471f-8c13-4c2ca5c0ac19.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8859d1f3-610d-4ca3-8804-505ce4be3757.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\8859d1f3-610d-4ca3-8804-505ce4be3757.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/8859d1f3-610d-4ca3-8804-505ce4be3757.jpeg",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\image\\8859d1f3-610d-4ca3-8804-505ce4be3757.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8c600ad5-4ccc-48d8-85bb-bc6ea20c8ff5.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\8c600ad5-4ccc-48d8-85bb-bc6ea20c8ff5.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/8c600ad5-4ccc-48d8-85bb-bc6ea20c8ff5.jpeg",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\image\\8c600ad5-4ccc-48d8-85bb-bc6ea20c8ff5.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8d345be1-fe9c-4e06-93f8-934e83c8d9ff.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\8d345be1-fe9c-4e06-93f8-934e83c8d9ff.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/8d345be1-fe9c-4e06-93f8-934e83c8d9ff.jpeg",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\image\\8d345be1-fe9c-4e06-93f8-934e83c8d9ff.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8e94ba41-0bb8-4e08-a9a7-e9edb87e4958.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\8e94ba41-0bb8-4e08-a9a7-e9edb87e4958.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/8e94ba41-0bb8-4e08-a9a7-e9edb87e4958.jpeg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\image\\8e94ba41-0bb8-4e08-a9a7-e9edb87e4958.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\92302598-09f6-4861-8b1e-031b087c42b8.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\92302598-09f6-4861-8b1e-031b087c42b8.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/92302598-09f6-4861-8b1e-031b087c42b8.jpeg",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\image\\92302598-09f6-4861-8b1e-031b087c42b8.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\96fdefcc-8336-4d53-9e70-b4491043d4ee.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\96fdefcc-8336-4d53-9e70-b4491043d4ee.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/96fdefcc-8336-4d53-9e70-b4491043d4ee.jpeg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\image\\96fdefcc-8336-4d53-9e70-b4491043d4ee.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\970c6d67-01ce-4952-9f52-f3178400f4be.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\970c6d67-01ce-4952-9f52-f3178400f4be.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/970c6d67-01ce-4952-9f52-f3178400f4be.jpeg",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\image\\970c6d67-01ce-4952-9f52-f3178400f4be.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\9a6ee8bb-4d00-4300-a9d7-fe4e91999f01.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\9a6ee8bb-4d00-4300-a9d7-fe4e91999f01.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/9a6ee8bb-4d00-4300-a9d7-fe4e91999f01.jpeg",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\image\\9a6ee8bb-4d00-4300-a9d7-fe4e91999f01.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a1088517-864d-4bb2-8b16-a62f004d5f2c.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\a1088517-864d-4bb2-8b16-a62f004d5f2c.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/a1088517-864d-4bb2-8b16-a62f004d5f2c.jpeg",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\image\\a1088517-864d-4bb2-8b16-a62f004d5f2c.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a2ae1ec7-30b6-4b63-9468-c89dbc03c239.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\a2ae1ec7-30b6-4b63-9468-c89dbc03c239.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/a2ae1ec7-30b6-4b63-9468-c89dbc03c239.jpeg",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\image\\a2ae1ec7-30b6-4b63-9468-c89dbc03c239.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a326b0a9-7a7e-43cf-8d0a-05c5b2d85de8.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\a326b0a9-7a7e-43cf-8d0a-05c5b2d85de8.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/a326b0a9-7a7e-43cf-8d0a-05c5b2d85de8.jpeg",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\image\\a326b0a9-7a7e-43cf-8d0a-05c5b2d85de8.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a3cfe249-3552-416b-b30b-48abc13a711d.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\a3cfe249-3552-416b-b30b-48abc13a711d.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/a3cfe249-3552-416b-b30b-48abc13a711d.jpeg",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\image\\a3cfe249-3552-416b-b30b-48abc13a711d.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a5fa26cd-c0c8-47c9-80a7-bfa7a81e35b8.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\a5fa26cd-c0c8-47c9-80a7-bfa7a81e35b8.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/a5fa26cd-c0c8-47c9-80a7-bfa7a81e35b8.jpeg",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\image\\a5fa26cd-c0c8-47c9-80a7-bfa7a81e35b8.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\a7f1c940-71f6-4146-ab90-c38752d159dd.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\a7f1c940-71f6-4146-ab90-c38752d159dd.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/a7f1c940-71f6-4146-ab90-c38752d159dd.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\image\\a7f1c940-71f6-4146-ab90-c38752d159dd.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\af102a9c-9f4e-4bae-925c-42f24d84774a.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\af102a9c-9f4e-4bae-925c-42f24d84774a.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/af102a9c-9f4e-4bae-925c-42f24d84774a.jpeg",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\image\\af102a9c-9f4e-4bae-925c-42f24d84774a.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\af6635e6-92e2-4d7d-b983-2f7e60d05f82.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\af6635e6-92e2-4d7d-b983-2f7e60d05f82.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/af6635e6-92e2-4d7d-b983-2f7e60d05f82.jpeg",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\image\\af6635e6-92e2-4d7d-b983-2f7e60d05f82.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\aff8953e-1998-43dc-a2d2-7f2d07c14b3c.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\aff8953e-1998-43dc-a2d2-7f2d07c14b3c.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/aff8953e-1998-43dc-a2d2-7f2d07c14b3c.jpeg",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\image\\aff8953e-1998-43dc-a2d2-7f2d07c14b3c.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b65030fa-f6e5-44f1-be7b-6c1294cfb41c.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\b65030fa-f6e5-44f1-be7b-6c1294cfb41c.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/b65030fa-f6e5-44f1-be7b-6c1294cfb41c.jpeg",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\image\\b65030fa-f6e5-44f1-be7b-6c1294cfb41c.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b70d80ec-e33f-42ad-af0b-d2b59f213d05.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\b70d80ec-e33f-42ad-af0b-d2b59f213d05.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/b70d80ec-e33f-42ad-af0b-d2b59f213d05.jpeg",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\image\\b70d80ec-e33f-42ad-af0b-d2b59f213d05.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b9dd9381-a974-418d-a9a2-c40aaf4d4c99.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\b9dd9381-a974-418d-a9a2-c40aaf4d4c99.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/b9dd9381-a974-418d-a9a2-c40aaf4d4c99.jpeg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\image\\b9dd9381-a974-418d-a9a2-c40aaf4d4c99.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b9f8c98c-53ef-499a-a5f6-840e50d66177.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\b9f8c98c-53ef-499a-a5f6-840e50d66177.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/b9f8c98c-53ef-499a-a5f6-840e50d66177.jpeg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\image\\b9f8c98c-53ef-499a-a5f6-840e50d66177.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\bab4a5a1-e30f-41b9-814e-fa3df87c4bfe.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\bab4a5a1-e30f-41b9-814e-fa3df87c4bfe.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/bab4a5a1-e30f-41b9-814e-fa3df87c4bfe.png",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\image\\bab4a5a1-e30f-41b9-814e-fa3df87c4bfe.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\bcd3a9cd-dbb8-421d-bfd9-beff01337415.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\bcd3a9cd-dbb8-421d-bfd9-beff01337415.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/bcd3a9cd-dbb8-421d-bfd9-beff01337415.jpeg",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\image\\bcd3a9cd-dbb8-421d-bfd9-beff01337415.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c07405a6-a160-4847-b7d5-3447555867d9.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\c07405a6-a160-4847-b7d5-3447555867d9.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/c07405a6-a160-4847-b7d5-3447555867d9.jpeg",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\image\\c07405a6-a160-4847-b7d5-3447555867d9.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c22dfe71-b544-4d8c-990f-2eee2d443bb3.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\c22dfe71-b544-4d8c-990f-2eee2d443bb3.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/c22dfe71-b544-4d8c-990f-2eee2d443bb3.jpeg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\image\\c22dfe71-b544-4d8c-990f-2eee2d443bb3.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c7691313-2252-44b7-b688-a8f0ab6c4772.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\c7691313-2252-44b7-b688-a8f0ab6c4772.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/c7691313-2252-44b7-b688-a8f0ab6c4772.jpeg",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\image\\c7691313-2252-44b7-b688-a8f0ab6c4772.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c7b7c660-e7a0-4cb5-8e67-9f87834f2d76.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\c7b7c660-e7a0-4cb5-8e67-9f87834f2d76.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/c7b7c660-e7a0-4cb5-8e67-9f87834f2d76.jpeg",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\image\\c7b7c660-e7a0-4cb5-8e67-9f87834f2d76.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\cc30d37b-3e33-4683-9e36-d80d374a0930.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\cc30d37b-3e33-4683-9e36-d80d374a0930.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/cc30d37b-3e33-4683-9e36-d80d374a0930.png",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\image\\cc30d37b-3e33-4683-9e36-d80d374a0930.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\d7b811f4-534a-4fe4-9763-82fd9af6083e.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\d7b811f4-534a-4fe4-9763-82fd9af6083e.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/d7b811f4-534a-4fe4-9763-82fd9af6083e.jpeg",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\image\\d7b811f4-534a-4fe4-9763-82fd9af6083e.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\d875e44d-663c-4dde-9cba-4d9b2309d4bf.png",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\d875e44d-663c-4dde-9cba-4d9b2309d4bf.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/d875e44d-663c-4dde-9cba-4d9b2309d4bf.png",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\image\\d875e44d-663c-4dde-9cba-4d9b2309d4bf.png"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\daf0ea99-c570-4941-b3a7-ab9097b89ceb.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\daf0ea99-c570-4941-b3a7-ab9097b89ceb.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/daf0ea99-c570-4941-b3a7-ab9097b89ceb.jpeg",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\image\\daf0ea99-c570-4941-b3a7-ab9097b89ceb.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\dd8d3c64-3a47-4674-98bf-86e77c76b035.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\dd8d3c64-3a47-4674-98bf-86e77c76b035.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/dd8d3c64-3a47-4674-98bf-86e77c76b035.jpeg",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\image\\dd8d3c64-3a47-4674-98bf-86e77c76b035.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\de640464-8993-4fef-9a10-29cca64e3f4c.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\de640464-8993-4fef-9a10-29cca64e3f4c.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/de640464-8993-4fef-9a10-29cca64e3f4c.jpeg",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\image\\de640464-8993-4fef-9a10-29cca64e3f4c.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e18dd42e-9dd5-4135-a1bf-0db6f8aa1787.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\e18dd42e-9dd5-4135-a1bf-0db6f8aa1787.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/e18dd42e-9dd5-4135-a1bf-0db6f8aa1787.jpeg",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\image\\e18dd42e-9dd5-4135-a1bf-0db6f8aa1787.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e4aa6e59-9303-4717-9a28-a38c24dfcece.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\e4aa6e59-9303-4717-9a28-a38c24dfcece.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/e4aa6e59-9303-4717-9a28-a38c24dfcece.jpeg",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\image\\e4aa6e59-9303-4717-9a28-a38c24dfcece.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e5f7028b-a873-4f23-b599-664a816db2b2.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\e5f7028b-a873-4f23-b599-664a816db2b2.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/e5f7028b-a873-4f23-b599-664a816db2b2.jpeg",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\image\\e5f7028b-a873-4f23-b599-664a816db2b2.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e8408e77-d08b-492d-98fe-d39084fedf56.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\e8408e77-d08b-492d-98fe-d39084fedf56.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/e8408e77-d08b-492d-98fe-d39084fedf56.jpeg",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\image\\e8408e77-d08b-492d-98fe-d39084fedf56.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\e9ec279e-d565-4272-a33f-e3a7cf915b85.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\e9ec279e-d565-4272-a33f-e3a7cf915b85.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/e9ec279e-d565-4272-a33f-e3a7cf915b85.jpeg",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\image\\e9ec279e-d565-4272-a33f-e3a7cf915b85.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f3fc7ac6-15b6-4cba-960c-d9c9d6076197.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\f3fc7ac6-15b6-4cba-960c-d9c9d6076197.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/f3fc7ac6-15b6-4cba-960c-d9c9d6076197.jpeg",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\image\\f3fc7ac6-15b6-4cba-960c-d9c9d6076197.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f68c42a9-ca76-47bb-91af-3f2c872c53f6.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\f68c42a9-ca76-47bb-91af-3f2c872c53f6.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/f68c42a9-ca76-47bb-91af-3f2c872c53f6.jpeg",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\image\\f68c42a9-ca76-47bb-91af-3f2c872c53f6.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f9b735bb-ff6d-41fe-b5d0-04a3f4567207.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\f9b735bb-ff6d-41fe-b5d0-04a3f4567207.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/f9b735bb-ff6d-41fe-b5d0-04a3f4567207.jpeg",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\image\\f9b735bb-ff6d-41fe-b5d0-04a3f4567207.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\fbd8e633-e24c-4be2-8d0e-bb09103b073d.jpeg",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\image\\fbd8e633-e24c-4be2-8d0e-bb09103b073d.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "image/fbd8e633-e24c-4be2-8d0e-bb09103b073d.jpeg",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\image\\fbd8e633-e24c-4be2-8d0e-bb09103b073d.jpeg"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\09f21b3c-5e1e-4069-aea3-b501b7aa549f.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\09f21b3c-5e1e-4069-aea3-b501b7aa549f.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/09f21b3c-5e1e-4069-aea3-b501b7aa549f.pdf",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\09f21b3c-5e1e-4069-aea3-b501b7aa549f.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\10463db5-fbfc-49ad-a92b-3051a4c6ab18.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\10463db5-fbfc-49ad-a92b-3051a4c6ab18.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/10463db5-fbfc-49ad-a92b-3051a4c6ab18.pdf",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\10463db5-fbfc-49ad-a92b-3051a4c6ab18.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\1ced5e6e-d54e-47fe-b418-c5b2e1f6a6a6.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\1ced5e6e-d54e-47fe-b418-c5b2e1f6a6a6.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/1ced5e6e-d54e-47fe-b418-c5b2e1f6a6a6.pdf",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\1ced5e6e-d54e-47fe-b418-c5b2e1f6a6a6.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\1f47a72e-c720-4bc7-b558-e1dd3c42a02b.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\1f47a72e-c720-4bc7-b558-e1dd3c42a02b.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/1f47a72e-c720-4bc7-b558-e1dd3c42a02b.pdf",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\1f47a72e-c720-4bc7-b558-e1dd3c42a02b.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\240ca5f6-26f8-4e20-98ca-59fc073d6909.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\240ca5f6-26f8-4e20-98ca-59fc073d6909.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/240ca5f6-26f8-4e20-98ca-59fc073d6909.pdf",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\240ca5f6-26f8-4e20-98ca-59fc073d6909.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\36d80645-cbd0-4b3a-8b5b-920a4a77adf7.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\36d80645-cbd0-4b3a-8b5b-920a4a77adf7.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/36d80645-cbd0-4b3a-8b5b-920a4a77adf7.pdf",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\36d80645-cbd0-4b3a-8b5b-920a4a77adf7.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\3cc597a9-26a9-4d0b-b6f1-b251a9c4d224.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\3cc597a9-26a9-4d0b-b6f1-b251a9c4d224.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/3cc597a9-26a9-4d0b-b6f1-b251a9c4d224.pdf",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\3cc597a9-26a9-4d0b-b6f1-b251a9c4d224.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\4072bcc9-c9ae-4149-805a-ee417a63d23e.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\4072bcc9-c9ae-4149-805a-ee417a63d23e.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/4072bcc9-c9ae-4149-805a-ee417a63d23e.pdf",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\4072bcc9-c9ae-4149-805a-ee417a63d23e.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\668467dc-1624-4a63-bfc3-1de21f452cd7.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\668467dc-1624-4a63-bfc3-1de21f452cd7.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/668467dc-1624-4a63-bfc3-1de21f452cd7.pdf",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\668467dc-1624-4a63-bfc3-1de21f452cd7.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\758dec9e-d81a-4035-8bef-42791812a09b.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\758dec9e-d81a-4035-8bef-42791812a09b.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/758dec9e-d81a-4035-8bef-42791812a09b.pdf",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\758dec9e-d81a-4035-8bef-42791812a09b.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\7d99f356-879d-4c5d-95c9-b4ddb546c6bf.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\7d99f356-879d-4c5d-95c9-b4ddb546c6bf.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/7d99f356-879d-4c5d-95c9-b4ddb546c6bf.pdf",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\7d99f356-879d-4c5d-95c9-b4ddb546c6bf.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\8eb40cb2-3c54-46b8-9e31-f629ead07a72.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\8eb40cb2-3c54-46b8-9e31-f629ead07a72.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/8eb40cb2-3c54-46b8-9e31-f629ead07a72.pdf",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\8eb40cb2-3c54-46b8-9e31-f629ead07a72.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\955bc7d0-516d-45bc-b2e8-3e8099afb0c1.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\955bc7d0-516d-45bc-b2e8-3e8099afb0c1.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/955bc7d0-516d-45bc-b2e8-3e8099afb0c1.pdf",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\955bc7d0-516d-45bc-b2e8-3e8099afb0c1.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\a4734af9-02ba-4970-af10-0d7a50850089.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\a4734af9-02ba-4970-af10-0d7a50850089.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/a4734af9-02ba-4970-af10-0d7a50850089.pdf",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\a4734af9-02ba-4970-af10-0d7a50850089.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\a69c9023-38ef-4130-909d-9441271e2a8c.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\a69c9023-38ef-4130-909d-9441271e2a8c.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/a69c9023-38ef-4130-909d-9441271e2a8c.pdf",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\a69c9023-38ef-4130-909d-9441271e2a8c.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\b2eb0cbe-5251-4dc0-8444-424be5d3153b.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\b2eb0cbe-5251-4dc0-8444-424be5d3153b.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/b2eb0cbe-5251-4dc0-8444-424be5d3153b.pdf",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\b2eb0cbe-5251-4dc0-8444-424be5d3153b.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\c911916d-f158-4916-95f4-0d7f3d046983.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\c911916d-f158-4916-95f4-0d7f3d046983.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/c911916d-f158-4916-95f4-0d7f3d046983.pdf",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\c911916d-f158-4916-95f4-0d7f3d046983.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\e6ca6627-3ef0-4999-8a69-555003d2326e.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\e6ca6627-3ef0-4999-8a69-555003d2326e.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/e6ca6627-3ef0-4999-8a69-555003d2326e.pdf",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\e6ca6627-3ef0-4999-8a69-555003d2326e.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\f3bafef0-6c80-4d47-89fd-1a1286febedb.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\f3bafef0-6c80-4d47-89fd-1a1286febedb.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/f3bafef0-6c80-4d47-89fd-1a1286febedb.pdf",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\f3bafef0-6c80-4d47-89fd-1a1286febedb.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\fa59d2ff-cc0e-4ed1-9bd6-09c7b9b5f2f4.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\fa59d2ff-cc0e-4ed1-9bd6-09c7b9b5f2f4.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/fa59d2ff-cc0e-4ed1-9bd6-09c7b9b5f2f4.pdf",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\pdf\\fa59d2ff-cc0e-4ed1-9bd6-09c7b9b5f2f4.pdf"
     },
     {
-      "Identity": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\fbb23eef-8581-4978-99c0-0ca02544b48c.pdf",
+      "Identity": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\pdf\\fbb23eef-8581-4978-99c0-0ca02544b48c.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ECXProjects\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "ContentRoot": "D:\\PROJECTS\\Website\\ECXWebsiteBackend\\ECX.Website.API\\wwwroot\\",
       "BasePath": "_content/ECX.Website.API",
       "RelativePath": "pdf/fbb23eef-8581-4978-99c0-0ca02544b48c.pdf",
       "AssetKind": "All",
