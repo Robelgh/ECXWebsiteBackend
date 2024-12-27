@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 using ECX.Website.Application.DTOs.Common.Validators;
+using FluentValidation;
 
 namespace ECX.Website.Application.CQRS.FeedBack_.Handler.Command
 {
@@ -34,8 +35,8 @@ namespace ECX.Website.Application.CQRS.FeedBack_.Handler.Command
         {
             var response = new BaseCommonResponse();
             var validator = new FeedBackCreateDtoValidator();
-            var validationResult = await validator.ValidateAsync(request.FeedBackFormDto);
-            var FeedBackDto = _mapper.Map<FeedBackDto>(request.FeedBackFormDto);
+            var validationResult = await validator.ValidateAsync(request.FeedBackDto);
+            var FeedBackDto = _mapper.Map<FeedBackDto>(request.FeedBackDto);
             if (validationResult.IsValid == false)
             {
                 response.Success = false;
@@ -58,15 +59,26 @@ namespace ECX.Website.Application.CQRS.FeedBack_.Handler.Command
                         break;
                     }
                 }
+                
 
                 var data = _mapper.Map<FeedBack>(FeedBackDto);
+                data.IsActive = true;
 
-                var saveData = await _feedBackRepository.Add(data);
+                try
+                {
+                    var saveData = await _feedBackRepository.Add(data);
 
-                response.Data = _mapper.Map<FeedBackDto>(saveData);
-                response.Success = true;
-                response.Message = "Created Successfully";
-                response.Status = "200";
+                    response.Data = _mapper.Map<FeedBackDto>(saveData);
+                    response.Success = true;
+                    response.Message = "Created Successfully";
+                    response.Status = "200";
+                }
+                catch (Exception ex)
+                {
+
+                    throw;
+                }
+           
 
             }
             return response;

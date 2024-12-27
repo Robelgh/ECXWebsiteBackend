@@ -20,6 +20,7 @@ namespace ECX.Website.Application.Contracts.Persistence
         Task<ResponseAccount> ForgetPasswordAsync(string email);
 
         Task<ResponseAccount> ResetPasswordAsync(ResetPasswordDto model);
+        public Task<AuthenticationCommandResponse> AuthenticateUser(string userName, string password);
 
     }
 }

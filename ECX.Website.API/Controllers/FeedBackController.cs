@@ -52,9 +52,9 @@ namespace ECX.Website.API.Controllers
 
         // POST api/<FeedBackController>
         [HttpPost]
-        public async Task<ActionResult<BaseCommonResponse>> Post([FromForm] FeedBackFormDto data)
+        public async Task<ActionResult<BaseCommonResponse>> Post([FromForm] FeedBackDto data)
         {
-            var command = new CreateFeedBackCommand { FeedBackFormDto = data };
+            var command = new CreateFeedBackCommand { FeedBackDto = data };
             BaseCommonResponse response = await _mediator.Send(command);
             switch(response.Status){
                 case "200" : return Ok(response);
@@ -68,9 +68,9 @@ namespace ECX.Website.API.Controllers
 
         // PUT api/<FeedBackController>/5
         [HttpPut]
-        public async Task<ActionResult<BaseCommonResponse>> Put([FromForm] FeedBackFormDto data)
+        public async Task<ActionResult<BaseCommonResponse>> Put([FromForm] FeedBackAnswerFormDto data)
         {
-            var command = new UpdateFeedBackCommand { FeedBackFormDto = data};
+            var command = new UpdateFeedBackCommand { FeedBackAnswerFormDto = data};
             BaseCommonResponse response = await _mediator.Send(command);
             switch(response.Status){
                 case "200" : return Ok(response);

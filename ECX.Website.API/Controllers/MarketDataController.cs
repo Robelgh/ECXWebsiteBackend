@@ -33,8 +33,24 @@ namespace ECX.Website.API.Controllers
               return Ok(_marketdataRepository.GetScrollingData());
             }
 
-            // GET: api/<MarketDataEcxController>
-            [HttpGet("realtimedata")]
+            [HttpGet("commodityGrade")]
+            public IActionResult GetCommodityGrade()
+            {
+
+                return Ok(_marketdataRepository.GetcommodityGrade());
+            }
+
+            [HttpGet("commodity")]
+            public IActionResult GetCommodity()
+            {
+
+                return Ok(_marketdataRepository.GetCommodity());
+            }
+
+
+
+        // GET: api/<MarketDataEcxController>
+        [HttpGet("realtimedata")]
             public IActionResult GetRealtimeData()
             {
 
@@ -47,60 +63,44 @@ namespace ECX.Website.API.Controllers
             {
             return Ok(_marketdataRepository.GetCommodityMarketData(commodity));
         }
+
+        [HttpGet("pretradenoncoffee")]
+        public IActionResult GetPretradeMarketData()
+        {
+            return Ok(_marketdataRepository.GetPretradeNonCoffeeMarketData());
+        }
+
+        [HttpGet("pretradecoffee/{isLocal}")]
+        public IActionResult GetPretradeMarketData(string isLocal)
+        {
+            return Ok(_marketdataRepository.GetPretradeCoffeeMarketData(isLocal));
+        }
+
         [HttpGet("symbol/{symbol}")]
         public IActionResult GetSymbolMarketData(string symbol)
         {
             return Ok(_marketdataRepository.GetSmbolMarketData(symbol));
         }
 
-        //// POST api/<MarketDataEcx>
-        //[HttpPost]
-        //public async Task<ActionResult<BaseCommonResponse>> Post([FromForm] PageFormDto data)
-        //{
-        //    var command = new CreatePageCommand { PageFormDto = data };
-        //    BaseCommonResponse response = await _mediator.Send(command);
-        //    switch (response.Status)
-        //    {
-        //        case "200": return Ok(response);
-        //        case "400": return BadRequest(response);
-        //        case "404": return NotFound(response);
-        //        default: return response;
+        [HttpGet("psa/{psa}")]
+        public IActionResult GetPSAStatus(string psa)
+        {
+            return Ok(_marketdataRepository.GetPSAStatus(psa));
+        }
 
-        //    }
+        [HttpGet("wrh/{wrh}")]
+        public IActionResult GetWRHStatus(int wrh)
+        {
+            return Ok(_marketdataRepository.GetWRHStatus(wrh));
+        }
 
-        //}
+        [HttpGet("grn/{grn}")]
+        public IActionResult GetGRNStatus(string grn)
+        {
+            return Ok(_marketdataRepository.GetGRNStatus(grn));
+        }
 
-        //// PUT api/<MarketDataEcx>/5
-        //[HttpPut]
-        //public async Task<ActionResult<BaseCommonResponse>> Put([FromForm] PageFormDto data)
-        //{
-        //    var command = new UpdatePageCommand { PageFormDto = data };
-        //    BaseCommonResponse response = await _mediator.Send(command);
-        //    switch (response.Status)
-        //    {
-        //        case "200": return Ok(response);
-        //        case "400": return BadRequest(response);
-        //        case "404": return NotFound(response);
-        //        default: return response;
 
-        //    }
-        //}
-
-        //// DELETE api/<MarketDataEcx>/5
-        //[HttpDelete("{id}")]
-        //public async Task<ActionResult<BaseCommonResponse>> Delete(Guid id)
-        //{
-        //    var command = new DeletePageCommand { Id = id };
-        //    BaseCommonResponse response = await _mediator.Send(command);
-        //    switch (response.Status)
-        //    {
-        //        case "200": return Ok(response);
-        //        case "400": return BadRequest(response);
-        //        case "404": return NotFound(response);
-        //        default: return response;
-
-        //    }
-        //}
     }
 }
 

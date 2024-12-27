@@ -34,6 +34,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ECX.Website.Domain.Lookup;
 using ECX.Website.Application.DTOs.ParentLookup;
+using ECX.Website.Application.DTOs.SessionSchedule;
 
 namespace ECX.Website.Application.Profiles
 {
@@ -148,6 +149,10 @@ namespace ECX.Website.Application.Profiles
             CreateMap<AnnouncementDto,Announcement>().ReverseMap();
             
             CreateMap<AnnouncementFormDto, AnnouncementDto>().ReverseMap();
+
+            CreateMap<SessionScheduleDto,SessionSchedule>().ReverseMap();
+
+            CreateMap<FeedBackAnswerFormDto,FeedBackDto>().ReverseMap();
 
             //CreateMap<AccountDto,Account>().ReverseMap();
 

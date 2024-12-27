@@ -7,20 +7,18 @@ using System.Threading.Tasks;
 
 namespace ECX.Website.Application.DTOs.FeedBack.Validators
 {
-    public class FeedBackCreateDtoValidator : AbstractValidator<FeedBackFormDto>
+    public class FeedBackCreateDtoValidator : AbstractValidator<FeedBackDto>
     {
         public FeedBackCreateDtoValidator()
         {
 
-            RuleFor(p => p.LangId)
+            RuleFor(p => p.Topic)
                 .NotEmpty().WithMessage("{PropertyName} is requiered.")
                 .NotNull();
-            RuleFor(p => p.Subject)
+            RuleFor(p => p.Description)
                .NotEmpty().WithMessage("{PropertyName} is requiered.")
                .NotNull();
-            RuleFor(p => p.Comment)
-                .NotEmpty().WithMessage("{PropertyName} is requiered.")
-                .NotNull();
+            
         }
     }
 }

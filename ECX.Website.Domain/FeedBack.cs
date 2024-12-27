@@ -8,9 +8,15 @@ namespace ECX.Website.Domain
     public class FeedBack : BaseDomainEntity
     {
 
-        public Guid LangId { get; set; }
-        public string Subject { get; set; }
-        public string Comment { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Topic { get; set; }
+        public string Description { get; set; }
+        public string? Answer { get; set; }
+        public string? AnsweredBy { get; set; }
+        public bool requestSeen { get; set; }
+        public bool answerSeen { get; set; }
 
     }
 }

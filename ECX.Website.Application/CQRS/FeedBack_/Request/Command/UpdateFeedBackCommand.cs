@@ -11,7 +11,7 @@ namespace ECX.Website.Application.CQRS.FeedBack_.Request.Command
 {
     public class UpdateFeedBackCommand :IRequest<BaseCommonResponse>
     {
-        public FeedBackFormDto FeedBackFormDto { get; set; }
+        public FeedBackAnswerFormDto FeedBackAnswerFormDto { get; set; }
 
     }
 }

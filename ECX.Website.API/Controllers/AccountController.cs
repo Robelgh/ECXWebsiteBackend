@@ -88,6 +88,25 @@ namespace ECX.Website.API.Controllers
         }
 
 
+        [HttpPost]
+
+        [Route("ADlogin")]
+
+        public async Task<ActionResult<AuthenticationCommandResponse>> adLogin([FromForm] ADloginDto data)
+        {
+            var command = new ADLoginAccountCommand { ADloginDto = data };
+            AuthenticationCommandResponse response = await _mediator.Send(command);
+            switch (response.Status)
+            {
+                case "200": return Ok(response);
+                case "400": return BadRequest(response);
+                case "404": return NotFound(response);
+                default: return response;
+
+            }
+        }
+
+
 
         //public AccountController(IMediator mediator)
         //{

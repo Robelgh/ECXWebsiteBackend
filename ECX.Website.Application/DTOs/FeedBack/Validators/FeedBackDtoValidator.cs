@@ -11,10 +11,10 @@ namespace ECX.Website.Application.DTOs.FeedBack.Validators
     {
         public FeedBackDtoValidator()
         {
-            RuleFor(p=>p.Subject)
-                .NotEmpty().WithMessage("{PropertyName} is requiered.")
-                .NotNull();
-            RuleFor(p => p.Comment)
+            RuleFor(p => p.Topic)
+                    .NotEmpty().WithMessage("{PropertyName} is requiered.")
+                    .NotNull();
+            RuleFor(p => p.Description)
                .NotEmpty().WithMessage("{PropertyName} is requiered.")
                .NotNull();
         }

@@ -16,8 +16,8 @@ namespace ECX.Website.Domain.Common
 
         public DateTime CreatedDate { get; set; }
 
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
 
-        public string UpdatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
     }
 }

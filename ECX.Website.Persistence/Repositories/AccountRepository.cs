@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.DirectoryServices;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Policy;
@@ -23,6 +24,11 @@ namespace ECX.Website.Persistence.Repositories
         private UserManager<IdentityUser> _userManger;
         private IConfiguration _configuration;
         private IEmailSender _mailService;
+
+        static Account user;
+        BaseCommonResponse response;
+        AuthenticationCommandResponse response2;
+
 
 
 
@@ -237,7 +243,131 @@ namespace ECX.Website.Persistence.Repositories
             };
         }
 
+        public async Task<AuthenticationCommandResponse> AuthenticateUser(string userName, string password)
+        {
+            response2 = new AuthenticationCommandResponse();
+            if (AutenticateToAD(_configuration["DirPath"], _configuration["domain"], userName, password, _configuration["ACDUser"], _configuration["ACDPass"]))
+            {
+                response2.Success = true;
+                response2.Token = CreateToken();
+                response2.UserId = user.Id;
+                response2.UserName = user.UserName;
+       
 
+                return response2;
+            }
+            else
+            {
+                response2.Success = false;
+                response2.Message = "Incorrect User Name or Password";
+                return response2;
+            }
+
+        }
+
+        bool AutenticateToAD(string dirPath, string _domain, string userName, string pwd, string _adAdminUser, string _adAdminPass)
+        {
+            // GetByOrganizationalUnit("IT");
+            string domain = _domain;
+            string LDAP_Path = dirPath;
+            string adAdminUser = _adAdminUser;
+            string adAdminPass = _adAdminPass;
+
+            if (string.IsNullOrEmpty(domain) || string.IsNullOrEmpty(LDAP_Path))
+                return false;
+            string domainAndUsername = domain + @"\" + userName;
+
+            try
+            {
+                #region Authenticate using Directory Search
+
+                using (System.DirectoryServices.DirectoryEntry entry = new(LDAP_Path, userName, pwd, AuthenticationTypes.Secure | AuthenticationTypes.Sealing | AuthenticationTypes.Signing))
+                {
+
+                    object obj = entry.NativeObject;
+                    DirectorySearcher search = new DirectorySearcher(entry);
+
+                    search.Filter = "(sAMAccountName=" + userName + ")";
+                    search.PropertiesToLoad.Add("CN");
+                    search.PropertiesToLoad.Add("distinguishedName");
+                    SearchResultCollection results = search.FindAll();
+                    if (results == null || results.Count == 0)
+                    {
+                        return false;
+                    }
+                    if (results.Count > 1)
+                    {
+                        results.Dispose();
+                        return false;
+                    }
+                    SearchResult result = results[0];
+
+                    if (result != null)
+                    {
+                        string distinguishedName = result.Properties["distinguishedName"][0].ToString();
+
+                        System.DirectoryServices.DirectoryEntry userADEntry = result.GetDirectoryEntry();
+                        user = new();
+                        user.Id = userADEntry.Guid;
+                        user.UserName = userADEntry.Username;
+                       
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                    entry.Close();
+                    return true;
+                }
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        string CreateToken()
+        {
+
+            var key = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Key"]));
+            var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            try
+            {
+                var token = new JwtSecurityToken(
+            _configuration["Jwt:Issuer"],
+            _configuration["Jwt:Audience"],
+            expires: DateTime.UtcNow.AddMinutes(1),
+            signingCredentials: signIn);
+
+                return new JwtSecurityTokenHandler().WriteToken(token);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+
+        }
+
+        static string GetOrganizationalUnit(string distinguishedName)
+        {
+            string[] parts = distinguishedName.Split(',');
+
+            foreach (string part in parts)
+            {
+                if (part.StartsWith("OU="))
+                {
+                    return part.Substring(3);
+                }
+            }
+
+            return "No OU found";
+
+        }
+
+  
 
 
     }

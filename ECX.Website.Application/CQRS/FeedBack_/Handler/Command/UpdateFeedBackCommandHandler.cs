@@ -25,37 +25,50 @@ namespace ECX.Website.Application.CQRS.FeedBack_.Handler.Command
         {
             var response = new BaseCommonResponse();
             var validator = new FeedBackUpdateDtoValidator();
-            var validationResult = await validator.ValidateAsync(request.FeedBackFormDto);
-            var FeedBackDto = _mapper.Map<FeedBackDto>(request.FeedBackFormDto);
-            var flag = await _feedBackRepository.Exists(request.FeedBackFormDto.Id);
+            // var validationResult = await validator.ValidateAsync(request.FeedBackAnswerFormDto);
+         
 
-            if (validationResult.IsValid == false)
+            var FeedBackDto = _mapper.Map<FeedBackDto>(request.FeedBackAnswerFormDto);
+            var flag = await _feedBackRepository.Exists(request.FeedBackAnswerFormDto.Id);
+
+            if (false)
             {
                 response.Success = false;
                 response.Message = "Update Failed";
-                response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
+               // response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
                 response.Status = "400";
             }
             else if (flag == false)
             {
 
                 response.Success = false;
-                response.Message = new NotFoundException(
-                            nameof(FeedBack), request.FeedBackFormDto.Id).Message.ToString();
+           //     response.Message = new NotFoundException(
+                   //         nameof(FeedBack), request.FeedBackFormDto.Id).Message.ToString();
                 response.Status = "404";
             }
             else 
             {
-                var updateData = await _feedBackRepository.GetById(request.FeedBackFormDto.Id);
-                
-                _mapper.Map(FeedBackDto, updateData);
+                var updateData = await _feedBackRepository.GetById(request.FeedBackAnswerFormDto.Id);
+                   updateData.Answer = request.FeedBackAnswerFormDto.Answer;
+                   updateData.AnsweredBy = request.FeedBackAnswerFormDto.AnsweredBy;
+                  // updateData.requestSeen = request.FeedBackAnswerFormDto.requestSeen;
+                  //updateData.answerSeen = request.FeedBackAnswerFormDto.answerSeen;
+               // _mapper.Map(FeedBackDto, updateData);
+                try
+                {
+                    var data = await _feedBackRepository.Update(updateData);
 
-                var data = await _feedBackRepository.Update(updateData);
+                    response.Data = _mapper.Map<FeedBackDto>(data);
+                    response.Success = true;
+                    response.Message = "Updated Successfull";
+                    response.Status = "200";
+                }
+                catch (Exception ex)
+                {
 
-                response.Data = _mapper.Map<FeedBackDto>(data);
-                response.Success = true;
-                response.Message = "Updated Successfull";
-                response.Status = "200";
+                    throw;
+                }
+         
             }
             return response;
         }

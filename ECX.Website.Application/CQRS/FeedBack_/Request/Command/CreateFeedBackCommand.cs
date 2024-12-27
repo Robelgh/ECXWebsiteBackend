@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.FeedBack_.Request.Command
 {
     public class CreateFeedBackCommand : IRequest<BaseCommonResponse>
     {
-        public FeedBackFormDto FeedBackFormDto { get; set; }
+        public FeedBackDto FeedBackDto { get; set; }
     }
 }
