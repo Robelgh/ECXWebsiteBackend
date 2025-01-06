@@ -61,10 +61,10 @@ namespace ECX.Website.Persistence
         public DbSet<Vacancy> Vacancys { get; set; }
         public DbSet<Video> Videos { get; set; }
         public DbSet<WareHouse> WareHouses { get; set; }
-
         public DbSet<ParentLookup> ParentLookups { get; set; }
-
-
+        public DbSet<SessionSchedule> SessionSchedules { get; set; }
+        public DbSet<ComplainFeedBack> complainFeedBacks { get; set; }
+        public DbSet<RequestInfo> requestInfos { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
            

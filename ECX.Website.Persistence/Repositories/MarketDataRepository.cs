@@ -1,21 +1,8 @@
 ﻿using ECX.Website.Application.Contracts.Persistence;
-using ECX.Website.Application.DTOs.Email;
-using ECX.Website.Application.DTOs.MarketData;
-using ECX.Website.Application.Response;
 using ECX.Website.Domain;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ECX.Website.Persistence.Repositories
 {
@@ -252,36 +239,181 @@ namespace ECX.Website.Persistence.Repositories
 
         }
 
-        
+        public DataTable GetcommodityGrade()
+        {
+            var state = "";
+            SqlConnection connection = new SqlConnection(_configuration["ConnectionStrings:ECXLookupConnectionString"]);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            var strErrMsg = "";
+            try
+            {
+                sqlDataAdapter.SelectCommand = new SqlCommand();
+                sqlDataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDataAdapter.SelectCommand.CommandText = "dbo." + "spGetSymbol";
+                sqlDataAdapter.SelectCommand.Connection = connection;
+                sqlDataAdapter.SelectCommand.CommandTimeout = 0;
 
-        //private async  static Task<List<ScrollingData>> ConvertDataTable<ScrollingData>(DataTable dt)
-        //{
+                connection.Open();
+                state = ConnectionState.Open.ToString();
+                sqlDataAdapter.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                strErrMsg = e.Message;
+            }
+            finally
+            {
+                if (connection.State.ToString() == System.Data.ConnectionState.Open.ToString())
+                    connection.Close();
 
-        //     List <ScrollingData> data = new List<ScrollingData>();
-        //    foreach (DataRow row in dt.Rows)
-        //    {
-        //        ScrollingData item = GetItem<ScrollingData>(row);
-        //        data.Add(item);
-        //    }
-        //    return  data;
-        //}
-        //private static T GetItem<T>(DataRow dr)
-        //{
-        //    Type temp = typeof(T);
-        //    T obj = Activator.CreateInstance<T>();
+                sqlDataAdapter.Dispose();
+            }
 
-        //    foreach (DataColumn column in dr.Table.Columns)
-        //    {
-        //        foreach (PropertyInfo pro in temp.GetProperties())
-        //        {
-        //            if (pro.Name == column.ColumnName)
-        //                pro.SetValue(obj, dr[column.ColumnName], null);
-        //            else
-        //                continue;
-        //        }
-        //    }
-        //    return obj;
-        //}
+            return dt;
+        }
+
+        public DataTable GetCommodity()
+        {
+            var state = "";
+            SqlConnection connection = new SqlConnection(_configuration["ConnectionStrings:ECXLookupConnectionString"]);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            var strErrMsg = "";
+            try
+            {
+                sqlDataAdapter.SelectCommand = new SqlCommand();
+                sqlDataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDataAdapter.SelectCommand.CommandText = "dbo." + "spGetCommodity";
+                sqlDataAdapter.SelectCommand.Connection = connection;
+                sqlDataAdapter.SelectCommand.CommandTimeout = 0;
+
+                connection.Open();
+                state = ConnectionState.Open.ToString();
+                sqlDataAdapter.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                strErrMsg = e.Message;
+            }
+            finally
+            {
+                if (connection.State.ToString() == System.Data.ConnectionState.Open.ToString())
+                    connection.Close();
+
+                sqlDataAdapter.Dispose();
+            }
+
+            return dt;
+        }
+
+        public DataTable GetPretradeNonCoffeeMarketData()
+        {
+            var state = "";
+            SqlConnection connection = new SqlConnection(_configuration["ConnectionStrings:ECXStaggingConnectionString"]);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            var strErrMsg = "";
+            try
+            {
+                sqlDataAdapter.SelectCommand = new SqlCommand();
+                sqlDataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDataAdapter.SelectCommand.CommandText = "dbo." + "spGetPreTradeInfoForNonCoffee";
+                sqlDataAdapter.SelectCommand.Connection = connection;
+                sqlDataAdapter.SelectCommand.CommandTimeout = 0;
+
+                connection.Open();
+                state = ConnectionState.Open.ToString();
+                sqlDataAdapter.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                strErrMsg = e.Message;
+            }
+            finally
+            {
+                if (connection.State.ToString() == System.Data.ConnectionState.Open.ToString())
+                    connection.Close();
+
+                sqlDataAdapter.Dispose();
+            }
+
+            return dt;
+        }
+
+        public DataTable GetPretradeCoffeeMarketData(string Num)
+        {
+            var state = "";
+            SqlConnection connection = new SqlConnection(_configuration["ConnectionStrings:ECXStaggingConnectionString"]);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            var strErrMsg = "";
+            try
+            {
+                sqlDataAdapter.SelectCommand = new SqlCommand();
+                SqlParameter sqlParameter = new SqlParameter("@IsLocal", SqlDbType.NVarChar);
+                sqlParameter.Value = Num;
+                sqlDataAdapter.SelectCommand.Parameters.Add(sqlParameter);
+                sqlDataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDataAdapter.SelectCommand.CommandText = "dbo." + "spGetPreTradeInfo";
+                sqlDataAdapter.SelectCommand.Connection = connection;
+                sqlDataAdapter.SelectCommand.CommandTimeout = 0;
+
+                connection.Open();
+                state = ConnectionState.Open.ToString();
+                sqlDataAdapter.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                strErrMsg = e.Message;
+            }
+            finally
+            {
+                if (connection.State.ToString() == System.Data.ConnectionState.Open.ToString())
+                    connection.Close();
+
+                sqlDataAdapter.Dispose();
+            }
+
+            return dt;
+        }
+
+        public DataTable GetCommodityTradeData(string commodity)
+        {
+            var state = "";
+            SqlConnection connection = new SqlConnection(_configuration["ConnectionStrings:ECXMarketDataConnectionString"]);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            var strErrMsg = "";
+            try
+            {
+                sqlDataAdapter.SelectCommand = new SqlCommand();
+                SqlParameter sqlParameter = new SqlParameter("@Commodity", SqlDbType.NVarChar);
+                sqlParameter.Value = commodity;
+                sqlDataAdapter.SelectCommand.Parameters.Add(sqlParameter);
+                sqlDataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDataAdapter.SelectCommand.CommandText = "dbo." + "RgetCommodityDailyTradeData";
+                sqlDataAdapter.SelectCommand.Connection = connection;
+                sqlDataAdapter.SelectCommand.CommandTimeout = 0;
+
+                connection.Open();
+                state = ConnectionState.Open.ToString();
+                sqlDataAdapter.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                strErrMsg = e.Message;
+            }
+            finally
+            {
+                if (connection.State.ToString() == System.Data.ConnectionState.Open.ToString())
+                    connection.Close();
+
+                sqlDataAdapter.Dispose();
+            }
+
+            return dt;
+        }
     }
 
 }

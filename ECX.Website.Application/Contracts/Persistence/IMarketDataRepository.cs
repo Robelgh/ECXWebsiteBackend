@@ -24,6 +24,15 @@ namespace ECX.Website.Application.Contracts.Persistence
 
         DataTable GetSmbolMarketData(string symbol);
 
+        DataTable GetcommodityGrade();
+
+        DataTable GetCommodity();
+        DataTable GetCommodityTradeData(string commodity);
+
+        DataTable GetPretradeNonCoffeeMarketData();
+        DataTable GetPretradeCoffeeMarketData(string Num);
+
+
 
 
         //Task<BaseCommonResponse> LoginUserAsync(loginDto model);

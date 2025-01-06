@@ -92,8 +92,8 @@ namespace ECX.Website.Persistence
             services.AddScoped<IVideoRepository, VideoRepository>();
             services.AddScoped<IWareHouseRepository, WareHouseRepository>();
             services.AddScoped<IParentLookupRepository, ParentLookupRepository>();
+            services.AddScoped<ISessionScheduleRepository, SessionScheduleRepository>();
 
-            
             return services;
         }
 
