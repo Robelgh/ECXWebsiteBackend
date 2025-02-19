@@ -22,11 +22,15 @@ namespace ECX.Website.Persistence
         {
             foreach (var entity in ChangeTracker.Entries<BaseDomainEntity>())
             {
-                entity.Entity.UpdatedDate = DateTime.Now;
+             
                 if(entity.State == EntityState.Added)
                 {
                     entity.Entity.CreatedDate = DateTime.Now;
                     entity.Entity.IsActive = true;
+                }
+                else if (entity.State == EntityState.Modified)
+                {
+                    entity.Entity.UpdatedDate = DateTime.Now;
                 }
                 
             }
@@ -65,6 +69,9 @@ namespace ECX.Website.Persistence
         public DbSet<SessionSchedule> SessionSchedules { get; set; }
         public DbSet<ComplainFeedBack> complainFeedBacks { get; set; }
         public DbSet<RequestInfo> requestInfos { get; set; }
+        public DbSet<TradeAnalysis> TradeAnalysises { get; set; }
+
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
            

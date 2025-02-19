@@ -14,6 +14,6 @@ namespace ECX.Website.Application.DTOs.ContractFile
         public string CommodityId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public IFormFile File{ get;set; }
+        public IFormFile? File{ get;set; }
     }
 }

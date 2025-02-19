@@ -13,7 +13,7 @@ namespace ECX.Website.Application.DTOs.ParentLookup
         public Guid LangId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public IFormFile ImgFile { get; set; }
+        public IFormFile? ImgFile { get; set; }
 
     }
 }

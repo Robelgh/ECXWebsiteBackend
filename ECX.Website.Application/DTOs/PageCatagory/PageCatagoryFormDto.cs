@@ -15,6 +15,6 @@ namespace ECX.Website.Application.DTOs.PageCatagory
         public Guid? ParentLookupId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public IFormFile ImgFile { get; set; }
+        public IFormFile? ImgFile { get; set; }
     }
 }

@@ -6,10 +6,13 @@ using ECX.Website.Application.Response;
 using ECX.Website.Domain;
 using ECX.Website.Persistence;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Security.Claims;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -69,13 +72,59 @@ namespace ECX.Website.API.Controllers
             //return StatusCode(201);
         }
 
+        //[HttpPost]
+
+        //[Route("login")]
+
+        //public async Task<ActionResult<ResponseAccount>> Login([FromForm] LoginADDto data)
+        //{
+        //    var command = new LoginAccountCommand { LoginADDto = data };
+        //    ResponseAccount response = await _mediator.Send(command);
+
+
+        //    switch (response.Status)
+        //    {
+        //        case "200": return Ok(response);
+        //        case "400": return BadRequest(response);
+        //        case "404": return NotFound(response);
+        //        default: return response;
+
+        //    }
+        //}
+
         [HttpPost]
 
         [Route("login")]
 
-        public async Task<ActionResult<ResponseAccount>> Login([FromForm] loginDto data)
+        public async Task<ActionResult<ResponseAccount>> Login([FromForm] LoginADDto data)
         {
-            var command = new LoginAccountCommand { loginDto = data };
+            // Assuming SSO URL is generated as part of the login request.
+            string SSOUrl = $"{HttpContext.Request.Path}?ssoaction=login"; // Build SSO URL dynamically
+
+            // Simulate or perform the SSO authentication here.
+            var response = await AuthenticateWithSSO(SSOUrl, data);
+
+            // Switch based on the response status
+            switch (response.Status)
+            {
+                case "200":
+                    return Ok(response); // Success response
+                case "400":
+                    return BadRequest(response); // Invalid request
+                case "404":
+                    return NotFound(response); // Not found, e.g., invalid credentials
+                default:
+                    return response; // Return response directly for other cases
+            }
+        }
+
+        [HttpPost]
+
+        [Route("AD/login")]
+
+        public async Task<ActionResult<ResponseAccount>> LoginAD([FromForm] LoginADDto data)
+        {
+            var command = new LoginAccountCommand { LoginADDto = data };
             ResponseAccount response = await _mediator.Send(command);
             switch (response.Status)
             {
@@ -87,6 +136,61 @@ namespace ECX.Website.API.Controllers
             }
         }
 
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return Ok(new { Message = "Logged out" });
+        }
+
+
+        [HttpPost]
+
+        [Route("MCR/AD/login")]
+
+        public async Task<ActionResult<ResponseAccount>> LoginMCRAD([FromForm] LoginADDto data)
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            var command = new MCRLoginAccountCommand { LoginADDto = data };
+            ResponseAccount response = await _mediator.Send(command);
+
+           
+
+
+            if (response.Status == "200")
+            {
+                
+                    string cookieValue = this.HttpContext.Request.Cookies[".AspNet.RaindropSharedTraderInterface.Cookie21"];
+                    response.Token = cookieValue;
+                    return Ok(response);
+              
+            }
+            else if (response.Status == "400")
+            {
+                return BadRequest(response);
+            }
+            else if (response.Status == "404")
+            {
+                return NotFound(response);
+            }
+            else
+            {
+                return response;
+            }
+
+        }
+        private async Task<ResponseAccount> AuthenticateWithSSO(string ssoUrl, LoginADDto data)
+        {
+            // In reality, you'd call out to your SSO provider here, using HttpClient or some other mechanism
+            // For now, we'll return a dummy response to simulate behavior
+            ResponseAccount response = new ResponseAccount
+            {
+                Status = "200", // Assume success for demo
+                Message = "Login successful"
+            };
+
+            return await Task.FromResult(response);
+        }
 
 
         //public AccountController(IMediator mediator)

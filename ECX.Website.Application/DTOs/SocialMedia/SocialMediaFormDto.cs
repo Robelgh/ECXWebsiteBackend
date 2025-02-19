@@ -14,6 +14,6 @@ namespace ECX.Website.Application.DTOs.SocialMedia
         public string Name { get; set; }
         public string Description { get; set; }
         public string Url { get; set; }
-        public IFormFile ImgFile{get;set;}
+        public IFormFile? ImgFile{get;set;}
     }
 }

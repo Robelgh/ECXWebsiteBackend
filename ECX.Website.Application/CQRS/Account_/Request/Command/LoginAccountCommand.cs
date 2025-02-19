@@ -11,6 +11,6 @@ namespace ECX.Website.Application.CQRS.Account_.Request.Command
 {
     public class LoginAccountCommand  : IRequest<ResponseAccount>
     {
-        public loginDto loginDto { get; set; }
+        public LoginADDto LoginADDto { get; set; }
 }
 }

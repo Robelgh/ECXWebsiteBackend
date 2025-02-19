@@ -14,6 +14,6 @@ namespace ECX.Website.Application.DTOs.Image
         public string Title { get; set; }
         public string Caption { get; set; }
         public bool   IsCarousel { get; set; }
-        public IFormFile ImgFile{get;set;}
+        public IFormFile? ImgFile{get;set;}
     }
 }

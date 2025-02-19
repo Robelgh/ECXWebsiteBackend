@@ -28,37 +28,24 @@ namespace ECX.Website.Persistence
 
             
 
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
-            {
-                options.Password.RequireDigit = true;
-                options.Password.RequireLowercase = true;
-                options.Password.RequiredLength = 5;
+            //services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            //{
+            //    options.Password.RequireDigit = true;
+            //    options.Password.RequireLowercase = true;
+            //    options.Password.RequiredLength = 5;
 
-                options.User.RequireUniqueEmail = true;
+            //    options.User.RequireUniqueEmail = true;
 
-            }).AddEntityFrameworkStores<ECXWebsiteAccountDbContext>()
-               .AddDefaultTokenProviders();
+            //}).AddEntityFrameworkStores<ECXWebsiteAccountDbContext>()
+            //   .AddDefaultTokenProviders();
 
-            services.AddAuthentication(auth =>
-            {
-                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-                .AddJwtBearer(options =>
-                {
-                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidAudience = configuration["AuthSettings:validAudience"],
-                        ValidIssuer = configuration["AuthSettings:validIssuer"],
-                        RequireExpirationTime = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["AuthSettings:securityKey"])),
-                        ValidateIssuerSigningKey = true,
-                    };
-                });
 
-           
+
+
+
+            //services.AddAntiforgery();
+            services.AddHttpContextAccessor();
+            services.AddScoped<IRealTimeDataRepository, RealTimeDataRepository>();
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ICommodityRepository, CommodityRepository>();
@@ -93,6 +80,8 @@ namespace ECX.Website.Persistence
             services.AddScoped<IWareHouseRepository, WareHouseRepository>();
             services.AddScoped<IParentLookupRepository, ParentLookupRepository>();
             services.AddScoped<ISessionScheduleRepository, SessionScheduleRepository>();
+            services.AddScoped<ITradeAnalysisRepository, TradeAnalysisRepository>();
+            services.AddScoped<IMCRRepository, MCRRepository>();
 
             return services;
         }

@@ -13,6 +13,6 @@ namespace ECX.Website.Application.DTOs.Video
         public Guid LangId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public IFormFile VideoFile {get;set;}
+        public IFormFile? VideoFile {get;set;}
     }
 }

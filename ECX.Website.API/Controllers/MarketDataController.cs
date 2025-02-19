@@ -4,8 +4,11 @@ using ECX.Website.Application.CQRS.Page_.Request.Command;
 using ECX.Website.Application.CQRS.Page_.Request.Queries;
 using ECX.Website.Application.DTOs.Page;
 using ECX.Website.Application.Response;
+using ECX.Website.Domain;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace ECX.Website.API.Controllers
 {
@@ -17,16 +20,32 @@ namespace ECX.Website.API.Controllers
         public class MarketDataController : ControllerBase
         {
             private readonly IMediator _mediator;
-        private readonly IMarketDataRepository _marketdataRepository;
+            private readonly IMarketDataRepository _marketdataRepository;
+            private readonly IRealTimeDataRepository _realTimeDataRepository;
 
-            public MarketDataController(IMediator mediator, IMarketDataRepository marketdataRepository)
+        public MarketDataController(IMediator mediator, IMarketDataRepository marketdataRepository, IRealTimeDataRepository realTimeDataRepository)
             {
                 _mediator = mediator;
-               _marketdataRepository = marketdataRepository;
+                _marketdataRepository = marketdataRepository;
+                _realTimeDataRepository = realTimeDataRepository;
             }
 
-            // GET: api/<MarketDataEcxController>
-            [HttpGet("scrollingdata")]
+            [HttpGet("send-data")]
+            public async Task<IActionResult> SendData()
+            {
+                // You can get data from the repository here, if needed
+                // For example, let's simulate data
+                string data = "New data from server!";
+
+                // Call the service to send data to clients via SignalR
+                await _realTimeDataRepository.SendRealTimeData(data);
+
+                return Ok("Data sent to clients!");
+            }
+
+       // [Authorize]
+        // GET: api/<MarketDataEcxController>
+        [HttpGet("scrollingdata")]
             public IActionResult Get()
             {
 
@@ -71,10 +90,10 @@ namespace ECX.Website.API.Controllers
             return Ok(_marketdataRepository.GetCommodityTradeData(comid));
         }
 
-        [HttpGet("pretradenoncoffee")]
-        public IActionResult GetPretradeMarketData()
+        [HttpGet("pretradenoncoffee/{commodity}")]
+        public IActionResult GetPretradenoncoffeeMarketData(string commodity)
         {
-            return Ok(_marketdataRepository.GetPretradeNonCoffeeMarketData());
+            return Ok(_marketdataRepository.GetPretradeNonCoffeeMarketData(commodity));
         }
 
         [HttpGet("pretradecoffee/{isLocal}")]
@@ -82,6 +101,12 @@ namespace ECX.Website.API.Controllers
         {
             return Ok(_marketdataRepository.GetPretradeCoffeeMarketData(isLocal));
         }
+        [HttpGet("nontraceablepretrade")]
+        public IActionResult getNonTraceableCoffeePretrade()
+        {
+            return Ok(_marketdataRepository.getNonTraceableCoffeePretrade());
+        }
+        
 
         [HttpGet("symbol/{symbol}")]
         public IActionResult GetSymbolMarketData(string symbol)

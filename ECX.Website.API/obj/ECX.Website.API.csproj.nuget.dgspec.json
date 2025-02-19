@@ -57,9 +57,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetOpenAuth.OAuth.Core": {
+              "target": "Package",
+              "version": "[4.3.4.13329, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Antiforgery": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -89,6 +97,10 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
+            "Microsoft.Extensions.Caching.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -100,6 +112,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "miniOrange.SAML.SSO": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             }
           },
           "imports": [
@@ -412,6 +428,10 @@
               "target": "Package",
               "version": "[6.0.26, )"
             },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
@@ -451,6 +471,14 @@
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Security.Claims": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

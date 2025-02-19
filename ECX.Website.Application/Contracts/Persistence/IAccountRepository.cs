@@ -11,15 +11,19 @@ namespace ECX.Website.Application.Contracts.Persistence
 {
     public interface IAccountRepository 
     {
-        Task<ResponseAccount> RegisterUserAsync(Account model , string password);
+        //Task<ResponseAccount> RegisterUserAsync(Account model , string password);
 
-        Task<ResponseAccount> LoginUserAsync(loginDto model);
+        //Task<ResponseAccount> LoginUserAsync(LoginADDto model);
 
-        Task<ResponseAccount> ConfirmEmailAsync(string userId, string token);
+        //Task<ResponseAccount> ConfirmEmailAsync(string userId, string token);
 
-        Task<ResponseAccount> ForgetPasswordAsync(string email);
+        //Task<ResponseAccount> ForgetPasswordAsync(string email);
 
-        Task<ResponseAccount> ResetPasswordAsync(ResetPasswordDto model);
+        //Task<ResponseAccount> ResetPasswordAsync(ResetPasswordDto model);
+
+        public Task<ResponseAccount> AutenticateUser(string userName, string password);
+
+        public Task<ResponseAccount> AutenticateMCR(string userName, string password);
 
     }
 }

@@ -13,6 +13,6 @@ namespace ECX.Website.Application.DTOs.Applicant
         public string FName { get; set; }
         public string LName { get; set; }
         public string EduStatus { get; set; }
-        public IFormFile File { get; set; }
+        public IFormFile? File { get; set; }
     }
 }

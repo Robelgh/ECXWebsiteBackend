@@ -29,8 +29,10 @@ namespace ECX.Website.Application.Contracts.Persistence
         DataTable GetCommodity();
         DataTable GetCommodityTradeData(string commodity);
 
-        DataTable GetPretradeNonCoffeeMarketData();
+        DataTable GetPretradeNonCoffeeMarketData(string commodity);
         DataTable GetPretradeCoffeeMarketData(string Num);
+
+        DataTable getNonTraceableCoffeePretrade();
 
 
 

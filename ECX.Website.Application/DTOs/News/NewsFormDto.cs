@@ -15,6 +15,6 @@ namespace ECX.Website.Application.DTOs.News
         public string Description { get; set; }
         public string Source { get; set; }
         public DateTime ExpDate { get; set; }
-        public IFormFile ImgFile{get;set;}
+        public IFormFile? ImgFile{get;set;}
     }
 }

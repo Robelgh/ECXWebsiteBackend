@@ -212,6 +212,10 @@
               "target": "Package",
               "version": "[6.0.26, )"
             },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
@@ -251,6 +255,14 @@
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Security.Claims": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

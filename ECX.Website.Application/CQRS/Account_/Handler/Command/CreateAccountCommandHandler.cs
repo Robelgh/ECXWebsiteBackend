@@ -36,59 +36,59 @@ namespace ECX.Website.Application.CQRS.Account_.Handler.Command
         public async Task<ResponseAccount> Handle(CreateAccountCommand request, CancellationToken cancellationToken)
         {
             var response = new ResponseAccount();
-            var validator = new AccountCreateDtoValidator();
+            //var validator = new AccountCreateDtoValidator();
 
-            if (request.RegisterDto == null)
-                throw new NullReferenceException("Reigster form is null");
+            //if (request.RegisterDto == null)
+            //    throw new NullReferenceException("Reigster form is null");
 
-            else if (request.RegisterDto.Password != request.RegisterDto.ConfirmPassword)
-                {
-                response.Message = "Confirm password doesn't match the password";
-                response.Success = false;
-                response.Status = "403";
+            //else if (request.RegisterDto.Password != request.RegisterDto.ConfirmPassword)
+            //    {
+            //    response.Message = "Confirm password doesn't match the password";
+            //    response.Success = false;
+            //    response.Status = "403";
                 
-                };
-            var validationResult = await validator.ValidateAsync(request.RegisterDto);
+            //    };
+            //var validationResult = await validator.ValidateAsync(request.RegisterDto);
 
-            if (validationResult.IsValid == false)
-            {
-                response.Success = false;
-                response.Message = "Creation Faild";
-                response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
-                response.Status = "400";
-            }
-            else
-            {
-                try
-                {
-                    var Account = _mapper.Map<Account>(request.RegisterDto);
-                    var result = await _accountRepository.RegisterUserAsync(Account , request.RegisterDto.Password);
+            //if (validationResult.IsValid == false)
+            //{
+            //    response.Success = false;
+            //    response.Message = "Creation Faild";
+            //    response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
+            //    response.Status = "400";
+            //}
+            //else
+            //{
+            //    try
+            //    {
+            //        var Account = _mapper.Map<Account>(request.RegisterDto);
+            //        var result = await _accountRepository.RegisterUserAsync(Account , request.RegisterDto.Password);
 
-                    if (result.Success)
-                    {
-                        response.Success = true;
-                        response.Message = "Created Successfully";
-                        response.Status = "200";
-                        ;
-                    }
-                    else
-                    {
-                        response.Message = "User did not create";
-                        response.Success = false;
-                        response.Errors = result.Errors;
-                    }
+            //        if (result.Success)
+            //        {
+            //            response.Success = true;
+            //            response.Message = "Created Successfully";
+            //            response.Status = "200";
+            //            ;
+            //        }
+            //        else
+            //        {
+            //            response.Message = "User did not create";
+            //            response.Success = false;
+            //            response.Errors = result.Errors;
+            //        }
 
                 
                     
-                }
-                catch (Exception ex)
-                {
-                    response.Success = false;
-                    response.Message = "Creation Failed";
-                    response.Errors = new List<string> { ex.Message };
-                    response.Status = "400";
-                }
-            }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        response.Success = false;
+            //        response.Message = "Creation Failed";
+            //        response.Errors = new List<string> { ex.Message };
+            //        response.Status = "400";
+            //    }
+            //}
             return response;
         }
     }

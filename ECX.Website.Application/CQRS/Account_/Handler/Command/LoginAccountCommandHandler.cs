@@ -28,21 +28,21 @@ namespace ECX.Website.Application.CQRS.Account_.Handler.Command
             var response = new ResponseAccount();
             var validator = new AccountCreateDtoValidator();
 
-            if (request.loginDto == null)
+            if (request.LoginADDto == null)
                 throw new NullReferenceException("Reigster form is null");
 
          
                 try
                 {
                   
-                    var result = await _accountRepository.LoginUserAsync(request.loginDto);
+                    var result = await _accountRepository.AutenticateUser(request.LoginADDto.UserName , request.LoginADDto.Password);
 
                     if (result.Success)
                     {
                         response.Success = true;
                         response.Message = result.Message;
                         response.UserName= result.UserName;
-                        response.ExpireDate = result.ExpireDate; 
+                        response.Token = result.Token; 
                         response.Status = "200";
                         ;
                     }

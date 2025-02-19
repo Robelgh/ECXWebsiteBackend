@@ -125,18 +125,27 @@ namespace ECX.Website.Application.CQRS.Page_.Handler.Command
                 {
                     PageDto.ImgName = (await _pageRepository.GetById(
                                 request.PageFormDto.Id)).ImgName;
-                } 
+                }
 
                 var updateData = await _pageRepository.GetById(request.PageFormDto.Id);
-                
-                _mapper.Map(PageDto, updateData);
+                try
+                {
+                    _mapper.Map(PageDto, updateData);
+                    var data = await _pageRepository.Update(updateData);
 
-                var data = await _pageRepository.Update(updateData);
 
-                response.Data = _mapper.Map<PageDto>(data);
-                response.Success = true;
-                response.Message = "Updated Successfull";
-                response.Status = "200";
+
+                    response.Data = _mapper.Map<PageDto>(data);
+                    response.Success = true;
+                    response.Message = "Updated Successfull";
+                    response.Status = "200";
+                }
+                catch (Exception ex)
+                {
+
+                    throw;
+                }
+               
             }
             return response;
         }

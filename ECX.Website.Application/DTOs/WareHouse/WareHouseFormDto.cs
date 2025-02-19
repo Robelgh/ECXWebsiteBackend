@@ -17,7 +17,7 @@ namespace ECX.Website.Application.DTOs.WareHouse
         public string Longitude { get; set; }
         public string Latitude { get; set; }
         public string Capacity { get; set; }
-        public string ImgFile{get;set;}
+        public string? ImgFile{get;set;}
 
     }
 }
