@@ -26,17 +26,17 @@ namespace ECX.Website.API.Controllers
         //private readonly IMapper _mapper;
         //private readonly JWTHandler _jwtHandler;
         private readonly IMediator _mediator;
+        private readonly ILogger<AccountController> _logger;
 
-        //public AccountController(UserManager<Account> userManager, IMapper mapper, JWTHandler jwtHandler)
+        //public AccountController(ILogger<AccountController> logger)
         //{
-        //    _userManager = userManager;
-        //    _mapper = mapper;
-        //    _jwtHandler = jwtHandler;
+        //    _logger = logger;
         //}
 
-        public AccountController(IMediator mediator)
+        public AccountController(IMediator mediator, ILogger<AccountController> logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
 
@@ -150,7 +150,7 @@ namespace ECX.Website.API.Controllers
 
         public async Task<ActionResult<ResponseAccount>> LoginMCRAD([FromForm] LoginADDto data)
         {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+           // await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             var command = new MCRLoginAccountCommand { LoginADDto = data };
             ResponseAccount response = await _mediator.Send(command);
 
@@ -160,7 +160,7 @@ namespace ECX.Website.API.Controllers
             if (response.Status == "200")
             {
                 
-                    string cookieValue = this.HttpContext.Request.Cookies[".AspNet.RaindropSharedTraderInterface.Cookie21"];
+                    string cookieValue = this.HttpContext.Request.Cookies[".AspNet.RaindropSharedTraderInterface.Cookie"];
                     response.Token = cookieValue;
                     return Ok(response);
               
@@ -181,8 +181,6 @@ namespace ECX.Website.API.Controllers
         }
         private async Task<ResponseAccount> AuthenticateWithSSO(string ssoUrl, LoginADDto data)
         {
-            // In reality, you'd call out to your SSO provider here, using HttpClient or some other mechanism
-            // For now, we'll return a dummy response to simulate behavior
             ResponseAccount response = new ResponseAccount
             {
                 Status = "200", // Assume success for demo
@@ -190,6 +188,39 @@ namespace ECX.Website.API.Controllers
             };
 
             return await Task.FromResult(response);
+        }
+
+        [HttpGet("check-session")]
+        public IActionResult CheckSession()
+        {
+
+
+            var cookie = Request.Cookies[".AspNet.RaindropSharedTraderInterface.Cookie"];
+            if (string.IsNullOrEmpty(cookie))
+            {
+                return Unauthorized(new { valid = false, message = "No authentication cookie found" });
+            }
+
+            try
+            {
+                var flag = User.Identity.IsAuthenticated;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            // If cookie is present, check if the user is authenticated
+            if (User.Identity.IsAuthenticated)
+            {
+                return Ok(new { valid = true });
+            }
+
+            _logger.LogInformation("IsAuthenticated: {IsAuthenticated}, Claims: {Claims}",
+               User.Identity.IsAuthenticated, string.Join(", ", User.Claims.Select(c => $"{c.Type}: {c.Value}")));
+
+            return Unauthorized(new { valid = false });
         }
 
 

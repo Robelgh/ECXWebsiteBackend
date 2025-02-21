@@ -282,13 +282,8 @@ namespace ECX.Website.Persistence.Repositories
             {
                 DataTable dt=ChooseMethodBasedOnUsername(userName);
                 if(dt != null && dt.Rows.Count > 0) {
-
-                    
-
-                    response.Success = true;
-
                     CreateToken(loginTrader);
-
+                    response.Success = true;
                     return response;
                 }
                 else
@@ -396,17 +391,40 @@ namespace ECX.Website.Persistence.Repositories
 
         public void CreateToken(LoginTrader loginTrader)
         {
-
             var str = System.Text.Json.JsonSerializer.Serialize(loginTrader);
-            var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme, ClaimTypes.Name, ClaimTypes.Role);
-            identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, str));
-            identity.AddClaim(new Claim(ClaimTypes.Name, loginTrader.UserName));
+            var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, "UserName"),
+                    new Claim(ClaimTypes.NameIdentifier, "UserId"),
+                    new Claim(ClaimTypes.Role, "Admin"),
+                };
+            var httpContext = this._httpContext.HttpContext;
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
 
-            var httpContext = this._httpContext.HttpContext;
 
-            Microsoft.AspNetCore.Authentication.AuthenticationHttpContextExtensions.SignInAsync(httpContext, principal,
-                new Microsoft.AspNetCore.Authentication.AuthenticationProperties { IsPersistent = false });
+
+            httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new Microsoft.AspNetCore.Authentication.AuthenticationProperties { IsPersistent = false });
+
+
+
+
+            //var str = System.Text.Json.JsonSerializer.Serialize(loginTrader);
+            //var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme, ClaimTypes.Name, ClaimTypes.Role);
+            //identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, str));
+            //identity.AddClaim(new Claim(ClaimTypes.Name, loginTrader.UserName));
+            //identity.AddClaim(new Claim(ClaimTypes.Role, "Admin"));
+            //var principal = new ClaimsPrincipal(identity);
+
+            //var httpContext = this._httpContext.HttpContext;
+
+            //httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new Microsoft.AspNetCore.Authentication.AuthenticationProperties { IsPersistent = false });
+
+
+            //Microsoft.AspNetCore.Authentication.AuthenticationHttpContextExtensions.SignInAsync(httpContext, principal,
+            //    new Microsoft.AspNetCore.Authentication.AuthenticationProperties { IsPersistent = false });
+
+
         }
 
         public static string Generate256BitKey()

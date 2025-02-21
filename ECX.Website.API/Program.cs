@@ -35,20 +35,21 @@ builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddAuthentication("Identity.Application").AddCookie("Identity.Application", options =>
-{
-    options.Cookie.Name = ".AspNet.RaindropSharedTraderInterface.Cookie21";
-    options.ExpireTimeSpan = System.TimeSpan.FromMinutes(Convert.ToDouble(_AppSettings.GetValue<string>("SessionTimeout")));
-    options.LoginPath = "/Authentication/Login";
-    options.Cookie.Domain = _AppSettings.GetValue<string>("Domain");
-    options.Cookie.Path = "/";
-    options.Cookie.HttpOnly = true;
-    options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Lax;
-    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-    options.SlidingExpiration = true;
-    IDataProtectionProvider d = DataProtectionProvider.Create(new DirectoryInfo(_AppSettings.GetValue<string>("DataProtectionPath")));
-    options.DataProtectionProvider = d;
-    options.SessionStore = sessionStore;
-});
+    {
+        options.Cookie.Name = ".AspNet.RaindropSharedTraderInterface.Cookie";
+        options.ExpireTimeSpan = System.TimeSpan.FromMinutes(Convert.ToDouble(_AppSettings.GetValue<string>("SessionTimeout")));
+        options.LoginPath = "/Account/Login";
+        options.Cookie.Domain = _AppSettings.GetValue<string>("Domain");
+        options.Cookie.Path = "/";
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
+        options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+        options.SlidingExpiration = true;
+        IDataProtectionProvider d = DataProtectionProvider.Create(new DirectoryInfo(_AppSettings.GetValue<string>("DataProtectionPath")));
+        options.DataProtectionProvider = d;
+        options.SessionStore = sessionStore;
+    }
+    );
 
 builder.Services.AddDistributedSqlServerCache(options =>
 {
@@ -77,7 +78,17 @@ builder.Services.AddCors(options =>
 // app.UseSwaggerUI();
 //}
 
+
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();  // Enables detailed error pages in development
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+}
 
 sessionStore.cache = (IDistributedCache)app.Services.GetService(typeof(IDistributedCache));
 sessionStore.SessionTimeout = Convert.ToDouble(_AppSettings.GetValue<string>("SessionTimeout"));
