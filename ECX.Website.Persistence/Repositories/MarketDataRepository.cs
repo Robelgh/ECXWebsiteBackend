@@ -276,7 +276,7 @@ namespace ECX.Website.Persistence.Repositories
         public DataTable GetCommodity()
         {
             var state = "";
-            SqlConnection connection = new SqlConnection(_configuration["ConnectionStrings:ECXLookupConnectionString"]);
+            SqlConnection connection = new SqlConnection(_configuration["ConnectionStrings:ECXConnectionString"]);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
             DataTable dt = new DataTable();
             var strErrMsg = "";

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.DataProtection;
 using ECX.Website.Domain;
 using Microsoft.Extensions.Caching.Distributed;
 
-var builder = WebApplication.CreateBuilder(args); 
+var builder = WebApplication.CreateBuilder(args);
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 var _AppSettings = builder.Configuration.GetSection("AppSettings");
 var _SecuritySetting = builder.Configuration.GetSection("SecuritySetting");
@@ -34,23 +34,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddAuthentication("Identity.Application").AddCookie("Identity.Application", options =>
-    {
-        options.Cookie.Name = ".AspNet.RaindropSharedTraderInterface.Cookie";
-        options.ExpireTimeSpan = System.TimeSpan.FromMinutes(Convert.ToDouble(_AppSettings.GetValue<string>("SessionTimeout")));
-        options.LoginPath = "/Account/Login";
-        options.Cookie.Domain = _AppSettings.GetValue<string>("Domain");
-        options.Cookie.Path = "/";
-        options.Cookie.HttpOnly = true;
-        options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
-        options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
-        options.SlidingExpiration = true;
-        IDataProtectionProvider d = DataProtectionProvider.Create(new DirectoryInfo(_AppSettings.GetValue<string>("DataProtectionPath")));
-        options.DataProtectionProvider = d;
-        options.SessionStore = sessionStore;
-    }
-    );
-
 builder.Services.AddDistributedSqlServerCache(options =>
 {
     options.ConnectionString = _ConnectionStrings.GetValue<string>("identity_server");
@@ -58,11 +41,30 @@ builder.Services.AddDistributedSqlServerCache(options =>
     options.TableName = "tbl_identity_cache";
 });
 
+builder.Services.AddAuthentication("Identity.Application").AddCookie("Identity.Application", options =>
+{
+    options.Cookie.Name = ".AspNet.RaindropSharedTraderInterface.Cookie";
+    options.ExpireTimeSpan = System.TimeSpan.FromMinutes(Convert.ToDouble(_AppSettings.GetValue<string>("SessionTimeout")));
+    options.LoginPath = "/Account/Login";
+    options.Cookie.Domain = _AppSettings.GetValue<string>("Domain");
+    options.Cookie.Path = "/";
+    options.Cookie.HttpOnly = true;
+    options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+    options.SlidingExpiration = true;
+    IDataProtectionProvider d = DataProtectionProvider.Create(new DirectoryInfo(_AppSettings.GetValue<string>("DataProtectionPath")));
+    options.DataProtectionProvider = d;
+    options.SessionStore = sessionStore;
+});
+
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
         policy =>
         {
+           // policy.WithOrigins("http://10.3.5.95:17023")
             policy.WithOrigins("http://localhost:4200")
                   .AllowAnyMethod()
                   .AllowAnyHeader()
@@ -88,6 +90,7 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
 
 sessionStore.cache = (IDistributedCache)app.Services.GetService(typeof(IDistributedCache));
@@ -97,14 +100,15 @@ sessionStore.SessionTimeout = Convert.ToDouble(_AppSettings.GetValue<string>("Se
 app.UseStaticFiles();
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseSwaggerUI(c =>{ c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ecx public service"); c.RoutePrefix = string.Empty;});
+app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ecx public service"); c.RoutePrefix = string.Empty; });
 app.UseCors("AllowSpecificOrigin");
-app.UseAuthentication();
-app.UseAuthorization();
-app.UseHttpsRedirection();
-app.UseCookiePolicy();
 app.UseRouting();
-app.UseminiOrangeSAMLSSOMiddleware();
+//app.UseAuthentication();
+app.UseAuthorization();
+//app.UseHttpsRedirection();
+app.UseCookiePolicy();
+
+//app.UseminiOrangeSAMLSSOMiddleware();
 
 
 var countService = app.Services.GetRequiredService<CountService>();

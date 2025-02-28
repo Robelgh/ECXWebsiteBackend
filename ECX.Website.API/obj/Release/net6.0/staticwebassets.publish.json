@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BsD82iQwN+PxZqdN2A82ToxyW3+RGdW8P2CQhPEQE1Q=",
+  "Hash": "vM1mxMSvjEit3VZrbjawI3n838Jx7pcPrlpLHW2oNHY=",
   "Source": "ECX.Website.API",
   "BasePath": "_content/ECX.Website.API",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\02450fcb-5639-4a03-97e1-b0094a44edbf.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/02450fcb-5639-4a03-97e1-b0094a44edbf.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\02450fcb-5639-4a03-97e1-b0094a44edbf.jpeg"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\02c02531-f0ab-423e-b6df-e9eca0d7179a.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/02c02531-f0ab-423e-b6df-e9eca0d7179a.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\02c02531-f0ab-423e-b6df-e9eca0d7179a.jpeg"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\05a8af09-5588-4667-a863-591f6f35b8a6.png",
@@ -306,6 +340,23 @@
       "OriginalItemSpec": "wwwroot\\image\\10002eef-2155-4c44-b293-366cc40b0f1b.png"
     },
     {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\110abd17-b2b9-441b-900e-26c7493396e1.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/110abd17-b2b9-441b-900e-26c7493396e1.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\110abd17-b2b9-441b-900e-26c7493396e1.jpeg"
+    },
+    {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\12e0f3b6-8a2b-475d-814e-fbe3874a1df8.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
@@ -389,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\14e904fe-9f92-497b-b497-38cf25baccb0.jpeg"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\1508c068-38b1-4749-a2fd-3efb39c829fe.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/1508c068-38b1-4749-a2fd-3efb39c829fe.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\1508c068-38b1-4749-a2fd-3efb39c829fe.jpeg"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\15570804-9eb1-4bf8-b880-4adbe65dbe08.jpeg",
@@ -1785,6 +1853,23 @@
       "OriginalItemSpec": "wwwroot\\image\\5eb4c69f-465e-4713-bf86-25a57dff8f62.jpeg"
     },
     {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\6053d38d-eca8-4122-9b80-70e0946fecd5.png",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/6053d38d-eca8-4122-9b80-70e0946fecd5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\6053d38d-eca8-4122-9b80-70e0946fecd5.png"
+    },
+    {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\60939589-b2a8-484a-b2a8-7d6602edcad0.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
@@ -2072,6 +2157,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\6e0596ee-87fe-4dec-8067-babcf564cf31.jpeg"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\703df0b4-127e-41cf-aeb1-68afae8e94f3.png",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/703df0b4-127e-41cf-aeb1-68afae8e94f3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\703df0b4-127e-41cf-aeb1-68afae8e94f3.png"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\70427e7d-99d6-4926-ab6f-ef742c3eaea8.png",
@@ -2446,6 +2548,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\8f670e5f-2344-4d8d-b790-52e6e270b6cd.jpeg"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\8fc9ee65-149e-46c8-ac52-eb1d858306de.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/8fc9ee65-149e-46c8-ac52-eb1d858306de.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\8fc9ee65-149e-46c8-ac52-eb1d858306de.jpeg"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\909e5770-de62-4a26-bcb7-0a77bec8663f.jpeg",
@@ -3111,6 +3230,23 @@
       "OriginalItemSpec": "wwwroot\\image\\b3a6d840-72c4-47ee-8f0d-657f8cb6f68c.png"
     },
     {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b48a045d-2faa-49b0-b0a0-0680380ba7d2.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/b48a045d-2faa-49b0-b0a0-0680380ba7d2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\b48a045d-2faa-49b0-b0a0-0680380ba7d2.jpeg"
+    },
+    {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\b52b0f0f-ccf7-48c5-be7a-1ab63bbc8feb.jpeg",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
@@ -3366,6 +3502,23 @@
       "OriginalItemSpec": "wwwroot\\image\\bd48f3ed-6157-497b-905e-e195626452da.png"
     },
     {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\bee96912-11e9-46ab-b1ed-db0a7c3a8643.png",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/bee96912-11e9-46ab-b1ed-db0a7c3a8643.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\bee96912-11e9-46ab-b1ed-db0a7c3a8643.png"
+    },
+    {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\bf30292b-e558-4e3f-989a-a91b86c82189.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
@@ -3398,6 +3551,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\c07405a6-a160-4847-b7d5-3447555867d9.jpeg"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c0b616ef-d5e6-4d7d-934f-00a38492c205.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/c0b616ef-d5e6-4d7d-934f-00a38492c205.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\c0b616ef-d5e6-4d7d-934f-00a38492c205.jpeg"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c0c0b5dd-0bb7-4e90-9ad8-d927f3d38705.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/c0c0b5dd-0bb7-4e90-9ad8-d927f3d38705.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\c0c0b5dd-0bb7-4e90-9ad8-d927f3d38705.jpeg"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c22dfe71-b544-4d8c-990f-2eee2d443bb3.jpeg",
@@ -3449,6 +3636,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\c3dfd725-73cb-440e-9906-af63ba753088.png"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c6139648-f03f-488a-baec-1ded89f979c1.png",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/c6139648-f03f-488a-baec-1ded89f979c1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\c6139648-f03f-488a-baec-1ded89f979c1.png"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\c61e58cf-3d4c-4b25-8ea5-332cfe0f8e6a.jpeg",
@@ -3551,6 +3755,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\cc84dc3f-b00e-439a-a11d-d01e64a575c1.jpeg"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\d0ccaee1-927e-4f3a-a91e-ef59cd20373c.png",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/d0ccaee1-927e-4f3a-a91e-ef59cd20373c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\d0ccaee1-927e-4f3a-a91e-ef59cd20373c.png"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\d1dbe5ae-59ff-4be3-a458-4275e7184953.jpeg",
@@ -4216,6 +4437,23 @@
       "OriginalItemSpec": "wwwroot\\image\\f2ceba04-dba2-4142-9955-10274fd2ebe4.jpeg"
     },
     {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f3d30d69-284d-4a3f-9b17-dbb85ded7ae8.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/f3d30d69-284d-4a3f-9b17-dbb85ded7ae8.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\f3d30d69-284d-4a3f-9b17-dbb85ded7ae8.jpeg"
+    },
+    {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f3ea2700-c5ea-4579-a445-bfafb364514a.png",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
@@ -4299,6 +4537,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\f79a6741-c739-4b19-a258-34ae1adb3bd9.png"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f8f76c97-5b7e-40c1-91de-91fc6bce4aeb.jpeg",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "image/f8f76c97-5b7e-40c1-91de-91fc6bce4aeb.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\f8f76c97-5b7e-40c1-91de-91fc6bce4aeb.jpeg"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\image\\f9b735bb-ff6d-41fe-b5d0-04a3f4567207.jpeg",
@@ -5406,6 +5661,40 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\miniOrangeContent\\mo_maincss.css",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "miniOrangeContent/mo_maincss.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\miniOrangeContent\\mo_maincss.css"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\miniOrangeContent\\Scripts\\Appslist.js",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "miniOrangeContent/Scripts/Appslist.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\miniOrangeContent\\Scripts\\Appslist.js"
+    },
+    {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\004b7797-94a6-469c-ab38-695ce5da49be.pdf",
       "SourceId": "ECX.Website.API",
       "SourceType": "Discovered",
@@ -5489,6 +5778,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\pdf\\09f21b3c-5e1e-4069-aea3-b501b7aa549f.pdf"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\0f4a382b-79a8-476b-8e90-4b1ba5972fa9.pdf",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "pdf/0f4a382b-79a8-476b-8e90-4b1ba5972fa9.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pdf\\0f4a382b-79a8-476b-8e90-4b1ba5972fa9.pdf"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\10463db5-fbfc-49ad-a92b-3051a4c6ab18.pdf",
@@ -5999,6 +6305,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\pdf\\bd6765e9-7684-4725-8896-6766a71d5e1c.pdf"
+    },
+    {
+      "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\c638e724-80bd-4a4c-9d21-0365c8bea997.pdf",
+      "SourceId": "ECX.Website.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\",
+      "BasePath": "_content/ECX.Website.API",
+      "RelativePath": "pdf/c638e724-80bd-4a4c-9d21-0365c8bea997.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pdf\\c638e724-80bd-4a4c-9d21-0365c8bea997.pdf"
     },
     {
       "Identity": "D:\\PROJECTS\\ecx_websiteBE\\ECX.Website.API\\wwwroot\\pdf\\c911916d-f158-4916-95f4-0d7f3d046983.pdf",

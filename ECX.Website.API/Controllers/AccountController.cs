@@ -13,11 +13,13 @@ using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ECX.Website.API.Controllers
 {
+   
     [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
@@ -190,38 +192,13 @@ namespace ECX.Website.API.Controllers
             return await Task.FromResult(response);
         }
 
+        [Authorize(AuthenticationSchemes = "Identity.Application")]
         [HttpGet("check-session")]
         public IActionResult CheckSession()
         {
-
-
-            var cookie = Request.Cookies[".AspNet.RaindropSharedTraderInterface.Cookie"];
-            if (string.IsNullOrEmpty(cookie))
-            {
-                return Unauthorized(new { valid = false, message = "No authentication cookie found" });
-            }
-
-            try
-            {
-                var flag = User.Identity.IsAuthenticated;
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-
-            // If cookie is present, check if the user is authenticated
-            if (User.Identity.IsAuthenticated)
-            {
-                return Ok(new { valid = true });
-            }
-
-            _logger.LogInformation("IsAuthenticated: {IsAuthenticated}, Claims: {Claims}",
-               User.Identity.IsAuthenticated, string.Join(", ", User.Claims.Select(c => $"{c.Type}: {c.Value}")));
-
-            return Unauthorized(new { valid = false });
+            return Ok(new { valid = true });
         }
+
 
 
         //public AccountController(IMediator mediator)
