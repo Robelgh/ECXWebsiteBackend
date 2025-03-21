@@ -14,6 +14,8 @@ using System.IdentityModel.Tokens.Jwt;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using ECX.Website.Application.Contracts.Persistence;
+using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -29,16 +31,24 @@ namespace ECX.Website.API.Controllers
         //private readonly JWTHandler _jwtHandler;
         private readonly IMediator _mediator;
         private readonly ILogger<AccountController> _logger;
+        private readonly IAccountRepository _accountRepository;
+
+        private readonly ExternalApiService _externalApiService;
+
+
+
 
         //public AccountController(ILogger<AccountController> logger)
         //{
         //    _logger = logger;
         //}
 
-        public AccountController(IMediator mediator, ILogger<AccountController> logger)
+        public AccountController(IMediator mediator, ILogger<AccountController> logger , IAccountRepository accountRepository, ExternalApiService externalApiService)
         {
             _mediator = mediator;
             _logger = logger;
+            _accountRepository = accountRepository;
+            _externalApiService = externalApiService;
         }
 
 
@@ -155,31 +165,7 @@ namespace ECX.Website.API.Controllers
            // await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             var command = new MCRLoginAccountCommand { LoginADDto = data };
             ResponseAccount response = await _mediator.Send(command);
-
-           
-
-
-            if (response.Status == "200")
-            {
-                
-                    string cookieValue = this.HttpContext.Request.Cookies[".AspNet.RaindropSharedTraderInterface.Cookie"];
-                    response.Token = cookieValue;
-                    return Ok(response);
-              
-            }
-            else if (response.Status == "400")
-            {
-                return BadRequest(response);
-            }
-            else if (response.Status == "404")
-            {
-                return NotFound(response);
-            }
-            else
-            {
-                return response;
-            }
-
+            return await Task.FromResult(response);
         }
         private async Task<ResponseAccount> AuthenticateWithSSO(string ssoUrl, LoginADDto data)
         {
@@ -199,6 +185,72 @@ namespace ECX.Website.API.Controllers
             return Ok(new { valid = true });
         }
 
+        [Authorize(AuthenticationSchemes = "Identity.Application")]
+        [HttpPost("SendOTP")]
+        public async Task<ActionResult<ResponseAccount>> SendOTP([FromForm] MiniorangeDto data)
+        {
+            //var command = new SendOTPCommand { miniorangeDto = data };
+            //MiniOrangeResponse response = await _accountRepository.SendOTP();
+
+            try
+            {
+                // Call the external API
+                var response = await _externalApiService.CallExternalApiAsync("https://mfa.ecx.com.et/api/auth/challenge", data);
+
+                // Return the response from the external API
+                return Ok(response);
+            }
+            catch (HttpRequestException ex)
+            {
+                // Handle errors from the external API
+                return StatusCode(500, $"Error calling external API: {ex.Message}");
+            }
+
+            
+        }
+
+        [Authorize(AuthenticationSchemes = "Identity.Application")]
+        [HttpPost("VerifyOTP")]
+        public async Task<ActionResult<ResponseAccount>> VerifyOTP([FromBody] MiniorangeValidationDto data)
+        {
+            try
+            {
+                // Call the external API
+                var response = await _externalApiService.CallExternalApiAsync("https://mfa.ecx.com.et/api/auth/validate", data);
+
+                JsonDocument jsonDocument = JsonDocument.Parse(response.Value);
+                JsonElement root=jsonDocument.RootElement;
+                string status = root.GetProperty("status").GetString();
+                
+
+                if (status == "SUCCESS")
+                {
+
+                    string cookieValue = this.HttpContext.Request.Cookies[".AspNet.RaindropSharedTraderInterface.Cookie"];
+                    return Ok(new ResponseAccount
+                    {
+                        Token = cookieValue,
+                        Status = "success",
+                        Message="Success",
+                        Success=true
+                    }) ;
+
+                }
+
+                // Return the response from the external API
+                return Ok(new ResponseAccount
+                {
+                    Status = "Failed",
+                    Message = "Failed",
+                    Success = false
+                });
+            }
+            catch (HttpRequestException ex)
+            {
+                // Handle errors from the external API
+                return StatusCode(500, $"Error calling external API: {ex.Message}");
+            }
+        }
 
 
         //public AccountController(IMediator mediator)

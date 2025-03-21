@@ -656,8 +656,69 @@ namespace ECX.Website.Persistence.Repositories
 
         }
 
+        public async Task<MiniOrangeResponse> SendOTP()
+        {
+            // Simulate some delay for async operation, like calling an API or sending SMS/Email
+            await Task.Delay(1000); // Simulating a delay
+
+            // Create sample delivery objects (this could be dynamically generated based on the method)
+            var phoneDelivery = new Delivery
+            {
+                Contact = "1234567890",
+                SendStatus = "SUCCESS",
+                SendTime = DateTime.UtcNow.ToString("yyyyMMddHHmmss") // Using current UTC time as example
+            };
+
+            var emailDelivery = new Delivery
+            {
+                Contact = "xyz@example.com",
+                SendStatus = "SUCCESS",
+                SendTime = DateTime.UtcNow.ToString("yyyyMMddHHmmss")
+            };
+
+            // Based on the `method`, we might change how the OTP is sent (SMS, Email, etc.)
+            string authType = "SMS"; // : "Email";
+            string responseType = "CHALLENGE";  // For example, we are returning a challenge type
+
+            // Create the list of questions (if applicable)
+            var questions = new List<Question>
+        {
+            new Question { QuestionText = "What is your mother's maiden name?" },
+            new Question { QuestionText = "What was the name of your first pet?" }
+        };
+
+            // Create the AuthResponse object with the generated data
+            var authResponse = new MiniOrangeResponse(
+                Guid.NewGuid().ToString(),  // txId, using GUID for unique identifier
+                authType,                   // SMS or Email based on method
+                responseType,               // Challenge type
+                phoneDelivery,              // Phone delivery object
+                emailDelivery,              // Email delivery object
+                "SUCCESS",                  // Status
+                "Successfully generated.",  // Message
+                "qr-code-value",            // QR code value (assuming this is static or dynamically generated)
+                questions                   // List of questions for KAB (Knowledge-based Authentication)
+            );
+
+            // Return the created AuthResponse object
+            return authResponse;
+        }
+
+        public async Task<MiniorangeOTPVerify> VerifyOTP()
+        {
+            return   new MiniorangeOTPVerify
+            {
+                   txId= "ba65583b-7c80-11e5-883e-0e2fb063e0f9",
+                   responseType=  "VALIDATE",
+                   status= "SUCCESS",
+                   message= "Successfully Validated."
+            };
+           
+        }
+    }
+
         //GetActiveRepByIDNo
 
 
     }
-}
+

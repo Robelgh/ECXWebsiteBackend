@@ -21,6 +21,9 @@ namespace ECX.Website.Application.Contracts.Persistence
 
         //Task<ResponseAccount> ResetPasswordAsync(ResetPasswordDto model);
 
+        Task<MiniorangeOTPVerify> VerifyOTP(); 
+        Task<MiniOrangeResponse> SendOTP();  // 0 for SMS , 1 for EMAIL , 2 for Authenticator
+
         public Task<ResponseAccount> AutenticateUser(string userName, string password);
 
         public Task<ResponseAccount> AutenticateMCR(string userName, string password);

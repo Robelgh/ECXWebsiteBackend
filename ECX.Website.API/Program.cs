@@ -33,6 +33,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddTransient<ExternalApiService>();
 
 builder.Services.AddDistributedSqlServerCache(options =>
 {
@@ -56,7 +57,15 @@ builder.Services.AddAuthentication("Identity.Application").AddCookie("Identity.A
     options.DataProtectionProvider = d;
     options.SessionStore = sessionStore;
 });
-
+builder.Services.AddHttpClient("ExternalApi", client =>
+{
+client.BaseAddress = new Uri("https://mfa.ecx.com.et/"); // Base URL of the external API
+client.DefaultRequestHeaders.Add("Accept", "application/json");
+client.DefaultRequestHeaders.Add("Customer-Key", "1");
+client.DefaultRequestHeaders.Add("Timestamp",
+        "1741849537454");
+client.DefaultRequestHeaders.Add("Authorization", "11df8551bd077431fac8795a96dfb83f9d6fb6fe8736fa689faef3448469fb00a6f01c6ecd57ccb72fd73cc4fb52bf1b537c4355e808d90598598fefe01e0054"); // Optional: Add headers
+});
 
 
 builder.Services.AddCors(options =>
@@ -64,7 +73,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigin",
         policy =>
         {
-           // policy.WithOrigins("http://10.3.5.95:17023")
+            //policy.WithOrigins("http://10.3.5.95:17023")
             policy.WithOrigins("http://localhost:4200")
                   .AllowAnyMethod()
                   .AllowAnyHeader()

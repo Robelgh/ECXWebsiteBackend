@@ -20,9 +20,11 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.9",
+          "Microsoft.Extensions.ApiDescription.Client": "7.0.2",
           "Microsoft.Extensions.Caching.SqlServer": "9.0.2",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.18.1",
+          "NSwag.ApiDescription.Client": "13.18.2",
           "Swashbuckle.AspNetCore": "6.2.3",
           "miniOrange.SAML.SSO": "7.0.4"
         },
@@ -592,6 +594,7 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.9"
         }
       },
+      "Microsoft.Extensions.ApiDescription.Client/7.0.2": {},
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.Caching.Abstractions/9.0.2": {
         "dependencies": {
@@ -1100,6 +1103,13 @@
           }
         }
       },
+      "NSwag.ApiDescription.Client/13.18.2": {
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Client": "7.0.2",
+          "NSwag.MSBuild": "13.18.2"
+        }
+      },
+      "NSwag.MSBuild/13.18.2": {},
       "SendGrid/9.28.1": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
@@ -2020,6 +2030,13 @@
       "path": "microsoft.entityframeworkcore.tools/7.0.9",
       "hashPath": "microsoft.entityframeworkcore.tools.7.0.9.nupkg.sha512"
     },
+    "Microsoft.Extensions.ApiDescription.Client/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gSObdZ5LVFpgkdY8Tt1RzVD+8Xd7SN95ePuPiceAZbRL/EHZzAVTiH2sNsRwHcuMBu7nlTpeMDUjJDUCQuvK0A==",
+      "path": "microsoft.extensions.apidescription.client/7.0.2",
+      "hashPath": "microsoft.extensions.apidescription.client.7.0.2.nupkg.sha512"
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2355,6 +2372,20 @@
       "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    },
+    "NSwag.ApiDescription.Client/13.18.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uViMdjUscfeqrlDY4q9O2a0t2cMqsOx1kdX9WLyQjTXea1xjAHgQFCYlgE6ibwkYcUDJDlwEYUzvsJelL6SY3g==",
+      "path": "nswag.apidescription.client/13.18.2",
+      "hashPath": "nswag.apidescription.client.13.18.2.nupkg.sha512"
+    },
+    "NSwag.MSBuild/13.18.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SRQ3mONkfbJWhZxA1yOFMJMXavUvnXwcoYU23qoVqSEY2G+y8jZuq9ErWm76JT0Kn5/Ml5UhG1FWmLhkqd4/+A==",
+      "path": "nswag.msbuild/13.18.2",
+      "hashPath": "nswag.msbuild.13.18.2.nupkg.sha512"
     },
     "SendGrid/9.28.1": {
       "type": "package",
